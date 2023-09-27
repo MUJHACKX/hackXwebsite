@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { TeamData } from "./TeamData"
+import { TeamData } from "../../components/TeamData"
 // const PujanModha = require("../../public/Team/AmitSoni.jpg");
 
 const Team = () => {
