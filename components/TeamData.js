@@ -44,13 +44,6 @@ const TeamData = [
         personLinkedIn: "https://www.linkedin.com/in/pujan-modha/"
     },
     {
-        personImage: '/NehaChaudhary.jpg',
-        personName: "Dr. Neha Chaudhary",
-        personPosition: "PROGRAM CHAIR",
-        personOrganization: "HOD CSE,MUJ",
-        personLinkedIn: "https://www.linkedin.com/in/pujan-modha/"
-    },
-    {
         personImage: '/AmitSoni.jpg',
         personName: "Dr. Amit Soni",
         personPosition: "CEO AIC",
@@ -62,6 +55,20 @@ const TeamData = [
         personName: "Dr. Dinesh Saini",
         personPosition: "DIRECTOR, ECELL",
         personOrganization: "MUJ",
+        personLinkedIn: "https://www.linkedin.com/in/pujan-modha/"
+    },
+    {
+        personImage: '/NehaChaudhary.jpg',
+        personName: "Dr. Neha Chaudhary",
+        personPosition: "PROGRAM CHAIR",
+        personOrganization: "HOD CSE,MUJ",
+        personLinkedIn: "https://www.linkedin.com/in/pujan-modha/"
+    },
+    {
+        personImage: '/SantoshKumarVishwakarma.jpg',
+        personName: "Dr. Santosh Kumar Vishwakarma",
+        personPosition: "PROGRAM CHAIR",
+        personOrganization: "HOD AI-ML,MUJ",
         personLinkedIn: "https://www.linkedin.com/in/pujan-modha/"
     },
     {
