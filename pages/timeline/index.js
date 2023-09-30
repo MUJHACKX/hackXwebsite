@@ -1,132 +1,144 @@
-import react from "react";
+import React, { useState, useEffect } from "react";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
+import {
+  FaRegClock,
+  FaCode,
+  FaTrophy,
+  FaBriefcase,
+  FaLaptop,
+  FaMedal,
+} from "react-icons/fa";
 
 const Work = () => {
+  const [animate, setAnimate] = useState(false);
+
+  useEffect(() => {
+    
+    const timer = setTimeout(() => {
+      setAnimate(true);
+    }, 100);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+
+
   return (
     <div className="h-full bg-primary">
       <div className="h-[20vh]"></div>
-      <VerticalTimeline 
-        lineColor="red"
-      >
+      <VerticalTimeline lineColor="#2196F3">
         <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+          className={`vertical-timeline-element--work ${animate && "animate"}`}
+          contentStyle={{
+            background: "rgba(41,136,255,255)",
+            color: "#fff",
+          }}
           contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
-          date="2011 - present"
-          iconStyle={{ background: "#fff", color: "#fff" }}
-          // icon={<WorkIcon />}
+          iconStyle={{ background: "#fff", color: "#000" }}
+          icon={<FaRegClock />}
         >
-          <h3 className="vertical-timeline-element-title">Creative Director</h3>
-          <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
-          <p>
-            Creative Direction, User Experience, Visual Design, Project
-            Management, Team Leading
-          </p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          date="2010 - 2011"
-          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          // icon={<WorkIcon />}
-        >
-          <h3 className="vertical-timeline-element-title">Art Director</h3>
+          <h3 className="vertical-timeline-element-title">Oct 3 - Oct 24 </h3>
           <h4 className="vertical-timeline-element-subtitle">
-            San Francisco, CA
+            Registration Begins
           </h4>
-          <p>
-            Creative Direction, User Experience, Visual Design, SEO, Online
-            Marketing
-          </p>
+          <p>Register from Oct 3 - 24 for extended hackathon participation.</p>
         </VerticalTimelineElement>
+
         <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          date="2008 - 2010"
-          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          // icon={<WorkIcon />}
+          className={`vertical-timeline-element--work ${animate && "animate"}`}
+          contentStyle={{
+            background: "rgba(91,107,254,255)",
+            color: "#fff",
+          }}
+          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
+          iconStyle={{ background: "#fff", color: "#000" }}
+          icon={<FaBriefcase />}
         >
-          <h3 className="vertical-timeline-element-title">Web Designer</h3>
-          <h4 className="vertical-timeline-element-subtitle">
-            Los Angeles, CA
-          </h4>
-          <p>User Experience, Visual Design</p>
+          <h3 className="vertical-timeline-element-title">Oct 27, 10 AM - 12 PM</h3>
+          <h4 className="vertical-timeline-element-subtitle">Opening</h4>
+          <p>Kick-off event, welcome, and event introduction.</p>
         </VerticalTimelineElement>
+
         <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          date="2006 - 2008"
-          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          // icon={<WorkIcon />}
+          className={`vertical-timeline-element--work ${animate && "animate"}`}
+          contentStyle={{
+            background: "rgba(116,96,253,255)",
+            color: "#fff",
+          }}
+          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
+          iconStyle={{ background: "#fff", color: "#000" }}
+          icon={<FaCode />}
         >
-          <h3 className="vertical-timeline-element-title">Web Designer</h3>
-          <h4 className="vertical-timeline-element-subtitle">
-            San Francisco, CA
-          </h4>
-          <p>User Experience, Visual Design</p>
+          <h3 className="vertical-timeline-element-title">Oct 27, 12 PM - 3 AM</h3>
+          <h4 className="vertical-timeline-element-subtitle">Round 1</h4>
+          <p>Participants work on initial hacking projects.</p>
         </VerticalTimelineElement>
+
+        {/* Add three more timeline content elements */}
         <VerticalTimelineElement
-          className="vertical-timeline-element--education"
-          date="April 2013"
-          iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-          // icon={<SchoolIcon />}
+          className={`vertical-timeline-element--work ${animate && "animate"}`}
+          contentStyle={{
+            background: "rgba(148,75,252,255)",
+            color: "#fff",
+          }}
+          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
+          iconStyle={{ background: "#fff", color: "#000" }}
+          icon={<FaTrophy />}
         >
-          <h3 className="vertical-timeline-element-title">
-            Content Marketing for Web, Mobile and Social Media
-          </h3>
-          <h4 className="vertical-timeline-element-subtitle">Online Course</h4>
-          <p>Strategy, Social Media</p>
+          <h3 className="vertical-timeline-element-title">Oct 27, 6 AM</h3>
+          <h4 className="vertical-timeline-element-subtitle">Round 1 Results</h4>
+          <p>Announce round 1 winners and achievements.</p>
         </VerticalTimelineElement>
+
         <VerticalTimelineElement
-          className="vertical-timeline-element--education"
-          date="November 2012"
-          iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-          // icon={<SchoolIcon />}
+          className={`vertical-timeline-element--work ${animate && "animate"}`}
+          contentStyle={{
+            background: "rgba(184,71,255,255)",
+            color: "#fff",
+          }}
+          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
+          iconStyle={{ background: "#fff", color: "#000" }}
+          icon={<FaCode />}
         >
-          <h3 className="vertical-timeline-element-title">
-            Agile Development Scrum Master
-          </h3>
-          <h4 className="vertical-timeline-element-subtitle">Certification</h4>
-          <p>Creative Direction, User Experience, Visual Design</p>
+          <h3 className="vertical-timeline-element-title">Oct 27, 6 AM - 2 PM</h3>
+          <h4 className="vertical-timeline-element-subtitle">Round 2</h4>
+          <p>Participants advance to the next hacking phase.</p>
         </VerticalTimelineElement>
+
         <VerticalTimelineElement
-          className="vertical-timeline-element--education"
-          date="2002 - 2006"
-          iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-          // icon={<SchoolIcon />}
+          className={`vertical-timeline-element--work ${animate && "animate"}`}
+          contentStyle={{
+            background: "rgba(208,86,253,255)",
+            color: "#fff",
+          }}
+          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
+          iconStyle={{ background: "#fff", color: "#000" }}
+          icon={<FaLaptop />}
         >
-          <h3 className="vertical-timeline-element-title">
-            Bachelor of Science in Interactive Digital Media Visual Imaging
-          </h3>
-          <h4 className="vertical-timeline-element-subtitle">
-            Bachelor Degree
-          </h4>
-          <p>Creative Direction, Visual Design</p>
+          <h3 className="vertical-timeline-element-title">Oct 27, 2:30 PM - 5 PM</h3>
+          <h4 className="vertical-timeline-element-subtitle">Presentation</h4>
+          <p>Teams present their projects and innovations.</p>
         </VerticalTimelineElement>
+
         <VerticalTimelineElement
-          iconStyle={{ background: "rgb(16, 204, 82)", color: "#fff" }}
-          // icon={<StarIcon />}
-        />
-        <VerticalTimelineElement
-          iconStyle={{ background: "rgb(16, 204, 82)", color: "#fff" }}
-          // icon={<StarIcon />}
-        />
+          className={`vertical-timeline-element--work ${animate && "animate"}`}
+          contentStyle={{
+            background: "rgba(249,120,242,255)",
+            color: "#fff",
+          }}
+          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
+          iconStyle={{ background: "#fff", color: "#000" }}
+          icon={<FaMedal />}
+        >
+          <h3 className="vertical-timeline-element-title">Oct 27, 6 PM</h3>
+          <h4 className="vertical-timeline-element-subtitle">Result Declared</h4>
+          <p>Announce final winners and award prizes.</p>
+        </VerticalTimelineElement>
       </VerticalTimeline>
-      <VerticalTimelineElement
-          className="vertical-timeline-element--education"
-          date="2002 - 2006"
-          iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-          // icon={<SchoolIcon />}
-        >
-          <h3 className="vertical-timeline-element-title">
-            Bachelor of Science in Interactive Digital Media Visual Imaging
-          </h3>
-          <h4 className="vertical-timeline-element-subtitle">
-            Bachelor Degree
-          </h4>
-          <p>Creative Direction, Visual Design</p>
-        </VerticalTimelineElement>
     </div>
   );
 };
