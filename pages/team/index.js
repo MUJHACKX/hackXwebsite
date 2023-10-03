@@ -41,20 +41,20 @@ const Team = () => {
     >
       <h2 className="h2 text-center mb-12 text-accent pt-[20vh]">TEAM</h2>
       <motion.div
-        className="grid gap-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 p-20 pt-30"
+        className="grid gap-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  p-20 pt-30"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.2 }}
       >
         {chiefPatron && (
-          <div>
-            <div className="border p-2 bg-accent bg-opacity-10 border-accent font-mono rounded-xl">
+          <div  >
+            <div className="border p-1 bg-accent bg-opacity-10 border-accent font-mono rounded-xl  ">
               <motion.div
                 className="relative overflow-hidden transition duration-300 transform rounded-lg shadow-2xl hover:scale-105 hover:shadow-3xl"
                 whileHover={{ scale: 1.05 }}
               >
                 <Image
-                  className="object-cover rounded-lg w-full aspect-[3/4]"
+                  className="object-cover rounded-lg w-100 h-100"
                   src={chiefPatron.personImage}
                   width={1000}
                   height={1000}
@@ -72,13 +72,13 @@ const Team = () => {
 
         {patron && (
           <div>
-            <div className="border p-2 bg-accent bg-opacity-10 border-accent font-mono rounded-xl">
+            <div className="border p-1 bg-accent bg-opacity-10 border-accent font-mono rounded-xl">
               <motion.div
                 className="relative overflow-hidden transition duration-300 transform rounded-lg shadow-2xl hover:scale-105 hover:shadow-3xl"
                 whileHover={{ scale: 1.05 }}
               >
                 <Image
-                  className="object-cover rounded-lg w-full aspect-[3/4]"
+                  className="object-cover rounded-lg w-100 h-100"
                   src={patron.personImage}
                   width={1000}
                   height={1000}
@@ -104,13 +104,13 @@ const Team = () => {
         >
           {coPatrons.map((coPatron, index) => (
             <div key={index}>
-              <div className="border p-2 bg-accent bg-opacity-10 border-accent font-mono rounded-xl">
+              <div className="border p-1 bg-accent bg-opacity-10 border-accent font-mono rounded-xl">
                 <motion.div
                   className="relative overflow-hidden transition duration-300 transform rounded-lg shadow-2xl hover:scale-105 hover:shadow-3xl"
                   whileHover={{ scale: 1.05 }}
                 >
                   <Image
-                    className="object-cover rounded-lg w-full aspect-[3/4]"
+                    className="object-cover rounded-lg w-100 h-100"
                     src={coPatron.personImage}
                     width={1000}
                     height={1000}
@@ -137,13 +137,13 @@ const Team = () => {
         >
           {secondLineMembers.map((member, index) => (
             <div key={index}>
-              <div className="border p-2 bg-accent bg-opacity-10 border-accent font-mono rounded-xl">
+              <div className="border p-1 bg-accent bg-opacity-10 border-accent font-mono rounded-xl">
                 <motion.div
                   className="relative overflow-hidden transition duration-300 transform rounded-lg shadow-2xl hover:scale-105 hover:shadow-3xl"
                   whileHover={{ scale: 1.05 }}
                 >
                   <Image
-                    className="object-cover rounded-lg w-full aspect-[3/4]"
+                    className="object-cover rounded-lg w-100 h-100"
                     src={member.personImage}
                     width={1000}
                     height={1000}
@@ -170,13 +170,13 @@ const Team = () => {
         >
           {thirdLineMembers.map((member, index) => (
             <div key={index}>
-              <div className="border p-2 bg-accent bg-opacity-10 border-accent font-mono rounded-xl">
+              <div className="border p-1 bg-accent bg-opacity-10 border-accent font-mono rounded-xl">
                 <motion.div
                   className="relative overflow-hidden transition duration-300 transform rounded-lg shadow-2xl hover:scale-105 hover:shadow-3xl"
                   whileHover={{ scale: 1.05 }}
                 >
                   <Image
-                    className="object-cover rounded-lg w-full aspect-[3/4]"
+                    className="object-cover rounded-lg w-100 h-100"
                     src={member.personImage}
                     width={1000}
                     height={1000}
@@ -209,7 +209,7 @@ const Team = () => {
                   whileHover={{ scale: 1.05 }}
                 >
                   <Image
-                    className="object-cover rounded-lg w-full aspect-[3/4]"
+                    className="object-cover rounded-lg w-100 h-100"
                     src={member.personImage}
                     width={1000}
                     height={1000}
