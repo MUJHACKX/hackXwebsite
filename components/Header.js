@@ -7,7 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 //components
-// import Socials from '../components/Socials';
+import Socials from '../components/Socials';
 
 const Header = () => {
   return <header className="absolute z-30 w-full flex items-center px-16 xl:px-0 xl:h-[90px]">
@@ -22,7 +22,7 @@ const Header = () => {
         priority={true}/>
         </Link>
         {/* Socials */}
-        {/* <Socials /> */}
+         <Socials />
       </div>
     </div>
   </header>;
