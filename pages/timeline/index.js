@@ -58,7 +58,7 @@ const Work = () => {
           iconStyle={{ background: "#fff", color: "#000" }}
           icon={<FaBriefcase />}
         >
-          <h3 className="vertical-timeline-element-title">Oct 27, 10 AM - 12 PM</h3>
+          <h3 className="vertical-timeline-element-title">Oct 26-27, 10 AM - 12 PM</h3>
           <h4 className="vertical-timeline-element-subtitle">Opening</h4>
           <p>Kick-off event, welcome, and event introduction.</p>
         </VerticalTimelineElement>
@@ -73,7 +73,7 @@ const Work = () => {
           iconStyle={{ background: "#fff", color: "#000" }}
           icon={<FaCode />}
         >
-          <h3 className="vertical-timeline-element-title">Oct 26, 12 PM - 3 AM</h3>
+          <h3 className="vertical-timeline-element-title">Oct 26-27, 12 PM - 3 AM</h3>
           <h4 className="vertical-timeline-element-subtitle">Round 1</h4>
           <p>Participants work on initial hacking projects.</p>
         </VerticalTimelineElement>
@@ -89,7 +89,7 @@ const Work = () => {
           iconStyle={{ background: "#fff", color: "#000" }}
           icon={<FaTrophy />}
         >
-          <h3 className="vertical-timeline-element-title">Oct 26-27, 6 AM</h3>
+          <h3 className="vertical-timeline-element-title">Oct 27, 6 AM</h3>
           <h4 className="vertical-timeline-element-subtitle">Round 1 Results</h4>
           <p>Announce round 1 winners and achievements.</p>
         </VerticalTimelineElement>
