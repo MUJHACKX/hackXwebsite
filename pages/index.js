@@ -56,7 +56,7 @@ const Home = () => {
         animate="show"
         exit="hidden"
         className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16">
-          Join HackX and shine a spotlight on your world-changing idea. We're your platform for innovation, helping you visualize solutions we didn't know we needed. Sharpen your programming and pitching skills, compete globally, and vie for a 200,000 prize pool. Embrace innovation, fun, and hard work with extraordinary minds.
+          Join MUJHackX and let your world-changing ideas shine bright , compete at a global hackathon with a prize pool of 200,000 rupees.
         </motion.p>
         {/* Btn */}
         <div className="flex justify-center xl:hidden relative">
