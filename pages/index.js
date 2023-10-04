@@ -63,7 +63,7 @@ const Home = () => {
         initial="hidden" 
         animate="show"
         exit="hidden"
-        className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16">
+        className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 text-white">
           Join MUJHackX and let your world-changing ideas shine bright , compete at a global hackathon with a prize pool of 200,000 rupees.
         </motion.p>
         {/* Btn */}
