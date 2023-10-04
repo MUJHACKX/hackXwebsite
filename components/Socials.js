@@ -11,10 +11,10 @@ const Socials = () => {
     {/* <Link href={' '} className=" hover:text-accent translate-all duration 300">
       <RiYoutubeLine />
     </Link> */}
-    <Link href={' '} className=" hover:text-accent translate-all duration 300">
+    <Link href={'https://instagram.com/muj.hackx?igshid=MzRlODBiNWFlZA=='} className=" hover:text-accent translate-all duration 300">
       <RiInstagramLine />
     </Link>
-    <Link href={' '} className=" hover:text-accent translate-all duration 300">
+    <Link href={'https://jaipur.manipal.edu/'} className=" hover:text-accent translate-all duration 300">
       <RiDribbbleLine />
     </Link>
     <Link href={'/register'} className=" hover:text-accent translate-all duration 300">
