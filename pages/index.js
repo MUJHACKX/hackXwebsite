@@ -5,6 +5,7 @@ import Image from "next/image";
 import ParticlesContainer from '../components/ParticlesContainer';
 import ProjectsBtn from '../components/ProjectsBtn';
 import Avatar from '../components/Avatar';
+// import BackImage from '../public/hackxbg.png';
 
 
 //framer motion
@@ -17,15 +18,22 @@ import { fadeIn } from '../variants'
 
 const Home = () => {
   return (
-  <div className="bg-primary h-full ">
+  <div className="bg-primary h-full "  style={{
+    backgroundImage: 'url("/bghackx-dark.png")',
+    backgroundSize: 'cover', // Adjusts the size of the background image
+    backgroundRepeat: 'no-repeat', // Prevents the background image from repeating
+    height: '100vh', // Adjust the desired height
+    width: '100vw', // Adjust the desired width
+  }}>
     {/* Text */}
     <div className="w-full h-full absolute right-0 bottom-0">
-      {/* bg img */}
+      
       {/*<div className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right 
         xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0">
       </div>*/}
       {/* particles */}
       <ParticlesContainer />
+      {/* <BackImage/> */}
       {/* Avatar */ }
       {/* <motion.div 
         variants={fadeIn('up', 0.4)} 
