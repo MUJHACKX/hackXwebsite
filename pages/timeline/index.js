@@ -17,7 +17,6 @@ const Work = () => {
   const [animate, setAnimate] = useState(false);
 
   useEffect(() => {
-    
     const timer = setTimeout(() => {
       setAnimate(true);
     }, 100);
@@ -25,11 +24,14 @@ const Work = () => {
     return () => clearTimeout(timer);
   }, []);
 
-
-
   return (
-    <div className="h-full bg-primary">
-      <div className="h-[20vh]"></div>
+    <div className=" bg-primary">
+      <div className="md:h-20 bg-primary"> 
+       
+      </div>
+      <div className="h-20 md:h-20 bg-primary"> 
+        
+      </div>
       <VerticalTimeline lineColor="#2196F3">
         <VerticalTimelineElement
           className={`vertical-timeline-element--work ${animate && "animate"}`}
