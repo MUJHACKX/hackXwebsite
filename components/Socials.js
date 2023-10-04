@@ -7,7 +7,7 @@
 
 
 // const Socials = () => {
-//   return <div className="flex items-center gap-x-5 text-lg">
+//   return <div className="flex items-center gap-x-5 mb-8 text-lg">
 //     {/* <Link href={' '} className=" hover:text-accent translate-all duration 300">
 //       <RiYoutubeLine />
 //     </Link> */}
