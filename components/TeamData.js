@@ -74,14 +74,14 @@ const TeamData = [
     {
         personImage: '/JuhiSingh.jpg',
         personName: "Dr. Juhi Singh",
-        personPosition: "ASSISTANT PROFESSOR, CSE",
+        personPosition: "Convener",
         personOrganization: "MUJ",
         personLinkedIn: "https://www.linkedin.com/in/pujan-modha/"
     },
     {
         personImage: '/ShishirSinghChauhan.jpg',
         personName: "Mr. Shishir Singh",
-        personPosition: "ASSISTANT PROFESSOR, CSE",
+        personPosition: "Convener",
         personOrganization: "MUJ",
         personLinkedIn: "https://www.linkedin.com/in/pujan-modha/"
     },
