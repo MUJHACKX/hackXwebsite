@@ -19,11 +19,11 @@ import { fadeIn } from '../variants'
 const Home = () => {
   return (
   <div className="bg-primary h-full "  style={{
-    backgroundImage: 'url("/bghackx-dark.png")',
-    backgroundSize: 'cover', // Adjusts the size of the background image
-    backgroundRepeat: 'no-repeat', // Prevents the background image from repeating
-    height: '100vh', // Adjust the desired height
-    width: '100vw', // Adjust the desired width
+    backgroundImage: 'url("/bghackx-daark.png")',
+    backgroundSize: 'cover', 
+    backgroundRepeat: 'no-repeat', 
+    height: '100vh', 
+    width: '100vw', 
   }}>
     {/* Text */}
     <div className="w-full h-full absolute right-0 bottom-0">
