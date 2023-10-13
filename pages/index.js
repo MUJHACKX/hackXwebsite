@@ -19,7 +19,7 @@ import { fadeIn } from '../variants'
 const Home = () => {
   return (
   <div className="bg-primary h-full "  style={{
-    backgroundImage: 'url("/bghackx-daark.png")',
+    backgroundImage: 'url("/bghackx-daark.webp")',
     backgroundSize: 'cover', 
     backgroundRepeat: 'no-repeat', 
     height: '100vh', 
