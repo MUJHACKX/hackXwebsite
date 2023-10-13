@@ -44,7 +44,7 @@ const Nav = () => {
   bottom-0 mt-auto xl:right-[2%] z-50 top-0 w-full xl:w-16 xl:max-w-md xl:h-screen'> 
 
     {/* inner */}
-    <div className='flex flex  w-full xl:flex-col items-center
+    <div className='flex w-full xl:flex-col items-center
      justify-between xl:justify-center gap-y-10 px-4 md:px-40 
      xl:px-0 h-[80px] xl:h-max py-8 bg-secondary/90 backdrop-blue-sm text-3xl xl:textxl
      xl:rounded-full '>
