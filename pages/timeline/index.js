@@ -31,7 +31,7 @@ const Schedule = () => {
                             {/*left*/}
                             <div className="flex flex-row-reverse md:contents" >
                                 <div
-                                    className="bg-accent md:text-right lg:w-[70%] w-full bg-opacity-10 backdrop-blur-0 border-pracula border col-start-1 col-end-5 p-4 rounded-lg my-8 ml-auto shadow-md" data-aos="fade-right"
+                                    className="bg-accent md:text-right lg:w-[70%] w-full bg-opacity-10 backdrop-blur-0 border-pracula border col-start-1 col-end-5 p-4 rounded-lg my-8 ml-auto shadow-md" data-aos="fade-up"
                                 >
                                     <h3 className="font-semibold text-pracula text-4xl mb-1">OCTOBER 06</h3>
                                     <h3 className="font-semibold text-pracula text-2xl mb-1">21:00</h3>
@@ -59,7 +59,7 @@ const Schedule = () => {
                                     ></div>
                                 </div>
                                 <div
-                                    className="bg-accent w-full lg:w-[70%] bg-opacity-10 backdrop-blur-0 border-pracula border col-start-6 col-end-10 p-4 rounded-lg my-8 mr-auto shadow-md" data-aos="fade-left"
+                                    className="bg-accent w-full lg:w-[70%] bg-opacity-10 backdrop-blur-0 border-pracula border col-start-6 col-end-10 p-4 rounded-lg my-8 mr-auto shadow-md" data-aos="fade-up"
                                 >
                                     <h3 className="font-semibold text-pracula text-2xl mb-1">21:00 - 00:00</h3>
                                     <p className="leading-tight">
@@ -70,7 +70,7 @@ const Schedule = () => {
                             {/*left*/}
                             <div className="flex flex-row-reverse md:contents">
                                 <div
-                                    className="bg-accent md:text-right lg:w-[70%] w-full bg-opacity-10 backdrop-blur-0 border-pracula border col-start-1 col-end-5 p-4 rounded-lg my-8 ml-auto shadow-md" data-aos="fade-right"
+                                    className="bg-accent md:text-right lg:w-[70%] w-full bg-opacity-10 backdrop-blur-0 border-pracula border col-start-1 col-end-5 p-4 rounded-lg my-8 ml-auto shadow-md" data-aos="fade-up"
                                 >
                                     <h3 className="font-semibold text-pracula text-2xl mb-1">23:00</h3>
                                     <p className="leading-tight md:text-right">
@@ -97,7 +97,7 @@ const Schedule = () => {
                                     ></div>
                                 </div>
                                 <div
-                                    className="bg-accent w-full lg:w-[70%] bg-opacity-10 backdrop-blur-0 border-pracula border col-start-6 col-end-10 p-4 rounded-lg my-8 mr-auto shadow-md" data-aos="fade-left"
+                                    className="bg-accent w-full lg:w-[70%] bg-opacity-10 backdrop-blur-0 border-pracula border col-start-6 col-end-10 p-4 rounded-lg my-8 mr-auto shadow-md" data-aos="fade-up"
                                 >
                                     <h3 className="font-semibold text-pracula text-4xl mb-1">OCTOBER 07</h3>
                                     <h3 className="font-semibold text-pracula text-2xl mb-1">00:00</h3>
@@ -109,7 +109,7 @@ const Schedule = () => {
                             {/*left*/}
                             <div className="flex flex-row-reverse md:contents">
                                 <div
-                                    className="bg-accent md:text-right lg:w-[70%] w-full bg-opacity-10 backdrop-blur-0 border-pracula border col-start-1 col-end-5 p-4 rounded-lg my-8 ml-auto shadow-md" data-aos="fade-right"
+                                    className="bg-accent md:text-right lg:w-[70%] w-full bg-opacity-10 backdrop-blur-0 border-pracula border col-start-1 col-end-5 p-4 rounded-lg my-8 ml-auto shadow-md" data-aos="fade-up"
                                 >
                                     <h3 className="font-semibold text-pracula text-2xl mb-1">11:00 - 13:00</h3>
                                     <p className="leading-tight md:text-right">
@@ -136,7 +136,7 @@ const Schedule = () => {
                                     ></div>
                                 </div>
                                 <div
-                                    className="bg-accent w-full lg:w-[70%] bg-opacity-10 backdrop-blur-0 border-pracula border col-start-6 col-end-10 p-4 rounded-lg my-8 mr-auto shadow-md" data-aos="fade-left"
+                                    className="bg-accent w-full lg:w-[70%] bg-opacity-10 backdrop-blur-0 border-pracula border col-start-6 col-end-10 p-4 rounded-lg my-8 mr-auto shadow-md" data-aos="fade-up"
                                 >
                                     <h3 className="font-semibold text-pracula text-2xl mb-1">14:00 - 26:00</h3>
                                     <p className="leading-tight">
@@ -147,7 +147,7 @@ const Schedule = () => {
                             {/*left*/}
                             <div className="flex flex-row-reverse md:contents">
                                 <div
-                                    className="bg-accent md:text-right lg:w-[70%] w-full bg-opacity-10 backdrop-blur-0 border-pracula border col-start-1 col-end-5 p-4 rounded-lg my-8 ml-auto shadow-md" data-aos="fade-right"
+                                    className="bg-accent md:text-right lg:w-[70%] w-full bg-opacity-10 backdrop-blur-0 border-pracula border col-start-1 col-end-5 p-4 rounded-lg my-8 ml-auto shadow-md" data-aos="fade-up"
                                 >
                                     <h3 className="font-semibold text-pracula text-2xl mb-1">18:00 - 20:00</h3>
                                     <p className="leading-tight md:text-right">
@@ -174,7 +174,7 @@ const Schedule = () => {
                                     ></div>
                                 </div>
                                 <div
-                                    className="bg-accent w-full lg:w-[70%] bg-opacity-10 backdrop-blur-0 border-pracula border col-start-6 col-end-10 p-4 rounded-lg my-8 mr-auto shadow-md" data-aos="fade-left"
+                                    className="bg-accent w-full lg:w-[70%] bg-opacity-10 backdrop-blur-0 border-pracula border col-start-6 col-end-10 p-4 rounded-lg my-8 mr-auto shadow-md" data-aos="fade-up"
                                 >
                                     <h3 className="font-semibold text-pracula text-4xl mb-1">OCTOBER 08</h3>
                                     <h3 className="font-semibold text-pracula text-2xl mb-1">11:00 - 13:00</h3>
@@ -186,7 +186,7 @@ const Schedule = () => {
                             {/*left*/}
                             <div className="flex flex-row-reverse md:contents">
                                 <div
-                                    className="bg-accent md:text-right lg:w-[70%] w-full bg-opacity-10 backdrop-blur-0 border-pracula border col-start-1 col-end-5 p-4 rounded-lg my-8 ml-auto shadow-md" data-aos="fade-right"
+                                    className="bg-accent md:text-right lg:w-[70%] w-full bg-opacity-10 backdrop-blur-0 border-pracula border col-start-1 col-end-5 p-4 rounded-lg my-8 ml-auto shadow-md" data-aos="fade-up"
                                 >
                                     <h3 className="font-semibold text-pracula text-2xl mb-1">14:00 - 16:00</h3>
                                     <p className="leading-tight md:text-right">
@@ -213,7 +213,7 @@ const Schedule = () => {
                                     ></div>
                                 </div>
                                 <div
-                                    className="bg-accent w-full lg:w-[70%] bg-opacity-10 backdrop-blur-0 border-pracula border col-start-6 col-end-10 p-4 rounded-lg my-8 mr-auto shadow-md" data-aos="fade-left"
+                                    className="bg-accent w-full lg:w-[70%] bg-opacity-10 backdrop-blur-0 border-pracula border col-start-6 col-end-10 p-4 rounded-lg my-8 mr-auto shadow-md" data-aos="fade-up"
                                 >
 
                                     <h3 className="font-semibold text-pracula text-2xl mb-1">18:00 - 23:59</h3>
