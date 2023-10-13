@@ -19,6 +19,14 @@ function MyApp({ Component, pageProps }) {
   return (
   <Layout>
     <DefaultSeo
+        additionalMetaTags={
+        [
+            {
+                name: 'keywords',
+                content: 'muj, mujhackx, hackx, hack, x, hack-x, muj hack-x, hackathon, muj hackathon, scse, mujhack-x, manipal university jaipur, manipal, university, jaipur, mahe, unstop, threeway, oracle, oracle academy, aws, azure, casio'
+            }
+        ]
+        }
         title={
         'MUJ HACKX'
         }
