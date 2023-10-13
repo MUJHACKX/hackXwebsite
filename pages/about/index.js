@@ -26,7 +26,7 @@ const aboutData = [
     title: 'Theme 1',
     info: [
       {
-        title: 'To be released soon',
+        title: 'Healthcare',
         // stage: '2011 - 2012',
       },
       // {
@@ -51,7 +51,7 @@ const aboutData = [
     title: 'Theme 2',
     info: [
         {
-          title: 'To be released soon',
+          title: 'Fintech',
           // stage: '2011 - 2012',
         },
       // {
@@ -68,7 +68,7 @@ const aboutData = [
     title: 'Theme 3',
     info: [
       {
-        title: 'To be released soon',
+        title: 'Web 3',
         // stage: '2011 - 2012',
       },
       // {
@@ -89,7 +89,28 @@ const aboutData = [
     title: 'Theme 4',
     info: [
       {
-        title: 'To be released soon',
+        title: 'Cyber Security',
+        // stage: '2011 - 2012',
+      },
+      // {
+      //   title: 'Web Development - ABC University, LA, CA',
+      //   stage: '2011',
+      // },
+      // {
+      //   title: 'Computer Science Diploma - AV Technical Institute',
+      //   stage: '2009',
+      // },
+      // {
+      //   title: 'Certified Graphic Designer - ABC Institute, Los Angeles, CA',
+      //   stage: '2006',
+      // },
+    ],
+  },
+  {
+    title: 'Theme 5',
+    info: [
+      {
+        title: 'Open Innovation',
         // stage: '2011 - 2012',
       },
       // {
@@ -147,9 +168,15 @@ const About = () => {
         <div>
           <div>
             {/* EXPERIENCE */}
-            <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
+            <div className="inline:block relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
               <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2 ">
-                <CountUp start={0} end={200000} duration={5} />+
+                <CountUp start={0} end={200000} duration={3} />+
+              </div>
+              <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">Prize Pool</div>
+            </div>
+            <div className="inline:block relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
+              <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2 ">
+                <CountUp start={0} end={1000} duration={3} />+
               </div>
               <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">Prize Pool</div>
             </div>
