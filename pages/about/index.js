@@ -178,7 +178,7 @@ const About = () => {
               <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2 ">
                 <CountUp start={0} end={1000} duration={3} />+
               </div>
-              <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">Prize Pool</div>
+              <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">Participants</div>
             </div>
           </div>
         </div>
