@@ -1,148 +1,238 @@
-import React, { useState, useEffect } from "react";
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css";
-import {
-  FaRegClock,
-  FaCode,
-  FaTrophy,
-  FaBriefcase,
-  FaLaptop,
-  FaMedal,
-} from "react-icons/fa";
+import React, {useEffect} from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
-const Work = () => {
-  const [animate, setAnimate] = useState(false);
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setAnimate(true);
-    }, 100);
+const Schedule = () => {
+    useEffect(() => {
+        AOS.init({
+            startEvent: 'DOMContentLoaded',
+            initClassName: 'aos-init',
+            animatedClassName: 'aos-animate',
+            debounceDelay: 50,
+            throttleDelay: 99,
+            offset: 120,
+            // delay: 200,
+            duration: 400,
+            easing: 'ease',
+            anchorPlacement: 'top-bottom',
 
-    return () => clearTimeout(timer);
-  }, []);
+        });
+    }, [])
+    return(
+        <div className='bg-primary bg-fixed'>
+            <div className='md:pb-[10%] pb-[30%] pt-[35%] md:pt-[10%] h-full bg-primary'>
+                <div className='justify-center flex' data-aos="fade-up">
+                    {/*component*/}
+                    <div className="bg-primary bg-fixed container justify-center items-center justify-items-center align-middle flex">
+                        <div
+                            className="bg-primary bg-fixed flex flex-col md:grid grid-cols-9 text-dracxt"
+                        >
+                            {/*left*/}
+                            <div className="flex flex-row-reverse md:contents" >
+                                <div
+                                    className="bg-accent md:text-right lg:w-[70%] w-full bg-opacity-10 backdrop-blur-0 border-pracula border col-start-1 col-end-5 p-4 rounded-lg my-8 ml-auto shadow-md" data-aos="fade-right"
+                                >
+                                    <h3 className="font-semibold text-pracula text-4xl mb-1">OCTOBER 06</h3>
+                                    <h3 className="font-semibold text-pracula text-2xl mb-1">21:00</h3>
+                                    <p className="leading-tight md:text-right">
+                                        Problem Statements will be released on Website
+                                    </p>
+                                </div>
+                                <div className="col-start-5 col-end-6 md:mx-auto relative mr-5">
+                                    <div className="h-full w-6 flex items-end justify-center">
+                                        <div className="h-[50%] w-1 bg-accent pointer-events-none"></div>
+                                    </div>
+                                    <div
+                                        className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-accent bg-opacity-100 backdrop-blur-0 border-pracula border shadow"
+                                    ></div>
+                                </div>
+                            </div>
+                            {/*right*/}
+                            <div className="flex md:contents">
+                                <div className="col-start-5 col-end-6 mr-5 md:mx-auto relative">
+                                    <div className="h-full w-6 flex items-center justify-center">
+                                        <div className="h-full w-1 bg-accent pointer-events-none"></div>
+                                    </div>
+                                    <div
+                                        className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-accent bg-opacity-100 backdrop-blur-0 border-pracula border shadow"
+                                    ></div>
+                                </div>
+                                <div
+                                    className="bg-accent w-full lg:w-[70%] bg-opacity-10 backdrop-blur-0 border-pracula border col-start-6 col-end-10 p-4 rounded-lg my-8 mr-auto shadow-md" data-aos="fade-left"
+                                >
+                                    <h3 className="font-semibold text-pracula text-2xl mb-1">21:00 - 00:00</h3>
+                                    <p className="leading-tight">
+                                        Participant are to choose their Problem Statement on which They'll work and submit the Statement on Forms
+                                    </p>
+                                </div>
+                            </div>
+                            {/*left*/}
+                            <div className="flex flex-row-reverse md:contents">
+                                <div
+                                    className="bg-accent md:text-right lg:w-[70%] w-full bg-opacity-10 backdrop-blur-0 border-pracula border col-start-1 col-end-5 p-4 rounded-lg my-8 ml-auto shadow-md" data-aos="fade-right"
+                                >
+                                    <h3 className="font-semibold text-pracula text-2xl mb-1">23:00</h3>
+                                    <p className="leading-tight md:text-right">
+                                        Introductory Section With Ieee Executive Guest (Online)
+                                    </p>
+                                </div>
+                                <div className="col-start-5 col-end-6 md:mx-auto relative mr-5">
+                                    <div className="h-full w-6 flex items-center justify-center">
+                                        <div className="h-full w-1 bg-accent pointer-events-none"></div>
+                                    </div>
+                                    <div
+                                        className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-accent bg-opacity-100 backdrop-blur-0 border-pracula border shadow"
+                                    ></div>
+                                </div>
+                            </div>
+                            {/*right*/}
+                            <div className="flex md:contents">
+                                <div className="col-start-5 col-end-6 mr-5 md:mx-auto relative">
+                                    <div className="h-full w-6 flex items-center justify-center">
+                                        <div className="h-full w-1 bg-accent pointer-events-none"></div>
+                                    </div>
+                                    <div
+                                        className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-accent bg-opacity-100 backdrop-blur-0 border-pracula border shadow"
+                                    ></div>
+                                </div>
+                                <div
+                                    className="bg-accent w-full lg:w-[70%] bg-opacity-10 backdrop-blur-0 border-pracula border col-start-6 col-end-10 p-4 rounded-lg my-8 mr-auto shadow-md" data-aos="fade-left"
+                                >
+                                    <h3 className="font-semibold text-pracula text-4xl mb-1">OCTOBER 07</h3>
+                                    <h3 className="font-semibold text-pracula text-2xl mb-1">00:00</h3>
+                                    <p className="leading-tight">
+                                        Hackathon Starts!!
+                                    </p>
+                                </div>
+                            </div>
+                            {/*left*/}
+                            <div className="flex flex-row-reverse md:contents">
+                                <div
+                                    className="bg-accent md:text-right lg:w-[70%] w-full bg-opacity-10 backdrop-blur-0 border-pracula border col-start-1 col-end-5 p-4 rounded-lg my-8 ml-auto shadow-md" data-aos="fade-right"
+                                >
+                                    <h3 className="font-semibold text-pracula text-2xl mb-1">11:00 - 13:00</h3>
+                                    <p className="leading-tight md:text-right">
+                                        Mentoring session 1(Cisco WebX Meet)
+                                    </p>
+                                </div>
+                                <div className="col-start-5 col-end-6 md:mx-auto relative mr-5">
+                                    <div className="h-full w-6 flex items-center justify-center">
+                                        <div className="h-full w-1 bg-accent pointer-events-none"></div>
+                                    </div>
+                                    <div
+                                        className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-accent bg-opacity-100 backdrop-blur-0 border-pracula border shadow"
+                                    ></div>
+                                </div>
+                            </div>
+                            {/*right*/}
+                            <div className="flex md:contents">
+                                <div className="col-start-5 col-end-6 mr-5 md:mx-auto relative">
+                                    <div className="h-full w-6 flex items-center justify-center">
+                                        <div className="h-full w-1 bg-accent pointer-events-none"></div>
+                                    </div>
+                                    <div
+                                        className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-accent bg-opacity-100 backdrop-blur-0 border-pracula border shadow"
+                                    ></div>
+                                </div>
+                                <div
+                                    className="bg-accent w-full lg:w-[70%] bg-opacity-10 backdrop-blur-0 border-pracula border col-start-6 col-end-10 p-4 rounded-lg my-8 mr-auto shadow-md" data-aos="fade-left"
+                                >
+                                    <h3 className="font-semibold text-pracula text-2xl mb-1">14:00 - 26:00</h3>
+                                    <p className="leading-tight">
+                                        Evaluation session 1
+                                    </p>
+                                </div>
+                            </div>
+                            {/*left*/}
+                            <div className="flex flex-row-reverse md:contents">
+                                <div
+                                    className="bg-accent md:text-right lg:w-[70%] w-full bg-opacity-10 backdrop-blur-0 border-pracula border col-start-1 col-end-5 p-4 rounded-lg my-8 ml-auto shadow-md" data-aos="fade-right"
+                                >
+                                    <h3 className="font-semibold text-pracula text-2xl mb-1">18:00 - 20:00</h3>
+                                    <p className="leading-tight md:text-right">
+                                        Mentoring session 2(Cisco WebX Meet)
+                                    </p>
+                                </div>
+                                <div className="col-start-5 col-end-6 md:mx-auto relative mr-5">
+                                    <div className="h-full w-6 flex items-center justify-center">
+                                        <div className="h-full w-1 bg-accent pointer-events-none"></div>
+                                    </div>
+                                    <div
+                                        className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-accent bg-opacity-100 backdrop-blur-0 border-pracula border shadow"
+                                    ></div>
+                                </div>
+                            </div>
+                            {/*right*/}
+                            <div className="flex md:contents">
+                                <div className="col-start-5 col-end-6 mr-5 md:mx-auto relative">
+                                    <div className="h-full w-6 flex items-center justify-center">
+                                        <div className="h-full w-1 bg-accent pointer-events-none"></div>
+                                    </div>
+                                    <div
+                                        className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-accent bg-opacity-100 backdrop-blur-0 border-pracula border shadow"
+                                    ></div>
+                                </div>
+                                <div
+                                    className="bg-accent w-full lg:w-[70%] bg-opacity-10 backdrop-blur-0 border-pracula border col-start-6 col-end-10 p-4 rounded-lg my-8 mr-auto shadow-md" data-aos="fade-left"
+                                >
+                                    <h3 className="font-semibold text-pracula text-4xl mb-1">OCTOBER 08</h3>
+                                    <h3 className="font-semibold text-pracula text-2xl mb-1">11:00 - 13:00</h3>
+                                    <p className="leading-tight">
+                                        Mentoring session 3(Cisco WebX Meet)
+                                    </p>
+                                </div>
+                            </div>
+                            {/*left*/}
+                            <div className="flex flex-row-reverse md:contents">
+                                <div
+                                    className="bg-accent md:text-right lg:w-[70%] w-full bg-opacity-10 backdrop-blur-0 border-pracula border col-start-1 col-end-5 p-4 rounded-lg my-8 ml-auto shadow-md" data-aos="fade-right"
+                                >
+                                    <h3 className="font-semibold text-pracula text-2xl mb-1">14:00 - 16:00</h3>
+                                    <p className="leading-tight md:text-right">
+                                        Evaluation session 2
+                                    </p>
+                                </div>
+                                <div className="col-start-5 col-end-6 md:mx-auto relative mr-5">
+                                    <div className="h-full w-6 flex items-center justify-center">
+                                        <div className="h-full w-1 bg-accent pointer-events-none"></div>
+                                    </div>
+                                    <div
+                                        className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-accent bg-opacity-100 backdrop-blur-0 border-pracula border shadow"
+                                    ></div>
+                                </div>
+                            </div>
+                            {/*right*/}
+                            <div className="flex md:contents">
+                                <div className="col-start-5 col-end-6 mr-5 md:mx-auto relative">
+                                    <div className="h-[50%] w-6 flex items-start justify-center">
+                                        <div className="h-full w-1 bg-accent pointer-events-none"></div>
+                                    </div>
+                                    <div
+                                        className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-accent bg-opacity-100 backdrop-blur-0 border-pracula border shadow"
+                                    ></div>
+                                </div>
+                                <div
+                                    className="bg-accent w-full lg:w-[70%] bg-opacity-10 backdrop-blur-0 border-pracula border col-start-6 col-end-10 p-4 rounded-lg my-8 mr-auto shadow-md" data-aos="fade-left"
+                                >
 
-  return (
-    <div className=" bg-primary">
-      <div className="md:h-20 bg-primary"> 
-       
-      </div>
-      <div className="h-20 md:h-20 bg-primary"> 
-        
-      </div>
-      <VerticalTimeline lineColor="#2196F3">
-        <VerticalTimelineElement
-          className={`vertical-timeline-element--work ${animate && "animate"}`}
-          contentStyle={{
-            background: "rgba(41,136,255,255)",
-            color: "#fff",
-          }}
-          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
-          iconStyle={{ background: "#fff", color: "#000" }}
-          icon={<FaRegClock />}
-        >
-          <h3 className="vertical-timeline-element-title">Oct 3 - Oct 24 </h3>
-          <h4 className="vertical-timeline-element-subtitle">
-            Registration Begins
-          </h4>
-          <p>Register from Oct 3 - 24 for extended hackathon participation.</p>
-        </VerticalTimelineElement>
+                                    <h3 className="font-semibold text-pracula text-2xl mb-1">18:00 - 23:59</h3>
+                                    <p className="leading-tight">
+                                        Submission Form will be open
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className='bg-dracula text-dracxt font-mono'>
+                    <div className='xl:mx-auto max-w-7xl lg:mx-[10vw] justify-items-center mx-[5vw]'>
+                    </div>
+                </div>
+            </div>
 
-        <VerticalTimelineElement
-          className={`vertical-timeline-element--work ${animate && "animate"}`}
-          contentStyle={{
-            background: "rgba(91,107,254,255)",
-            color: "#fff",
-          }}
-          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
-          iconStyle={{ background: "#fff", color: "#000" }}
-          icon={<FaBriefcase />}
-        >
-          <h3 className="vertical-timeline-element-title">Oct 26, 10 AM - 12 PM</h3>
-          <h4 className="vertical-timeline-element-subtitle">Opening</h4>
-          <p>Kick-off event, welcome, and event introduction.</p>
-        </VerticalTimelineElement>
+        </div>
+    )
+}
 
-        <VerticalTimelineElement
-          className={`vertical-timeline-element--work ${animate && "animate"}`}
-          contentStyle={{
-            background: "rgba(116,96,253,255)",
-            color: "#fff",
-          }}
-          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
-          iconStyle={{ background: "#fff", color: "#000" }}
-          icon={<FaCode />}
-        >
-          <h3 className="vertical-timeline-element-title">Oct 26-27, 12 PM - 3 AM</h3>
-          <h4 className="vertical-timeline-element-subtitle">Round 1</h4>
-          <p>Participants work on initial hacking projects.</p>
-        </VerticalTimelineElement>
-
-        {/* Add three more timeline content elements */}
-        <VerticalTimelineElement
-          className={`vertical-timeline-element--work ${animate && "animate"}`}
-          contentStyle={{
-            background: "rgba(148,75,252,255)",
-            color: "#fff",
-          }}
-          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
-          iconStyle={{ background: "#fff", color: "#000" }}
-          icon={<FaTrophy />}
-        >
-          <h3 className="vertical-timeline-element-title">Oct 27, 6 AM</h3>
-          <h4 className="vertical-timeline-element-subtitle">Round 1 Results</h4>
-          <p>Announce round 1 winners and achievements.</p>
-        </VerticalTimelineElement>
-
-        <VerticalTimelineElement
-          className={`vertical-timeline-element--work ${animate && "animate"}`}
-          contentStyle={{
-            background: "rgba(184,71,255,255)",
-            color: "#fff",
-          }}
-          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
-          iconStyle={{ background: "#fff", color: "#000" }}
-          icon={<FaCode />}
-        >
-          <h3 className="vertical-timeline-element-title">Oct 27, 6 AM - 2 PM</h3>
-          <h4 className="vertical-timeline-element-subtitle">Round 2</h4>
-          <p>Participants advance to the next hacking phase.</p>
-        </VerticalTimelineElement>
-
-        <VerticalTimelineElement
-          className={`vertical-timeline-element--work ${animate && "animate"}`}
-          contentStyle={{
-            background: "rgba(208,86,253,255)",
-            color: "#fff",
-          }}
-          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
-          iconStyle={{ background: "#fff", color: "#000" }}
-          icon={<FaLaptop />}
-        >
-          <h3 className="vertical-timeline-element-title">Oct 27, 2:30 PM - 5 PM</h3>
-          <h4 className="vertical-timeline-element-subtitle">Presentation</h4>
-          <p>Teams present their projects and innovations.</p>
-        </VerticalTimelineElement>
-
-        <VerticalTimelineElement
-          className={`vertical-timeline-element--work ${animate && "animate"}`}
-          contentStyle={{
-            background: "rgba(249,120,242,255)",
-            color: "#fff",
-          }}
-          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
-          iconStyle={{ background: "#fff", color: "#000" }}
-          icon={<FaMedal />}
-        >
-          <h3 className="vertical-timeline-element-title">Oct 27, 6 PM</h3>
-          <h4 className="vertical-timeline-element-subtitle">Result Declared</h4>
-          <p>Announce final winners and award prizes.</p>
-        </VerticalTimelineElement>
-      </VerticalTimeline>
-    </div>
-  );
-};
-
-export default Work;
+export default Schedule;
