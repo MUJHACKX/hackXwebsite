@@ -1,4 +1,5 @@
 import '../styles/globals.css';
+import { DefaultSeo } from 'next-seo';
 //components
 
 import Layout from '../components/Layout';
@@ -17,6 +18,25 @@ function MyApp({ Component, pageProps }) {
 
   return (
   <Layout>
+    <DefaultSeo
+        title={
+        'MUJ HACKX'
+        }
+        description={
+        "Join MUJHackX and let your world-changing ideas shine bright , compete at a global hackathon with a prize pool of 200,000 rupees."
+        }
+        openGraph={{
+          type: 'website',
+          locale: 'en_IE',
+          url: 'https://mujhackx.com/',
+          siteName: 'MUJ HACKX',
+        }}
+        twitter={{
+          handle: '@handle',
+          site: '@site',
+          cardType: 'summary_large_image',
+        }}
+    />
     <AnimatePresence mode='wait' >
       <motion.div key={router.route} className='h-full'>
         <Transition />
