@@ -1,1 +1,1 @@
-# MUJ HACKX Website Template
+# MUJ HackX: International Hackathon by Manipal University Jaipur
