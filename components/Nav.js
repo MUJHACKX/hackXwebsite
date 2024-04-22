@@ -9,6 +9,7 @@ import {
 } from 'react-icons/hi2';
 import { MdTimeline } from "react-icons/md";
 import { AiOutlineTeam } from "react-icons/ai";
+import { RiGalleryLine } from "react-icons/ri";
 
 // nav data
 export const navData = [
@@ -16,6 +17,7 @@ export const navData = [
   { name: 'about', path: '/about', icon: <HiRectangleGroup /> },
   { name: 'timeline', path: '/timeline', icon: <MdTimeline /> },
   { name: 'team', path: '/team', icon: <AiOutlineTeam /> },
+  {name: 'gallery' ,path: '/gallery',icon: <RiGalleryLine />},
   // {
   //   name: 'testimonials',
   //   path: '/testimonials',
