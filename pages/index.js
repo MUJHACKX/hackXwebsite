@@ -57,18 +57,18 @@ const Home = () => {
         className="h1"> 
           MUJ's Premier <br /><span className="text-accent">Hackathon </span>
         </motion.h1>
-                <div className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-8 xl:mb-12 text-white">
-                <motion.p variants={fadeIn('down', 0.3)}
-        initial="hidden" 
-        animate="show"
-        exit="hidden"class="text-sm text-white"><strong>Starts</strong>: September 5, 2024
-                </motion.p>
-                <motion.p variants={fadeIn('down', 0.3)}
-        initial="hidden" 
-        animate="show"
-        exit="hidden" class="text-sm text-white"><strong>Ends</strong>: September 6, 2024
-                </motion.p>
-                </div>
+        //         <div className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-8 xl:mb-12 text-white">
+        //         <motion.p variants={fadeIn('down', 0.3)}
+        // initial="hidden" 
+        // animate="show"
+        // exit="hidden"class="text-sm text-white"><strong>Starts</strong>: September 5, 2024
+        //         </motion.p>
+        //         <motion.p variants={fadeIn('down', 0.3)}
+        // initial="hidden" 
+        // animate="show"
+        // exit="hidden" class="text-sm text-white"><strong>Ends</strong>: September 6, 2024
+        //         </motion.p>
+        //         </div>
         {/* Subtitle */}
         <motion.p 
         variants={fadeIn('down', 0.3)}
