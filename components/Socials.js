@@ -17,6 +17,9 @@ const Socials = () => {
     </Link>
     <Link href={'https://jaipur.manipal.edu/'} target="_blank" className=" hover:text-accent translate-all duration 300">
       <RiDribbbleLine />
+     <Link href={'https://www.linkedin.com/company/mujhackx'} target="_blank" className=" hover:text-accent translate-all duration 300">
+      <RiLinkedinLine />
+    </Link>
     </Link>
     <Link href={'https://linktr.ee/mujhackx'} target="_blank" className=" hover:text-accent translate-all duration 300">
       <button className="bg-transparent hover:text-accent text-white font-semibold hover:text-accent py-2 px-4 border border-transparent hover:border-teansparent rounded">Register</button>
