@@ -101,121 +101,121 @@ const gallery = ()=>{
                 </div>
               
         </div>
-        
-        <SwipeCarousel index1={"1%"} index2={"-95%"} type={"Promotion Highlights"} imgArr={[{
-      url: "/promotion1.jpeg",
+           
+        <SwipeCarousel index1={"1%"} index2={"-95%"} type={"Promotion Highlights"} count={2000} images={[{
+      imageUrl: "/promotion1.jpg",
       title: "Title 1",
+      id: 0,
+    },{
+      imageUrl: "/promotion2.jpg",
+      title: "Title 2",
       id: 1,
     },{
-      url: "/promotion2.jpeg",
-      title: "Title 2",
+      imageUrl: "/promotion3.jpg",
+      title: "Title 3",
       id: 2,
     },{
-      url: "/promotion3.jpeg",
-      title: "Title 3",
+      imageUrl: "/promotion4.jpg",
+      title: "Title 4",
       id: 3,
     },{
-      url: "/promotion4.jpeg",
-      title: "Title 4",
+      imageUrl: "/promotion5.jpg",
+      title: "Title 5",
       id: 4,
     },{
-      url: "/promotion5.jpeg",
-      title: "Title 5",
-      id: 5,
-    },{
-      url: "/promotion6.jpeg",
+      imageUrl: "/promotion6.jpg",
       title: "Title 6",
-      id: 6,
+      id: 5,
     }]}></SwipeCarousel>
-      <SwipeCarousel index1={"-86%"} index2={"10%"} type={"Glimpse Of Hackathon"}imgArr={[{
-      url: "/glimpse7.jpeg",
+      <SwipeCarousel index1={"-86%"} index2={"10%"} type={"Glimpse Of Hackathon"}  count={3000} images={[{
+      imageUrl: "/glimpse7.jpg",
       title: "Title 1",
+      id: 0,
+    },{
+      imageUrl: "/glimpse6.jpg",
+      title: "Title 2",
       id: 1,
     },{
-      url: "/glimpse6.JPG",
-      title: "Title 2",
+      imageUrl: "/glimpse5.jpg",
+      title: "Title 3",
       id: 2,
     },{
-      url: "/glimpse5.jpeg",
-      title: "Title 3",
+      imageUrl: "/glimpse4.jpg",
+      title: "Title 4",
       id: 3,
     },{
-      url: "/glimpse4.jpeg",
-      title: "Title 4",
+      imageUrl: "/glimpse3.jpg",
+      title: "Title 5",
       id: 4,
     },{
-      url: "/glimpse3.jpeg",
-      title: "Title 5",
+      imageUrl: "/glimpse2.jpg",
+      title: "Title 6",
       id: 5,
     },{
-      url: "/glimpse2.JPG",
-      title: "Title 6",
-      id: 6,
-    },{
-      url: "/glimpse1.jpeg",
+      imageUrl: "/glimpse1.jpg",
       title: "Title 7",
-      id: 7,
+      id: 6,
     }]}></SwipeCarousel>  
-    <SwipeCarousel index1={"1%"} index2={"-95%"} type={"Official Awards"} imgArr={[{
-      url: "/awards1.jpeg",
+    <SwipeCarousel index1={"1%"} index2={"-95%"} type={"Official Awards"} count={2000} images={[{
+      imageUrl: "/awards1.jpg",
       title: "Title 1",
+      id: 0,
+    },{
+      imageUrl: "/awards2.jpg",
+      title: "Title 2",
       id: 1,
     },{
-      url: "/awards2.jpeg",
-      title: "Title 2",
+      imageUrl: "/awards3.jpg",
+      title: "Title 3",
       id: 2,
     },{
-      url: "/awards3.jpeg",
-      title: "Title 3",
+      imageUrl: "/awards4.jpg",
+      title: "Title 4",
       id: 3,
     },{
-      url: "/awards4.jpeg",
-      title: "Title 4",
+      imageUrl: "/awards5.jpg",
+      title: "Title 5",
       id: 4,
     },{
-      url: "/awards5.jpeg",
-      title: "Title 5",
+      imageUrl: "/awards6.jpg",
+      title: "Title 6",
       id: 5,
     },{
-      url: "/awards6.jpeg",
-      title: "Title 6",
+      imageUrl: "/awards7.jpg",
+      title: "Title 7",
       id: 6,
     },{
-      url: "/awards7.png",
-      title: "Title 7",
-      id: 7,
-    },{
-      url: "/awards8.jpeg",
+      imageUrl: "/awards8.jpg",
       title: "Title 8",
-      id: 8,
+      id: 7,
     }]}></SwipeCarousel>
     
-    <SwipeCarousel index1={"-86%"} index2={"10%"} type={"Media Coverage"}imgArr={[{
-      url: "/coverage1.png",
+    <SwipeCarousel index1={"-86%"} index2={"10%"} type={"Media Coverage"} count={3000} images={[{
+      imageUrl: "/coverage1.jpg",
       title: "Title 1",
+      id: 0,
+    },{
+      imageUrl: "/coverage2.jpg",
+      title: "Title 2",
       id: 1,
     },{
-      url: "/coverage2.png",
-      title: "Title 2",
+      imageUrl: "/coverage3.jpg",
+      title: "Title 3",
       id: 2,
     },{
-      url: "/coverage3.png",
-      title: "Title 3",
+      imageUrl: "/coverage4.jpg",
+      title: "Title 4",
       id: 3,
     },{
-      url: "/coverage4.png",
-      title: "Title 4",
+      imageUrl: "/coverage5.jpg",
+      title: "Title 5",
       id: 4,
     },{
-      url: "/coverage5.png",
-      title: "Title 5",
-      id: 5,
-    },{
-      url: "/coverage6.png",
+      imageUrl: "/coverage6.jpg",
       title: "Title 6",
-      id: 6,
+      id: 5,
     }]}></SwipeCarousel>
-    </div>
-}
 
+    </div>
+} 
 export default gallery
