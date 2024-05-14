@@ -33,200 +33,161 @@ const Team = () => {
   );
 
   return (
-    <motion.div
-      className="h-[100] bg-primary"
-      initial={{ opacity: 0 }}
-      animate={controls}
-      transition={{ duration: 0.6 }}
-    >
-      <h2 className="h2 text-center mb-12 text-accent pt-[20vh]">TEAM</h2>
-      <motion.div
-        className="grid gap-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  p-20 pt-30"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.6, delay: 0.2 }}
-      >
+    <div className="bg-primary min-h-screen w-screen">
+      <h2 className="h2  text-center mb-12 text-accent pt-[20vh]">TEAM</h2>
+
+      <div className="flex flex-col align-middle w-full bg-primary ">
+        <h2 className="text-center text-4xl font-bold my-4">Patron</h2>
+        <hr className="mb-4" />
+        <div className="flex flex-wrap justify-center md:justify-around">
         {chiefPatron && (
-          <div  >
-            <div className="border p-1 bg-accent bg-opacity-10 border-accent font-mono rounded-xl  ">
-              <motion.div
-                className="relative overflow-hidden transition duration-300 transform rounded-lg shadow-2xl hover:scale-105 hover:shadow-3xl"
-                whileHover={{ scale: 1.05 }}
-              >
-                <Image
-                  className="object-cover rounded-lg w-100 h-100"
-                  src={chiefPatron.personImage}
-                  width={1000}
-                  height={1000}
-                  alt={chiefPatron.personName}
-                ></Image>
-                <div className="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-accent bg-opacity-100 opacity-0 hover:opacity-100">
-                  <p className="mb-4 text-3xl font-bold text-primary">{chiefPatron.personName}</p>
-                  <p className="mb-4 text-lg lg:text-base text-primary">{chiefPatron.personPosition}</p>
-                  <p className="mb-4 text-lg lg:text-base text-primary">{chiefPatron.personOrganization}</p>
-                </div>
-              </motion.div>
+         <div className="flex flex-col items-center">
+            <div className="relative overflow-hidden transition duration-300 transform rounded-lg shadow-2xl hover:scale-105 hover:shadow-3xl hover:-translate-y-2 ">
+              <Image
+                className="object-cover rounded-lg w-100 h-150 lg:w-64 lg:h-64"
+                src={chiefPatron.personImage}
+                width={700}
+                height={1000}
+                alt={chiefPatron.personName}
+              ></Image>
             </div>
-          </div>
+            <div className="px-5 py-4 text-wheat hover:text-sky-400">
+              <h1 className="mb-4 text-3xl font-bold text-wheat">{chiefPatron.personName}</h1>
+              <h2 className="mb-4 text-lg lg:text-base text-wheat">{chiefPatron.personPosition}</h2>
+              <h3 className="mb-4 text-lg lg:text-base text-wheat">{chiefPatron.personOrganization}</h3>
+            </div>
+            </div>
         )}
+
 
         {patron && (
-          <div>
-            <div className="border p-1 bg-accent bg-opacity-10 border-accent font-mono rounded-xl">
-              <motion.div
-                className="relative overflow-hidden transition duration-300 transform rounded-lg shadow-2xl hover:scale-105 hover:shadow-3xl"
-                whileHover={{ scale: 1.05 }}
-              >
-                <Image
-                  className="object-cover rounded-lg w-100 h-100"
-                  src={patron.personImage}
-                  width={1000}
-                  height={1000}
-                  alt={patron.personName}
-                ></Image>
-                <div className="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-accent bg-opacity-100 opacity-0 hover:opacity-100">
-                  <p className="mb-4 text-3xl font-bold text-primary">{patron.personName}</p>
-                  <p className="mb-4 text-lg lg:text-base text-primary">{patron.personPosition}</p>
-                  <p className="mb-4 text-lg lg:text-base text-primary">{patron.personOrganization}</p>
-                </div>
-              </motion.div>
+          <div className="flex justify-center flex-wrap flex-col">
+            <div className="relative overflow-hidden transition duration-300 transform rounded-lg shadow-2xl hover:scale-105 hover:shadow-3xl hover:-translate-y-2 ">
+           
+              <Image
+                className="object-cover rounded-lg w-100 h-150 lg:w-64 lg:h-64"
+                src={patron.personImage}
+                width={700}
+                height={1000}
+                alt={patron.personName}
+              ></Image>
+            </div>
+            <div className="px-5 py-4 text-white-400 hover:text-sky-400">
+              <p className="mb-4 text-3xl font-bold text-wheat">{patron.personName}</p>
+              <p className="mb-4 text-lg lg:text-base text-wheat">{patron.personPosition}</p>
             </div>
           </div>
         )}
-      </motion.div>
-
-      {coPatrons.length > 0 && (
-        <motion.div
-          className="grid gap-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 p-20 pt-30"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-        >
-          {coPatrons.map((coPatron, index) => (
-            <div key={index}>
-              <div className="border p-1 bg-accent bg-opacity-10 border-accent font-mono rounded-xl">
-                <motion.div
-                  className="relative overflow-hidden transition duration-300 transform rounded-lg shadow-2xl hover:scale-105 hover:shadow-3xl"
-                  whileHover={{ scale: 1.05 }}
-                >
-                  <Image
-                    className="object-cover rounded-lg w-100 h-100"
-                    src={coPatron.personImage}
-                    width={1000}
-                    height={1000}
-                    alt={coPatron.personName}
-                  ></Image>
-                  <div className="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-accent bg-opacity-100 opacity-0 hover:opacity-100">
-                    <p className="mb-4 text-3xl font-bold text-primary">{coPatron.personName}</p>
-                    <p className="mb-4 text-lg lg:text-base text-primary">{coPatron.personPosition}</p>
-                    <p className="mb-4 text-lg lg:text-base text-primary">{coPatron.personOrganization}</p>
-                  </div>
-                </motion.div>
+     </div>
+        {coPatrons.length > 0 && (<>
+          <h2 className="text-center text-4xl font-bold my-4  bg-primary">Co-Patron</h2>
+        <hr className="mb-4" />
+      <div className="flex flex-wrap justify-center md:justify-around  bg-primary">
+         
+            {coPatrons.map((coPatron, index) => (
+              <div key={index}>
+                   <div className="relative overflow-hidden transition duration-300 transform rounded-lg shadow-2xl hover:scale-105 hover:shadow-3xl hover:-translate-y-2 ">
+                <Image
+                className="object-cover rounded-lg w-100 h-150 lg:w-64 lg:h-64"
+                  src={coPatron.personImage}
+                  width={700}
+                  height={1000}
+                  alt={coPatrons.personName}
+                ></Image>
+                </div>
+              <div className="px-5 py-4 text-white-400 hover:text-sky-400">
+                  <p className="mb-4 text-3xl font-bold text-wheat">{coPatron.personName}</p>
+                  <p className="mb-4 text-lg lg:text-base text-wheat">{coPatron.personPosition}</p>
+                  <p className="mb-4 text-lg lg:text-base text-wheat">{coPatron.personOrganization}</p>
+                </div>
               </div>
-            </div>
-          ))}
-        </motion.div>
-      )}
+            ))}
+          </div>
+          </>
+        )}
 
-      {secondLineMembers.length > 0 && (
-        <motion.div
-          className="grid gap-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 p-20 pt-30"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.6 }}
-        >
-          {secondLineMembers.map((member, index) => (
-            <div key={index}>
-              <div className="border p-1 bg-accent bg-opacity-10 border-accent font-mono rounded-xl">
-                <motion.div
-                  className="relative overflow-hidden transition duration-300 transform rounded-lg shadow-2xl hover:scale-105 hover:shadow-3xl"
-                  whileHover={{ scale: 1.05 }}
-                >
+        {secondLineMembers.length > 0 && (<>
+          <h2 className="text-center text-4xl font-bold my-4  bg-primary">Second-line memeber</h2>
+        <hr className="mb-4 bg-primary" />
+        <div className="flex flex-wrap justify-center md:justify-around  bg-primary ">
+        
+            {secondLineMembers.map((member, index) => (
+              <div key={index}>
+          <div className="relative overflow-hidden transition duration-300 transform rounded-lg hover:scale-105 hover:shadow-3xl hover:-translate-y-2 ">
                   <Image
-                    className="object-cover rounded-lg w-100 h-100"
+                    className="object-cover rounded-lg w-100 h-150 lg:w-64 lg:h-64"
                     src={member.personImage}
-                    width={1000}
+                    width={700}
                     height={1000}
                     alt={member.personName}
                   ></Image>
-                  <div className="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-accent bg-opacity-100 opacity-0 hover:opacity-100">
-                    <p className="mb-4 text-3xl font-bold text-primary">{member.personName}</p>
-                    <p className="mb-4 text-lg lg:text-base text-primary">{member.personPosition}</p>
-                    <p className="mb-4 text-lg lg:text-base text-primary">{member.personOrganization}</p>
-                  </div>
-                </motion.div>
+                </div>
+                <div className="px-5 py-4 text-white-400 hover:text-sky-400">
+                  <p className="mb-4 text-3xl font-bold text-wheat">{member.personName}</p>
+                  <p className="mb-4 text-lg lg:text-base text-wheat">{member.personPosition}</p>
+                  <p className="mb-4 text-lg lg:text-base text-wheat">{member.personOrganization}</p>
+                </div>
               </div>
+            ))}
+          </div>
+          </>
+        )}
+{thirdLineMembers.length > 0 && (
+  <>
+    <h2 className="text-center text-4xl font-bold my-4  bg-primary">Third-line member</h2>
+    <hr className="mb-4 bg-primary" />
+    <div className="flex flex-wrap justify-center md:justify-around  bg-primary ">
+      {thirdLineMembers.map((member, index) => (
+        <div key={index}>
+         <div className="relative overflow-hidden transition duration-300 transform rounded-lg  hover:scale-105 hover:shadow-3xl hover:-translate-y-2 ">
+            <Image
+              className="object-cover rounded-lg w-100 h-150 lg:w-64 lg:h-64"
+              src={member.personImage}
+              width={700}
+              height={1000}
+              alt={member.personName}
+            ></Image>
+             </div>
+            <div className="px-5 py-4 text-white-400 hover:text-sky-400">
+              <p className="mb-4 text-3xl font-bold text-wheat">{member.personName}</p>
+              <p className="mb-4 text-lg lg:text-base text-wheat">{member.personPosition}</p>
+              <p className="mb-4 text-lg lg:text-base text-wheat">{member.personOrganization}</p>
             </div>
-          ))}
-        </motion.div>
-      )}
+         
+        </div>
+      ))}
+    </div>
+  </>
+)}
 
-      {thirdLineMembers.length > 0 && (
-        <motion.div
-          className="grid gap-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 p-20 pt-30"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.8 }}
-        >
-          {thirdLineMembers.map((member, index) => (
-            <div key={index}>
-              <div className="border p-1 bg-accent bg-opacity-10 border-accent font-mono rounded-xl">
-                <motion.div
-                  className="relative overflow-hidden transition duration-300 transform rounded-lg shadow-2xl hover:scale-105 hover:shadow-3xl"
-                  whileHover={{ scale: 1.05 }}
-                >
-                  <Image
-                    className="object-cover rounded-lg w-100 h-100"
-                    src={member.personImage}
-                    width={1000}
-                    height={1000}
-                    alt={member.personName}
-                  ></Image>
-                  <div className="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-accent bg-opacity-100 opacity-0 hover:opacity-100">
-                    <p className="mb-4 text-3xl font-bold text-primary">{member.personName}</p>
-                    <p className="mb-4 text-lg lg:text-base text-primary">{member.personPosition}</p>
-                    <p className="mb-4 text-lg lg:text-base text-primary">{member.personOrganization}</p>
-                  </div>
-                </motion.div>
-              </div>
+{fifthLineMembers.length > 0 && (
+  <>
+    <h2 className="text-center text-4xl font-bold my-4  bg-primary">Fifth-line member</h2>
+    <hr className="mb-4 bg-primary" />
+    <div className="flex flex-wrap justify-center md:justify-around  bg-primary ">
+      {fifthLineMembers.map((member, index) => (
+        <div key={index}>
+         <div className="relative overflow-hidden transition duration-300 transform rounded-lg  hover:scale-105 hover:shadow-3xl hover:-translate-y-2 ">
+            <Image
+              className="object-cover rounded-lg w-100 h-150 lg:w-64 lg:h-64"
+              src={member.personImage}
+              width={700}
+              height={1000}
+              alt={member.personName}
+            ></Image>
+             </div>
+            <div className="px-5 py-4 text-white-400 hover:text-sky-400">
+              <p className="mb-4 text-lg lg:text-base text-wheat">{member.personPosition}</p>
+              <p className="mb-4 text-lg lg:text-base text-wheat">{member.personOrganization}</p>
             </div>
-          ))}
-        </motion.div>
-      )}
-
-      {fifthLineMembers.length > 0 && (
-        <motion.div
-          className="grid gap-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 p-20 pt-30"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 1 }}
-        >
-          {fifthLineMembers.map((member, index) => (
-            <div key={index}>
-              <div className="border p-2 bg-accent bg-opacity-10 border-accent font-mono rounded-xl">
-                <motion.div
-                  className="relative overflow-hidden transition duration-300 transform rounded-lg shadow-2xl hover:scale-105 hover:shadow-3xl"
-                  whileHover={{ scale: 1.05 }}
-                >
-                  <Image
-                    className="object-cover rounded-lg w-100 h-100"
-                    src={member.personImage}
-                    width={1000}
-                    height={1000}
-                    alt={member.personName}
-                  ></Image>
-                  <div className="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-accent bg-opacity-100 opacity-0 hover:opacity-100">
-                    <p className="mb-4 text-3xl font-bold text-primary">{member.personName}</p>
-                    <p className="mb-4 text-lg lg:text-base text-primary">{member.personPosition}</p>
-                    <p className="mb-4 text-lg lg:text-base text-primary">{member.personOrganization}</p>
-                  </div>
-                </motion.div>
-              </div>
-            </div>
-          ))}
-        </motion.div>
-      )}
-    </motion.div>
+         
+        </div>
+      ))}
+    </div>
+  </>
+)}
+      </div>
+    </div>
   );
 };
 
