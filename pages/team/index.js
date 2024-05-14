@@ -107,7 +107,7 @@ const Team = () => {
         )}
 
         {secondLineMembers.length > 0 && (<>
-          <h2 className="text-center text-4xl font-bold my-4  bg-primary">Second-line memeber</h2>
+          <h2 className="text-center text-4xl font-bold my-4  bg-primary">Chair</h2>
         <hr className="mb-4 bg-primary" />
         <div className="flex flex-wrap justify-center md:justify-around  bg-primary ">
         
@@ -134,7 +134,7 @@ const Team = () => {
         )}
 {thirdLineMembers.length > 0 && (
   <>
-    <h2 className="text-center text-4xl font-bold my-4  bg-primary">Third-line member</h2>
+    <h2 className="text-center text-4xl font-bold my-4  bg-primary">Program Chair</h2>
     <hr className="mb-4 bg-primary" />
     <div className="flex flex-wrap justify-center md:justify-around  bg-primary ">
       {thirdLineMembers.map((member, index) => (
@@ -150,7 +150,7 @@ const Team = () => {
              </div>
             <div className="px-5 py-4 text-white-400 hover:text-sky-400">
               <p className="mb-4 text-3xl font-bold text-wheat">{member.personName}</p>
-              <p className="mb-4 text-lg lg:text-base text-wheat">{member.personPosition}</p>
+              {/* <p className="mb-4 text-lg lg:text-base text-wheat">{member.personPosition}</p> */}
               <p className="mb-4 text-lg lg:text-base text-wheat">{member.personOrganization}</p>
             </div>
          
@@ -162,7 +162,7 @@ const Team = () => {
 
 {fifthLineMembers.length > 0 && (
   <>
-    <h2 className="text-center text-4xl font-bold my-4  bg-primary">Fifth-line member</h2>
+    <h2 className="text-center text-4xl font-bold my-4  bg-primary">Convener</h2>
     <hr className="mb-4 bg-primary" />
     <div className="flex flex-wrap justify-center md:justify-around  bg-primary ">
       {fifthLineMembers.map((member, index) => (
@@ -177,7 +177,8 @@ const Team = () => {
             ></Image>
              </div>
             <div className="px-5 py-4 text-white-400 hover:text-sky-400">
-              <p className="mb-4 text-lg lg:text-base text-wheat">{member.personPosition}</p>
+            <p className="mb-4 text-3xl font-bold text-wheat">{member.personName}</p>
+              {/* <p className="mb-4 text-lg lg:text-base text-wheat">{member.personPosition}</p> */}
               <p className="mb-4 text-lg lg:text-base text-wheat">{member.personOrganization}</p>
             </div>
          
