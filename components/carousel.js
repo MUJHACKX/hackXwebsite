@@ -92,7 +92,7 @@ const AutoPlayCarousel = ({images,count,type}) => {
       </div>
     <div className='flex justify-center items-center'>
        
-    <div className="carousel-container sm:w-[1080px] w-[550px] sm:h-[520px] h-[450px] px-0 md:px-8 ">
+    <div className="carousel-container sm:w-[1080px] w-[450px] sm:h-[520px] h-[550px] px-0 md:px-8 ">
       <div className="relative w-full h-96">
         {images.map(({imageUrl, id}) => (
           <div
@@ -106,7 +106,7 @@ const AutoPlayCarousel = ({images,count,type}) => {
                 src={imageUrl}
                 alt={`Slide ${id + 1}`}
                 layout="fill"
-                objectFit="cover"
+                objectFit= ""
                 priority={true} // Ensure priority loading for smoother transition
                 quality={75} // Adjust image quality as needed
                 loading="eager" // Load images eagerly
