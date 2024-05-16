@@ -13,13 +13,13 @@ const members = [{
   personName:"Dev Shalinkumar Agrawal"
 },{
   personImage: "/Ayush.jpg",
-  personName:"Aneerban Saha"
+  personName:"Ayush Poddar"
 },{
   personImage: "/Aneerban.jpg",
   personName:"Aneerban Saha"
 },{
   personImage: "/Lakshay.png",
-  personName:"Lakshay Goel"
+  personName:"Lakshya Goel"
 },]
 const gallery = ()=>{
     return <div className='font bg-[#131424] h-auto '>
