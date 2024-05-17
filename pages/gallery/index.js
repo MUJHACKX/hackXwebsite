@@ -20,14 +20,17 @@ const members = [{
 },{
   personImage: "/Lakshay.png",
   personName:"Lakshya Goel"
-},]
+},,{
+  personImage: "/Manya.jpg",
+  personName:"Manya Goel"
+}]
 const gallery = ()=>{
     return <div className='font bg-[#131424] h-auto '>
                 <div className="flex justify-center  ">
                     <h2 className="h1 text-center mb-12 text-accent pt-[20vh] sm:pb-[30px]">GALLERY</h2>
                 </div>
             <div className=" flex items-center justify-center m-5  ">
-                <Image src={'/herogallery.jpeg'} width={1000} height={1000} className="  rounded-lg hover:shadow-xl" ></Image> 
+                <Image src={'/herogallery.jpeg'} width={1000} height={1000}  priority="true" className="  rounded-lg hover:shadow-xl" ></Image> 
             </div>
             <motion.h3 
         variants={fadeIn('up', 0.6)}
