@@ -71,7 +71,7 @@ const gallery = ()=>{
         animate="show"
         exit="hidden"
         className="h3 text-center sm:mt-16 mt-12 text-accent "> 
-          ACHIVERS
+          WINNERS
         </motion.h3>
 
 

@@ -73,6 +73,7 @@ const Team = () => {
         <div className="px-5 py-4 text-white text-center flex-grow">
           <p className="mb-4 text-3xl font-bold text-white">{patron.personName}</p>
           <p className="mb-4 text-lg lg:text-base text-white">{patron.personPosition}</p>
+          <h3 className="mb-4 text-lg lg:text-base text-white">{patron.personOrganization}</h3>
         </div>
       </div>
     )}
@@ -182,6 +183,9 @@ const Team = () => {
             ></Image>
           </div>
           <div className="px-5 py-4 text-white text-center flex-grow">
+          <p className="mb-4 text-3xl font-bold text-white overflow-hidden text-ellipsis whitespace-nowrap">
+        {member.personName}
+      </p>
             <p className="mb-4 text-3xl font-bold text-white overflow-hidden text-ellipsis whitespace-nowrap">
               {member.personPosition}
             </p>
