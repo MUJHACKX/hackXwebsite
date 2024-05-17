@@ -38,7 +38,7 @@ const gallery = ()=>{
         animate="show"
         exit="hidden"
         className="h3 text-center text-[#d1d3e3] mt-[30px] mb-[40px]"> 
-          Team HackX
+          Student Convener 2023-24
         </motion.h3>
         {members.length > 0 && (
   <>
