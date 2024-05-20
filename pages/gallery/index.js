@@ -5,25 +5,7 @@ import  SwipeCarousel  from "../../components/carousel"
 
 
 
-const members = [{
-  personImage: "/preet.jpg",
-  personName:"Preet"
-},{
-  personImage:"/Dev.jpg",
-  personName:"Dev Shalinkumar Agrawal"
-},{
-  personImage: "/Ayush.jpg",
-  personName:"Ayush Poddar"
-},{
-  personImage: "/Aneerban.jpg",
-  personName:"Aneerban Saha"
-},{
-  personImage: "/Lakshay.png",
-  personName:"Lakshya Goel"
-},,{
-  personImage: "/Manya.jpg",
-  personName:"Manya Goel"
-}]
+
 const gallery = ()=>{
     return <div className='font bg-[#131424] h-auto '>
                 <div className="flex justify-center  ">
@@ -32,39 +14,7 @@ const gallery = ()=>{
             <div className=" flex items-center justify-center m-5  ">
                 <Image src={'/herogallery.jpeg'} width={1000} height={1000}  priority="true" className="  rounded-lg hover:shadow-xl" ></Image> 
             </div>
-            <motion.h3 
-        variants={fadeIn('up', 0.6)}
-        initial="hidden" 
-        animate="show"
-        exit="hidden"
-        className="h3 text-center text-[#d1d3e3] mt-[30px] mb-[40px]"> 
-          Student Convener 2023-24
-        </motion.h3>
-        {members.length > 0 && (
-  <>
-    <div className="flex flex-wrap justify-around  bg-primary  sm:mb-[200px] mb-[150px] ">
-      {members.map((member, index) => (
-        <div key={index}>
-         <div className="relative overflow-hidden transition duration-300 transform rounded-lg  hover:scale-105 px-2 py-4 hover:shadow-3xl hover:-translate-y-2 ">
-            <Image
-              className="object-cover rounded-lg w-64  h-64 lg:w-64 lg:h-64"
-              src={member.personImage}
-              width={700}
-              height={1000}
-              alt={member.personName}
-            ></Image>
-            <div className=" text-center py-4 hover:text-sky-400">
-              <p className="mb-4 text-xl font-bold text-[#d1d3e3]">{member.personName}</p>
-              {/* <p className="mb-4 text-lg lg:text-base text-wheat">{member.personPosition}</p> */}
-            </div>
-             </div>
-             
-         
-        </div>
-      ))}
-    </div>
-  </>
-)}
+  
             <motion.h3 
         variants={fadeIn('down', 0.4)}
         initial="hidden" 
