@@ -32,6 +32,27 @@ const Team = () => {
       team.personName === "Mr. Shishir Singh"
   );
 
+  const StudentConvner = [{
+    personImage: "/preet.jpg",
+    personName:"Preet"
+  },{
+    personImage:"/Dev.jpg",
+    personName:"Dev Shalinkumar Agrawal"
+  },{
+    personImage: "/Ayush.jpg",
+    personName:"Ayush Poddar"
+  },{
+    personImage: "/Aneerban.jpg",
+    personName:"Aneerban Saha"
+  },{
+    personImage: "/Lakshay.png",
+    personName:"Lakshya Goel"
+  },,{
+    personImage: "/Manya.jpg",
+    personName:"Manya Goel"
+  }]
+
+
   return (
     <div className="bg-primary min-h-screen w-screen">
       <h2 className="h2  text-center mb-12 text-accent pt-[20vh]">TEAM</h2>
@@ -196,6 +217,33 @@ const Team = () => {
     </div>
   </>
 )}
+
+{StudentConvner.length > 0 && (
+  <>
+    <h2 className="text-center text-4xl font-bold my-4 text-white bg-primary">Student Convener 2023-24</h2>
+    <hr className="mb-4 bg-primary" />
+    <div className="flex flex-wrap justify-center md:justify-around md:p-14 bg-primary ">
+      {StudentConvner.map((member, index) => (
+        <div key={index} className="flex flex-col" style={{ maxWidth: '300px' }}>
+          <div className="relative overflow-hidden transition duration-300 transform rounded-lg hover:scale-105 hover:shadow-3xl hover:-translate-y-2 ">
+            <Image
+              className="object-cover rounded-lg w-100 h-150 lg:w-64 lg:h-64"
+              src={member.personImage}
+              width={700}
+              height={1000}
+              alt={member.personName}
+            ></Image>
+            <div className="text-center py-4 hover:text-sky-400">
+              <p className="mb-4 text-xl font-bold text-[#d1d3e3]">{member.personName}</p>
+              {/* <p className="mb-4 text-lg lg:text-base text-wheat">{member.personPosition}</p> */}
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </>
+)}
+
 </div>
    
   );
