@@ -2,7 +2,7 @@ import React, {useEffect} from "react";
 import AOS from "aos";
 import TimelineCard from "../../components/TimelineCard";
 import "aos/dist/aos.css";
-import timelineData from "./data";
+import timelineData from "../../data/timelineData";
 
 const Schedule = () => {
   useEffect(() => {

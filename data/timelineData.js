@@ -1,12 +1,12 @@
-import registerImage from "../../public/register.png";
-import openingImage from "../../public/opening.png";
-import round1Image from "../../public/round1.png";
-import round1ResultsImage from "../../public/round1results.png";
-import round2Image from "../../public/round2.png";
-import presentationImage from "../../public/presentation.png";
-import trophyImage from "../../public/trophy.png";
+import registerImage from "../public/register.png";
+import openingImage from "../public/opening.png";
+import round1Image from "../public/round1.png";
+import round1ResultsImage from "../public/round1results.png";
+import round2Image from "../public/round2.png";
+import presentationImage from "../public/presentation.png";
+import trophyImage from "../public/trophy.png";
 
-export default {
+const timelineData = {
   2024: [
     {
       direction: "left",
@@ -166,3 +166,5 @@ export default {
     },
   ]
 }
+
+export default timelineData;
