@@ -38,26 +38,25 @@ const Schedule = () => {
         </div>
         <div className='justify-center flex' data-aos="fade-up">
           {/*component*/}
-          <div className="bg-primary bg-fixed container justify-center items-center justify-items-center align-middle flex">
+          <div
+            className="bg-primary bg-fixed container justify-center items-center justify-items-center align-middle flex">
             <div className="bg-primary bg-fixed flex flex-col text-dracxt">
-              {
-                timelineData[year].map((item, index) => {
-                  return (
-                    <TimelineCard
-                      key={index}
-                      direction={item.direction}
-                      heading1={item.heading1}
-                      heading2={item.heading2}
-                      heading3={item.heading3}
-                      progress={item.progress}
-                      label={item.label}
-                      image={item.image}
-                      topLine={item.topLine}
-                      bottomLine={item.bottomLine}
-                    />
-                  )
-                })
-              }
+              {timelineData[year].customText &&
+                <h1 className="text-4xl font-bold text-center mt-20 h-[44vh]">{timelineData[year].customText}</h1>}
+              {!timelineData[year].customText && timelineData[year].data.map((data, index) => (
+                <TimelineCard
+                  key={index}
+                  direction={data.direction}
+                  heading1={data.heading1}
+                  heading2={data.heading2}
+                  heading3={data.heading3}
+                  progress={data.progress}
+                  label={data.label}
+                  image={data.image}
+                  topLine={data.topLine}
+                  bottomLine={data.bottomLine}
+                />
+              ))}
             </div>
           </div>
         </div>
