@@ -22,15 +22,15 @@ const Schedule = () => {
   const [year, setYear] = React.useState(2023);
   return (
     <div className='bg-primary bg-fixed'>
-      <div className='md:pb-[10%] pb-[30%] pt-[35%] md:pt-[10%] h-full bg-primary flex items-center flex-col'>
-        <div className="flex items-center w-[50%] text-xl h-16">
+      <div className='md:pb-[10%] pb-[30%] pt-[45%] md:pt-[10%] h-full bg-primary flex items-center flex-col'>
+        <div className="flex items-center w-[70%] md:w-[50%] text-xl h-16">
           <button
-            className={`w-[50%] p-4 rounded ${year === 2024 ? 'bg-gradient-to-r from-cyan-500 to-purple-500' : ''}`}
+            className={`w-[50%] m-4 md:m-0 p-4 rounded ${year === 2024 ? 'bg-gradient-to-r from-cyan-500 to-purple-500' : ''}`}
             onClick={() => setYear(2024)}
           >2024
           </button>
           <button
-            className={`w-[50%] p-4 rounded ${year === 2023 ? 'bg-gradient-to-r from-cyan-500 to-purple-500' : ''}`}
+            className={`w-[50%] m-4 md:m-0 p-4 rounded ${year === 2023 ? 'bg-gradient-to-r from-cyan-500 to-purple-500' : ''}`}
             onClick={() => setYear(2023)}
           >2023
           </button>
