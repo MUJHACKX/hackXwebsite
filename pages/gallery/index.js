@@ -242,7 +242,7 @@ const gallery = () => {
             id: 0,
           },
           {
-            imageUrl: "/coverage2.png",
+            imageUrl: "/coverage6.png",
             title: "Title 2",
             id: 1,
           },
@@ -256,13 +256,9 @@ const gallery = () => {
             title: "Title 4",
             id: 3,
           },
+
           {
-            imageUrl: "/coverage5.png",
-            title: "Title 5",
-            id: 4,
-          },
-          {
-            imageUrl: "/coverage6.png",
+            imageUrl: "/coverage2.png",
             title: "Title 6",
             id: 5,
           },
