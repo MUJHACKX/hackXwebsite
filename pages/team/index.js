@@ -2,6 +2,7 @@ import Image from "next/image";
 import { TeamData } from "../../components/TeamData";
 import { useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
+import { FaLinkedin } from "react-icons/fa6"; 
 
 const Team = () => {
   const [show, setShow] = useState(false);
@@ -34,22 +35,28 @@ const Team = () => {
 
   const StudentConvner = [{
     personImage: "/preet.jpg",
-    personName:"Preet"
+    personName:"Preet",
+    personLinkedIn:"https://www.linkedin.com/in/preet-kalani/"
   },{
     personImage:"/Dev.jpg",
-    personName:"Dev Shalinkumar Agrawal"
+    personName:"Dev Shalinkumar Agrawal",
+    personLinkedIn:"https://www.linkedin.com/in/dev-agrawal28/"
   },{
     personImage: "/Ayush.jpg",
-    personName:"Ayush Poddar"
+    personName:"Ayush Poddar",
+    personLinkedIn:"https://www.linkedin.com/in/ayush-poddar-324909245/"
   },{
     personImage: "/Aneerban.jpg",
-    personName:"Aneerban Saha"
+    personName:"Aneerban Saha",
+    personLinkedIn:"https://www.linkedin.com/in/aneerban-saha/"
   },{
     personImage: "/Lakshay.png",
-    personName:"Lakshya Goel"
+    personName:"Lakshya Goel",
+    personLinkedIn:"https://www.linkedin.com/in/ilakshya1/"
   },,{
     personImage: "/Manya.jpg",
-    personName:"Manya Goel"
+    personName:"Manya Goel",
+    personLinkedIn:"https://www.linkedin.com/in/manya-goel-8a6335222/"
   }]
 
 
@@ -71,9 +78,12 @@ const Team = () => {
             height={1000}
             alt={chiefPatron.personName}
           ></Image>
+           
         </div>
         <div className="px-5 py-4 text-white text-center flex-grow">
-          <h1 className="mb-4 text-3xl font-bold text-white">{chiefPatron.personName}</h1>
+          <h1 className="mb-4 text-3xl font-bold text-white">{chiefPatron.personName}
+          <a href={chiefPatron.personLinkedIn} target="_blank" rel="noopener noreferrer"><FaLinkedin  size="1.5em" className="ml-2" /></a>
+          </h1>
           <h2 className="mb-4 text-lg lg:text-base text-white">{chiefPatron.personPosition}</h2>
           <h3 className="mb-4 text-lg lg:text-base text-white">{chiefPatron.personOrganization}</h3>
         </div>
@@ -90,9 +100,12 @@ const Team = () => {
             height={1000}
             alt={patron.personName}
           ></Image>
+            
         </div>
         <div className="px-5 py-4 text-white text-center flex-grow">
-          <p className="mb-4 text-3xl font-bold text-white">{patron.personName}</p>
+          <p className="mb-4 text-3xl font-bold text-white">{patron.personName}
+          <a href={patron.personLinkedIn} target="_blank" rel="noopener noreferrer"><FaLinkedin  size="1.5em" className="ml-2 " /></a>
+         </p>
           <p className="mb-4 text-lg lg:text-base text-white">{patron.personPosition}</p>
           <h3 className="mb-4 text-lg lg:text-base text-white">{patron.personOrganization}</h3>
         </div>
@@ -110,16 +123,17 @@ const Team = () => {
           <div className="relative overflow-hidden transition duration-300 transform rounded-lg shadow-2xl hover:scale-105 hover:shadow-3xl hover:-translate-y-2 ">
             <Image
               className="object-cover rounded-lg w-100 h-150 lg:w-64 lg:h-64"
-              src={coPatron.personImage}
+              src={coPatron.personImage} 
               width={700}
               height={1000}
               alt={coPatron.personName}
             ></Image>
+            
           </div>
           <div className="px-5 py-4 text-white text-center flex-grow">
             <p className="mb-4 text-3xl font-bold text-white overflow-hidden text-ellipsis whitespace-nowrap">
-              {coPatron.personName}
-            </p>
+            {coPatron.personName} <a href={coPatron.personLinkedIn} target="_blank" rel="noopener noreferrer"><FaLinkedin  size="1.5em" className="ml-2 " /></a>
+                  </p>
             <p className="mb-4 text-lg lg:text-base text-white">{coPatron.personPosition}</p>
             <p className="mb-4 text-lg lg:text-base text-white">{coPatron.personOrganization}</p>
           </div>
@@ -144,11 +158,12 @@ const Team = () => {
         height={1000}
         alt={member.personName}
       ></Image>
+       
     </div>
     <div className="px-5 py-4 text-white text-center flex-grow">
       <p className="mb-4 text-3xl font-bold text-white overflow-hidden text-ellipsis whitespace-nowrap">
-        {member.personName}
-      </p>
+      {member.personName} <a href={member.personLinkedIn} target="_blank" rel="noopener noreferrer"><FaLinkedin  size="1.5em" className="ml-2 " /></a>
+                  </p>
       <p className="mb-4 text-lg lg:text-base text-white">{member.personPosition}</p>
       <p className="mb-4 text-lg lg:text-base text-white">{member.personOrganization}</p>
     </div>
@@ -173,11 +188,12 @@ const Team = () => {
         height={1000}
         alt={member.personName}
       ></Image>
+       
     </div>
     <div className="px-5 py-4 text-white text-center flex-grow">
       <p className="mb-4 text-3xl font-bold text-white overflow-hidden text-ellipsis whitespace-nowrap">
-        {member.personName}
-      </p>
+      {member.personName} <a href={member.personLinkedIn} target="_blank" rel="noopener noreferrer"><FaLinkedin  size="1.5em" className="ml-2 " /></a>
+                  </p>
       <p className="mb-4 text-lg lg:text-base text-white">{member.personPosition}</p>
       <p className="mb-4 text-lg lg:text-base text-white">{member.personOrganization}</p>
     </div>
@@ -202,11 +218,12 @@ const Team = () => {
               height={1000}
               alt={member.personName}
             ></Image>
+            
           </div>
           <div className="px-5 py-4 text-white text-center flex-grow">
           <p className="mb-4 text-3xl font-bold text-white overflow-hidden text-ellipsis whitespace-nowrap">
-        {member.personName}
-      </p>
+          {member.personName} <a href={member.personLinkedIn} target="_blank" rel="noopener noreferrer"><FaLinkedin  size="1.5em" className="ml-2 " /></a>
+                  </p>
             <p className="mb-4 text-3xl font-bold text-white overflow-hidden text-ellipsis whitespace-nowrap">
               {member.personPosition}
             </p>
@@ -233,8 +250,10 @@ const Team = () => {
               height={1000}
               alt={member.personName}
             ></Image>
+             
             <div className="text-center py-4 hover:text-sky-400">
-              <p className="mb-4 text-xl font-bold text-[#d1d3e3]">{member.personName}</p>
+              <p className="mb-4 text-xl font-bold text-[#d1d3e3]">  {member.personName} <a href={member.personLinkedIn} target="_blank" rel="noopener noreferrer"><FaLinkedin  size="1.5em" className="ml-2" /></a>
+                  </p>
               {/* <p className="mb-4 text-lg lg:text-base text-wheat">{member.personPosition}</p> */}
             </div>
           </div>
