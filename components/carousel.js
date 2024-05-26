@@ -59,7 +59,7 @@ const Card = ({ card }) => {
 };
 
 export default SwipeCarousel;
-*/
+
 
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
@@ -118,6 +118,27 @@ const AutoPlayCarousel = ({images,count,type}) => {
     </div>
     </div>
   );
+};*/
+
+const MasonryCarousel = ({ images, type }) => {
+  return (
+    <div>
+      <div className="flex mt-[100px] items-center justify-center">
+        <span className="font-semibold  h3 uppercase bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500   text-transparent bg-clip-text">
+          {type}
+        </span>
+      </div>
+      <div className="xl:columns-3 columns-2 gap-3 xl:w-[1200px] md:w-[800px] w-[500px] mx-auto space-y-3 pb-28">
+        {images.map(({ imageUrl, id }) => {
+          return (
+            <div className="bg-gray-200 break-inside-avoid">
+              <img src={imageUrl} id={id}></img>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
 };
 
-export default AutoPlayCarousel;
+export default MasonryCarousel;
