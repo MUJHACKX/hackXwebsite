@@ -128,7 +128,7 @@ const MasonryCarousel = ({ images, type }) => {
           {type}
         </span>
       </div>
-      <div className="xl:columns-3 columns-2 gap-3 xl:w-[1200px] md:w-[800px] w-[500px] mx-auto space-y-3 pb-28">
+      <div className="xl:columns-3 columns-2 gap-3 xl:w-[1200px] md:w-[750px] w-[500px] mx-auto space-y-3 pb-28">
         {images.map(({ imageUrl, id }) => {
           return (
             <div className="bg-gray-200 break-inside-avoid">
