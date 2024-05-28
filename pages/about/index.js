@@ -15,6 +15,11 @@ import SponsorImage6 from "../../public/sponsors/img6.png";
 import SponsorImage7 from "../../public/sponsors/img7.png";
 import SponsorImage8 from "../../public/sponsors/img8.jpg";
 import SponsorImage9 from "../../public/sponsors/img3.png";
+import SponsorImage10 from "../../public/sponsors/img10.png";
+import SponsorImage11 from "../../public/sponsors/img11.png";
+import SponsorImage12 from "../../public/sponsors/img12.png";
+import SponsorImage13 from "../../public/sponsors/img13.jpg";
+
 
 
 const advantages = [
@@ -129,6 +134,10 @@ const About = () => {
             <Image src={SponsorImage7} alt="sponsor" className="m-4" width={0} height={0} style={{height: '8rem', width: 'auto'}} />
             <Image src={SponsorImage8} alt="sponsor" className="m-4" width={0} height={0} style={{height: '8rem', width: 'auto'}} />
             <Image src={SponsorImage9} alt="sponsor" className="m-4" width={0} height={0} style={{height: '8rem', width: 'auto'}} />
+            <Image src={SponsorImage10} alt="sponsor" className="m-4" width={0} height={0} style={{height: '8rem', width: 'auto'}} />
+            <Image src={SponsorImage11} alt="sponsor" className="m-4" width={0} height={0} style={{height: '8rem', width: 'auto'}} />
+            <Image src={SponsorImage12} alt="sponsor" className="m-4" width={0} height={0} style={{height: '8rem', width: 'auto'}} />
+            <Image src={SponsorImage13} alt="sponsor" className="m-4" width={0} height={0} style={{height: '8rem', width: 'auto'}} />
           </div>
         </div>
       </div>
