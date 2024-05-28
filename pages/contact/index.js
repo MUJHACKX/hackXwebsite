@@ -1,128 +1,120 @@
-// import Circles from '/components/Circles';
-// import {BsArrowRight} from 'react-icons/bs';
-// import {motion} from 'framer-motion';
-// const Contact = () => {
-//   return <div className='h-full  bg-primary'>
-//     {/* <iframe
-//           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.877283914117!2d75.56265937558182!3d26.84385517668822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396c4850e05bee9b%3A0x1b8d67402d4eb863!2sManipal%20University%20Jaipur!5e0!3m2!1sen!2sin!4v1694255447850!5m2!1sen!2sin"
-//           allowFullScreen=""
-//           loading="lazy"
-//           referrerpolicy="no-referrer-when-downgrade"
-//         ></iframe> */}
-//     <div className='container mx-auto pt-40 text-center xl:text-left flex-items-center justify-center'>
-//     <div className='flex flex-col w-full '>
-//     <h2 className='h2 text-center mb-12'>Let's <span className='text-accent'>connect.</span></h2>
-//     <form className='flex-1 flex flex-col gap-6 w-full mx-auto' action="">
-//       <div className='flex gap-x-6 w-full'>
-//         <input type="text" placeholder='name' className='input' />
-//         <input type="text" placeholder='email' className='input' />
-//       </div>
-//       <input type="text" placeholder='subject' className='input' />
-//       <textarea placeholder='message' className='textarea'></textarea>
-//       <button className='btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-cente overflow-hidden hover:border-accenet group'>
-//         <span className='group-hover:-translate-y-[120%] group-hover: opacity-1 transition-all duration-500'>
-//          Let's Talk!
+import React, { useEffect } from "react";
+import TextAnimation from "../../components/TextAnimation";
+import { motion, useAnimation } from "framer-motion";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "../../components/ui/accordion";
+import styles from "../../styles/faq.module.css";
 
-//         </span>
-//       </button>
-//     </form>
-//     </div>
-//     </div>
-//    </div>
-// };
+const FAQ = () => {
+  const data = [
+    {
+      title: "How do I register ?",
+      content: "REVEALED SOON",
+    },
+    {
+      title: "How many team members do I need ?",
+      content:
+        "You can participate individually or in teams of 3 to 4 members.",
+    },
+    {
+      title: "How much are the participation fees?",
+      content: "REVEALED SOON",
+    },
+    {
+      title: "Will the Hackathon be in person or online ?",
+      content:
+        "MUJHackX 2.0 will be conducted in complete offline/in-person mode.",
+    },
+    {
+      title: "What is the venue for MUJHackX 2.0 ?",
+      content:
+        "Manipal University Jaipur, explore our beautiful campus while thinking about innovating some crazy thing.",
+    },
+    {
+      title: "What are the prerequisites to participate in this hackathon ?",
+      content:
+        "No prerequisites are required to participate in this hackathon. This event is open to participants of all skill levels.",
+    },
+    {
+      title:
+        "Can my friend join our team after we have already submitted the application for review ?",
+      content:
+        "Yes, your friend can join the team by submitting an individual application. Once both your friend's individual application and your team's application are accepted, you will be able to add your friend to the team.",
+    },
+  ];
 
-// export default Contact;
-import React from "react";
-import { useForm, ValidationError } from "@formspree/react";
-import { BsArrowRight } from "react-icons/bs";
-import { motion } from "framer-motion";
+  const controls = useAnimation();
 
-function ContactForm() {
-  const [state, handleSubmit] = useForm("mzblkkkp");
-
-  if (state.succeeded) {
-    return (
-      <div className="text-green-500">
-        <p>Message sent successfully!</p>
-      </div>
-    );
-  }
+  useEffect(() => {
+    controls.start({
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.5, delay: 0.2 },
+    });
+  }, [controls]);
 
   return (
-    <form
-      className="flex-1 flex flex-col gap-6 w-full mx-auto"
-      onSubmit={handleSubmit}
-    >
-      <div className="flex gap-6">
-        <div className="flex-1">
-          <label htmlFor="name" className="text-white">
-
-          </label>
-          <input
-            id="name"
-            type="text"
-            name="name"
-            className="input"
-            placeholder=" name"
-          />
+    <div className="bg-primary flex flex-col min-h-screen p-4 md:pb-64 lg:px-0 md:pt-24 pt-16">
+      <div className="w-full h-full flex flex-col gap-24 px-4 pt-20 md:px-8 xl:px-20 2xl:px-40">
+        <div className="flex flex-col justify-between items-start sm:items-center gap-12 md:gap-0 md:flex-row md:items-start">
+          <div className="flex flex-col items-start gap-8">
+            <motion.div initial={{ opacity: 0, y: 20 }} animate={controls}>
+              <TextAnimation text="The FAQ Vault: Unlock Instant Insights" />
+            </motion.div>
+            <motion.p
+              className="w-full text-[#C3C3C3] font-['Inter'] font-normal text-[1.25rem] sm:max-w-[32rem] lg:max-w-[40rem] xl:max-w-[50rem] 2xl:max-w-[55rem] md:text-[1rem] xl:text-[1.5rem]"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+            >
+              Have questions, need assistance, or just want to connect? Feel
+              free to reach out!
+            </motion.p>
+          </div>
         </div>
-        <div className="flex-1"> {/* Email */}
-          <label htmlFor="email" className="text-white">
-
-          </label>
-          <input
-            id="email"
-            type="email"
-            name="email"
-            className="input"
-            placeholder="Email Address"
-          />
-          <ValidationError
-            prefix="Email"
-            field="email"
-            errors={state.errors}
-          />
-        </div>
-      </div>
-      <textarea
-        id="message"
-        name="message"
-        className="textarea"
-        placeholder="Message"
-      />
-      <ValidationError
-        prefix="Message"
-        field="message"
-        errors={state.errors}
-      />
-      <button
-        type="submit"
-        className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-cente overflow-hidden hover:border-accenet group"
-        disabled={state.submitting}
-      >
-        <span className="group-hover:-translate-y-[120%] group-hover:opacity-1 transition-all duration-500">
-          {state.submitting ? "Submitting..." : "Submit"}
-        </span>
-      </button>
-    </form>
-  );
-}
-
-const Contact = () => {
-  return (
-    <div className="h-full bg-primary">
-      <div className="container mx-auto pt-40 text-center xl:text-left flex-items-center justify-center">
-        <div className="flex flex-col w-full ">
-          <h2 className="h2 text-center mb-12 font-bold bg-gradient-to-r ease-in-out via-purple-500 bg-clip-text text-transparent
-            from-indigo-300 to-indigo-300 animate-text">
-            Let's Connect.
-          </h2>
-          <ContactForm />
+        <div className="flex flex-col md:flex-row gap-5 md:gap-20">
+          <div className="flex flex-col max-w-[448px]">
+            <div className="text-white text-3xl md:text-4xl font-medium leading-[44px]">
+              FAQs
+            </div>
+            <div>
+              <span className="text-gray-200 text-lg font-normal leading-7">
+                Have questions about the hackathon? Explore our FAQ below!
+              </span>
+              <span className="text-gray-200 text-lg font-normal leading-7">
+                Need further assistance? Don't hesitate to reach out to our
+                team.
+              </span>
+            </div>
+          </div>
+          <div className="max-w-[700px]">
+            {data.map((item, index) => (
+              <Accordion key={index} type="single" collapsible>
+                <AccordionItem value={`item-${index}`} className="py-4 md:p-8">
+                  <AccordionTrigger
+                    className="max-w-[592px] text-white text-2xl 
+                    font-medium leading-7"
+                  >
+                    {item.title}
+                  </AccordionTrigger>
+                  <AccordionContent
+                    className="max-w-[592px] text-gray-200 text-lg 
+                      font-normal font-['Inter'] leading-7"
+                  >
+                    {item.content}
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
+            ))}
+          </div>
         </div>
       </div>
     </div>
-     );
-    };
+  );
+};
 
-    export default Contact;
-
+export default FAQ;
