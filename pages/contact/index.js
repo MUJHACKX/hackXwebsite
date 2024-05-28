@@ -58,12 +58,12 @@ const FAQ = () => {
   }, [controls]);
 
   return (
-    <div className="bg-primary flex flex-col min-h-screen p-4 md:pb-64 lg:px-0 md:pt-24 pt-16">
+    <div className="bg-primaryf flex flex-col min-h-screen p-4 md:pb-64 lg:px-0 md:pt-24 pt-16">
       <div className="w-full h-full flex flex-col gap-24 px-4 pt-20 md:px-8 xl:px-20 2xl:px-40">
         <div className="flex flex-col justify-between items-start sm:items-center gap-12 md:gap-0 md:flex-row md:items-start">
           <div className="flex flex-col items-start gap-8">
             <motion.div initial={{ opacity: 0, y: 20 }} animate={controls}>
-              <TextAnimation text="The FAQ Vault: Unlock Instant Insights" />
+              <TextAnimation text="Everything you need to know!" />
             </motion.div>
             <motion.p
               className="w-full text-[#C3C3C3] font-['Inter'] font-normal text-[1.25rem] sm:max-w-[32rem] lg:max-w-[40rem] xl:max-w-[50rem] 2xl:max-w-[55rem] md:text-[1rem] xl:text-[1.5rem]"
