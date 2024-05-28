@@ -34,6 +34,23 @@ module.exports = {
       },
       animation: {
         'spin-slow': 'spin 6s linear infinite',
+        'text': 'text 5s ease infinite',
+      },
+      keyframes: {
+        'text': {
+          '0%': {
+            'background-size': '200% 200%',
+            'background-position': 'left center'
+          },
+          '50%': {
+            'background-size': '200% 200%',
+            'background-position': 'right center'
+          },
+          '100%': {
+            'background-size': '200% 200%',
+            'background-position': 'left center'
+          }
+        },
       },
       fontFamily: {
         poppins: [`var(--font-poppins)`, 'sans-serif'],
