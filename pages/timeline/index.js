@@ -23,7 +23,11 @@ const Schedule = () => {
   return (
     <div className='bg-primary bg-fixed'>
       <div className='md:pb-[10%] pb-[30%] pt-[45%] md:pt-[10%] h-full bg-primary flex items-center flex-col'>
-        <div className="flex items-center w-[70%] md:w-[50%] text-xl h-16">
+        <div className="text-4xl md:text-6xl text-center font-bold bg-gradient-to-r ease-in-out via-purple-500 bg-clip-text text-transparent
+            from-indigo-300 to-indigo-300 animate-text">
+          Timeline
+        </div>
+        <div className="flex items-center w-[70%] md:w-[50%] text-xl h-16 mt-8 md:mt-16">
           <button
             className={`w-[50%] m-4 md:m-0 p-4 rounded ${year === 2024 ? 'bg-gradient-to-r from-cyan-500 to-purple-500' : ''}`}
             onClick={() => setYear(2024)}

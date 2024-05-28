@@ -6,7 +6,8 @@ const gallery = () => {
   return (
     <div className="font bg-[#131424] h-auto ">
       <div className="flex justify-center  ">
-        <h2 className="h1 text-center mb-12 text-accent pt-[20vh] sm:pb-[30px]">
+        <h2 className="h1 text-center mb-12 text-accent pt-[20vh] sm:pb-[30px] font-bold bg-gradient-to-r ease-in-out via-purple-500 bg-clip-text text-transparent
+            from-indigo-300 to-indigo-300 animate-text">
           GALLERY
         </h2>
       </div>

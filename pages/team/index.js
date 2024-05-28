@@ -55,7 +55,8 @@ const Team = () => {
 
   return (
     <div className="bg-primary min-h-screen w-screen">
-      <h2 className="h2  text-center mb-12 text-accent pt-[20vh]">TEAM</h2>
+      <h2 className="h2  text-center mb-12 text-accent pt-[20vh] font-bold bg-gradient-to-r ease-in-out via-purple-500 bg-clip-text text-transparent
+            from-indigo-300 to-indigo-300 animate-text">TEAM</h2>
 
       <div className="flex flex-col align-middle w-full bg-primary ">
   <h2 className="text-center text-4xl text-white font-bold my-4">Patron</h2>
@@ -245,7 +246,7 @@ const Team = () => {
 )}
 
 </div>
-   
+
   );
 };
 
