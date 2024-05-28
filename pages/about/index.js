@@ -1,226 +1,139 @@
-import React, { useState } from "react";
+import React, {useState} from "react";
+import ThemeCard from "../../components/ThemeCard";
+import CountAnimation from "../../components/CountAnimation";
+import ParticipateAdvantage from "../../components/ParticipateAdvantage";
+import {motion} from "framer-motion"
+import Image from "next/image";
+import themesData from "../../data/themesData";
 
-// icons
-import {
-  FaHtml5,
-  FaCss3,
-  FaJs,
-  FaReact,
-  FaWordpress,
-  FaFigma,
-} from "react-icons/fa";
-
-import {
-  SiNextdotjs,
-  SiFramer,
-  SiAdobexd,
-  SiAdobephotoshop,
-} from "react-icons/si";
-
+import SponsorImage1 from "../../public/sponsors/img1.png";
+import SponsorImage2 from "../../public/sponsors/img2.jpg";
+import SponsorImage3 from "../../public/sponsors/img9.svg";
+import SponsorImage4 from "../../public/sponsors/img4.png";
+import SponsorImage5 from "../../public/sponsors/img5.jpeg";
+import SponsorImage6 from "../../public/sponsors/img6.png";
+import SponsorImage7 from "../../public/sponsors/img7.png";
+import SponsorImage8 from "../../public/sponsors/img8.jpg";
+import SponsorImage9 from "../../public/sponsors/img3.png";
 
 
-
-//  data
-const aboutData = [
+const advantages = [
   {
-    title: 'Theme 1',
-    info: [
-      {
-        title: 'Healthcare',
-        // stage: '2011 - 2012',
-      },
-      // {
-      //   title: 'Web Development',
-      //   icons: [
-      //     <FaHtml5 />,
-      //     <FaCss3 />,
-      //     <FaJs />,
-      //     <FaReact />,
-      //     <SiNextdotjs />,
-      //     <SiFramer />,
-      //     <FaWordpress />,
-      //   ],
-      // },
-      // {
-      //   title: 'UI/UX Design',
-      //   icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
-      // },
-    ],
+    icon: '/img1.svg',
+    heading: 'Collaborate and skill up',
+    description: 'Connect with people, form a team, learn new skills and develop amazing projects!'
   },
   {
-    title: 'Theme 2',
-    info: [
-        {
-          title: 'Fintech',
-          // stage: '2011 - 2012',
-        },
-      // {
-      //   title: 'Webby Awards - Honoree',
-      //   stage: '2011 - 2012',
-      // },
-      // {
-      //   title: 'Adobe Design Achievement Awards - Finalist',
-      //   stage: '2009 - 2010',
-      // },
-    ],
+    icon: '/img2.svg',
+    heading: 'Win exciting prizes',
+    description: 'Top 3 teams plus best projects of each domain will win prizes which will be disclosed soon!'
   },
   {
-    title: 'Theme 3',
-    info: [
-      {
-        title: 'Web 3',
-        // stage: '2011 - 2012',
-      },
-      // {
-      //   title: 'UX/UI Designer - XYZ Company',
-      //   stage: '2012 - 2023',
-      // },
-      // {
-      //   title: 'Web Developer - ABC Agency',
-      //   stage: '2010 - 2012',
-      // },
-      // {
-      //   title: 'Intern - DEF Corporation',
-      //   stage: '2008 - 2010',
-      // },
-    ],
+    icon: '/img3.svg',
+    heading: 'Engaging Workshops',
+    description: 'Technical workshops and events like no-light event will keep the participants engaged throughout.'
   },
   {
-    title: 'Theme 4',
-    info: [
-      {
-        title: 'Cyber Security',
-        // stage: '2011 - 2012',
-      },
-      // {
-      //   title: 'Web Development - ABC University, LA, CA',
-      //   stage: '2011',
-      // },
-      // {
-      //   title: 'Computer Science Diploma - AV Technical Institute',
-      //   stage: '2009',
-      // },
-      // {
-      //   title: 'Certified Graphic Designer - ABC Institute, Los Angeles, CA',
-      //   stage: '2006',
-      // },
-    ],
+    icon: '/img4.svg',
+    heading: 'Mentorship sessions',
+    description: 'Get mentorship and guidance from prominent technocrats of the industry.'
   },
   {
-    title: 'Theme 5',
-    info: [
-      {
-        title: 'Open Innovation',
-        // stage: '2011 - 2012',
-      },
-      // {
-      //   title: 'Web Development - ABC University, LA, CA',
-      //   stage: '2011',
-      // },
-      // {
-      //   title: 'Computer Science Diploma - AV Technical Institute',
-      //   stage: '2009',
-      // },
-      // {
-      //   title: 'Certified Graphic Designer - ABC Institute, Los Angeles, CA',
-      //   stage: '2006',
-      // },
-    ],
+    icon: '/img5.svg',
+    heading: 'Recruitment offers',
+    description: 'Best performers will get recruitment offers from prestigious companies.'
   },
-];
-//components
-import Avatar from '../../components/Avatar';
-import Circles from '../../components/Circles';
-
-//framer Motion
-
-import {motion} from 'framer-motion'
-import {fadeIn} from '../../variants'
-
-
-import CountUp from "react-countup";
-
+  {
+    icon: '/img6.svg',
+    heading: 'Expand network',
+    description: 'Connect with industry professionals and recruiters and other teams to learn and grow more.'
+  }
+]
 
 const About = () => {
-  const [index, setIndex] = useState(0);
-  console.log(index);
-  return <div className="h-full bg-primary pt-40 text center xl:text-left">
-    {/* <Circles /> */}
-    {/* AVATAR img */}
-    <motion.div 
-    variants={ fadeIn('right', 0.2)} 
-    initial="hidden" 
-    animate="show" 
-    exit="hidden" 
-    className=" hidden xl:flex absolute bottom-0 -left-[370px]">
-     {/* <Avatar /> */}
-    </motion.div>
-    <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
-      <div className="flex-1 flex flex-col justify-center">
-        {/* ABOUT ME SECTION*/}
-        <h2 className="h2"> 
-          Where Creativity Meets <span className="text-accent">Code</span>
-        </h2>
-        <p className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0">
-        HackX: Manipal University Jaipur's global hackathon. A 36-hour challenge for students worldwide, igniting talent and creativity. Juries shape mesmerizing ideas into perfect projects, boosting confidence and innovation.
-        </p>
-        {/*        COURTESY */ }
-        <div>
-          <div>
-            {/* EXPERIENCE */}
-            <div className="inline:block relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
-              <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2 ">
-                <CountUp start={0} end={200000} duration={3} />+
-              </div>
-              <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">Prize Pool</div>
+  const [currentTheme, setCurrentTheme] = useState(0);
+  return (
+    <div className='bg-primary bg-fixed'>
+      <div className='pb-[30%] md:pb-[10%] pt-[45%] md:pt-[10%] h-full bg-primary flex items-center flex-col'>
+        <div className="w-full md:w-auto flex flex-col items-center">
+          <div className="text-4xl md:text-6xl text-center font-bold bg-gradient-to-r ease-in-out via-purple-500 bg-clip-text text-transparent
+            from-indigo-300 to-indigo-300 animate-text">
+            WHY PARTICIPATE IN HACKX?
+          </div>
+          <div
+            className="flex flex-row flex-wrap mt-12 items-center w-[90%] md:w-[85%] bg-gradient-to-r from-[#9d00ff1f] to-[#5600ff4d] rounded-2xl pt-4 md:pt-0">
+            {
+              advantages.map((advantage, index) => (
+                <ParticipateAdvantage key={index} icon={advantage.icon} heading={advantage.heading}
+                                      description={advantage.description}/>
+              ))
+            }
+          </div>
+        </div>
+        <div className="w-full md:w-auto mt-28">
+          <div className="text-4xl md:text-6xl text-center font-bold bg-gradient-to-r ease-in-out via-purple-500 bg-clip-text text-transparent
+            from-indigo-300 to-indigo-300 animate-text">
+            THEMES
+          </div>
+          <div className="flex-col mt-6 md:mt-12 flex items-center">
+            <div className="text-2xl md:text-3xl">
+              Big Reveal Ahead!
             </div>
-            <div className="inline:block relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
-              <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2 ">
-                <CountUp start={0} end={1000} duration={3} />+
-              </div>
-              <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">Participants</div>
+            {/*<div className="flex flex-row w-[90%] md:w-[85%] flex-wrap">*/}
+            {/*  {*/}
+            {/*    themesData.map((theme, index) => (*/}
+            {/*      <ThemeCard key={index} index={index} theme={theme} currentTheme={currentTheme}*/}
+            {/*                 setCurrentTheme={setCurrentTheme}/>*/}
+            {/*    ))*/}
+            {/*  }*/}
+            {/*</div>*/}
+            {/*<div className="flex flex-row p-3 w-[80%]">*/}
+            {/*  <div className="md:text-xl mt-4 md:mt-8 ml-2 text-slate-200">{themesData[currentTheme].desc}</div>*/}
+            {/*</div>*/}
+          </div>
+        </div>
+        <div className="w-full mt-32 flex flex-col items-center">
+          <div className="text-4xl md:text-6xl text-center font-bold bg-gradient-to-r ease-in-out via-purple-500 bg-clip-text text-transparent
+            from-indigo-300 to-indigo-300 animate-text">
+            LAST YEAR'S SUCCESS
+          </div>
+          <motion.div
+            className="flex flex-row mt-6 md:mt-8 items-center w-full md:w-[80%] flex-grow"
+          >
+            <div className="flex flex-col flex-grow items-center">
+              <CountAnimation targetValue={30}/>
+              <div className="md:text-3xl text-center text-slate-200">Universities</div>
             </div>
+            <div className="flex flex-col flex-grow items-center">
+              <CountAnimation targetValue={1000}/>
+              <div className="md:text-3xl text-center text-slate-200">Participants</div>
+            </div>
+            <div className="flex flex-col flex-grow items-center">
+              <CountAnimation targetValue={850}/>
+              <div className="md:text-3xl text-center text-slate-200">Projects</div>
+            </div>
+          </motion.div>
+        </div>
+        <div className="w-full md:w-auto flex flex-col items-center mt-32">
+          <div className="text-4xl md:text-6xl text-center font-bold bg-gradient-to-r ease-in-out via-purple-500 bg-clip-text text-transparent
+            from-indigo-300 to-indigo-300 animate-text">
+            PAST PARTNERS & SPONSORS
+          </div>
+          <div className="flex flex-row flex-wrap mt-12 items-center w-[90%] md:w-[60%] rounded-2xl justify-center">
+            <Image src={SponsorImage1} alt="sponsor" className="m-4" width={0} height={0} style={{height: '8rem', width: 'auto'}} />
+            <Image src={SponsorImage2} alt="sponsor" className="m-4" width={0} height={0} style={{height: '8rem', width: 'auto'}} />
+            <Image src={SponsorImage3} alt="sponsor" className="m-4" width={0} height={0} style={{height: '8rem', width: 'auto'}} />
+            <Image src={SponsorImage4} alt="sponsor" className="m-4" width={0} height={0} style={{height: '8rem', width: 'auto'}} />
+            <Image src={SponsorImage5} alt="sponsor" className="m-4" width={0} height={0} style={{height: '8rem', width: 'auto'}} />
+            <Image src={SponsorImage6} alt="sponsor" className="m-4" width={0} height={0} style={{height: '8rem', width: 'auto'}} />
+            <Image src={SponsorImage7} alt="sponsor" className="m-4" width={0} height={0} style={{height: '8rem', width: 'auto'}} />
+            <Image src={SponsorImage8} alt="sponsor" className="m-4" width={0} height={0} style={{height: '8rem', width: 'auto'}} />
+            <Image src={SponsorImage9} alt="sponsor" className="m-4" width={0} height={0} style={{height: '8rem', width: 'auto'}} />
           </div>
         </div>
       </div>
-
-      <div className="flex flex-col w-full xl:max-w-[48%] h-[480px] pt-10">
-        <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
-          {aboutData.map((item, itemIndex) => {
-            return (
-            <div key={itemIndex} 
-            className={`${index === itemIndex && 'text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300'} 
-            cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 
-              after:left-0`}
-              onClick={() => setIndex(itemIndex)}
-              > 
-                {item.title}
-              </div>
-          );
-          })}
-        </div>
-        <div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
-          {aboutData[index].info.map((item, itemIndex) => {
-            return (
-            <div key={itemIndex} className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 pb-10 lg:pb-0 items-center text-white/60"> 
-            {/* Title */}
-              <div className="font-light mb-2 md:mb-0"> {item.title}</div>
-              <div className="hidden md:flex"> </div>
-              <div>{item.stage}</div>
-              <div className="flex gap-x-4">
-                {/* Icons */}
-                {item.icons?.map((icon, itemIndex)=> {
-                return <div className="text-2xl text-white">{icon}</div>
-              })} 
-              </div>              
-            </div>
-            );
-          })}
-        </div>
-      </div>
-
     </div>
-  </div>
+  )
 };
 
 export default About;
