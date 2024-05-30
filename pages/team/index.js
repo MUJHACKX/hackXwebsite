@@ -1,17 +1,7 @@
-import Image from "next/image";
-import { TeamData } from "../../components/TeamData";
-import { useEffect, useState } from "react";
-import { motion, useAnimation } from "framer-motion";
+import TeamData from "../../data/teamData";
+import FacultyCard from "../../components/FacultyCard";
 
 const Team = () => {
-  const [show, setShow] = useState(false);
-  const controls = useAnimation();
-
-  useEffect(() => {
-    controls.start({ opacity: 1 });
-    setShow(true);
-  }, [controls]);
-
   const chiefPatron = TeamData.find((team) => team.personPosition === "CHIEF PATRON");
   const patron = TeamData.find((team) => team.personPosition === "PATRON");
   const coPatrons = TeamData.filter((team) => team.personPosition === "CO-PATRON");
@@ -32,220 +22,164 @@ const Team = () => {
       team.personName === "Mr. Shishir Singh"
   );
 
-  const StudentConvner = [{
+  const StudentConvener1 = [{
     personImage: "/preet.jpg",
-    personName:"Preet"
-  },{
-    personImage:"/Dev.jpg",
-    personName:"Dev Shalinkumar Agrawal"
-  },{
+    personName: "Preet"
+  }, {
+    personImage: "/Dev.jpg",
+    personName: "Dev Shalinkumar Agrawal"
+  }, {
     personImage: "/Ayush.jpg",
-    personName:"Ayush Poddar"
-  },{
+    personName: "Ayush Poddar"
+  }]
+
+  const StudentConvener2 = [{
     personImage: "/Aneerban.jpg",
-    personName:"Aneerban Saha"
-  },{
+    personName: "Aneerban Saha"
+  }, {
     personImage: "/Lakshay.png",
-    personName:"Lakshya Goel"
-  },,{
+    personName: "Lakshya Goel"
+  }, {
     personImage: "/Manya.jpg",
-    personName:"Manya Goel"
+    personName: "Manya Goel"
   }]
 
 
   return (
-    <div className="bg-primary min-h-screen w-screen">
-      <h2 className="h2  text-center mb-12 text-accent pt-[20vh] font-bold bg-gradient-to-r ease-in-out via-purple-500 bg-clip-text text-transparent
+    <div className="bg-primary flex items-center justify-center pb-[30%] md:pb-[10%]">
+      <div className="w-full md:w-[80%]">
+        <h2 className="h2 text-center mb-12 text-accent pt-[20vh] font-bold bg-gradient-to-r ease-in-out via-purple-500 bg-clip-text text-transparent
             from-indigo-300 to-indigo-300 animate-text">TEAM</h2>
 
-      <div className="flex flex-col align-middle w-full bg-primary ">
-  <h2 className="text-center text-4xl text-white font-bold my-4">Patron</h2>
-  <hr className="mb-4" />
-  <div className="flex flex-wrap justify-center md:justify-around">
-    {chiefPatron && (
-      <div className="flex flex-col " style={{ maxWidth: '300px' }}>
-        <div className="relative overflow-hidden transition duration-300 transform rounded-lg shadow-2xl hover:scale-105 hover:shadow-3xl hover:-translate-y-2 ">
-          <Image
-            className="object-cover rounded-lg w-100 h-150 lg:w-64 lg:h-64"
-            src={chiefPatron.personImage}
-            width={700}
-            height={1000}
-            alt={chiefPatron.personName}
-          ></Image>
-        </div>
-        <div className="px-5 py-4 text-white text-center flex-grow">
-          <h1 className="mb-4 text-3xl font-bold text-white">{chiefPatron.personName}</h1>
-          <h2 className="mb-4 text-lg lg:text-base text-white">{chiefPatron.personPosition}</h2>
-          <h3 className="mb-4 text-lg lg:text-base text-white">{chiefPatron.personOrganization}</h3>
-        </div>
-      </div>
-    )}
-
-    {patron && (
-      <div className="flex flex-col items-start" style={{ maxWidth: '300px' }}>
-        <div className="relative overflow-hidden transition duration-300 transform rounded-lg shadow-2xl hover:scale-105 hover:shadow-3xl hover:-translate-y-2 ">
-          <Image
-            className="object-cover rounded-lg w-100 h-150 lg:w-64 lg:h-64"
-            src={patron.personImage}
-            width={700}
-            height={1000}
-            alt={patron.personName}
-          ></Image>
-        </div>
-        <div className="px-5 py-4 text-white text-center flex-grow">
-          <p className="mb-4 text-3xl font-bold text-white">{patron.personName}</p>
-          <p className="mb-4 text-lg lg:text-base text-white">{patron.personPosition}</p>
-          <h3 className="mb-4 text-lg lg:text-base text-white">{patron.personOrganization}</h3>
-        </div>
-      </div>
-    )}
-  </div>
-</div>
-{coPatrons.length > 0 && (
-  <>
-    <h2 className="text-center text-4xl font-bold my-4 text-white bg-primary">Co-Patron</h2>
-    <hr className="mb-4" />
-    <div className="flex flex-wrap justify-center md:justify-around bg-primary">
-      {coPatrons.map((coPatron, index) => (
-        <div key={index} className="flex flex-col " style={{ maxWidth: '300px' }}>
-          <div className="relative overflow-hidden transition duration-300 transform rounded-lg shadow-2xl hover:scale-105 hover:shadow-3xl hover:-translate-y-2 ">
-            <Image
-              className="object-cover rounded-lg w-100 h-150 lg:w-64 lg:h-64"
-              src={coPatron.personImage}
-              width={700}
-              height={1000}
-              alt={coPatron.personName}
-            ></Image>
-          </div>
-          <div className="px-5 py-4 text-white text-center flex-grow">
-            <p className="mb-4 text-3xl font-bold text-white overflow-hidden text-ellipsis whitespace-nowrap">
-              {coPatron.personName}
-            </p>
-            <p className="mb-4 text-lg lg:text-base text-white">{coPatron.personPosition}</p>
-            <p className="mb-4 text-lg lg:text-base text-white">{coPatron.personOrganization}</p>
+        <div className="flex flex-col align-middle bg-primary ">
+          <h2 className="text-center text-4xl text-white font-bold my-4">Patron</h2>
+          <hr className="mb-4"/>
+          <div className="flex flex-col md:flex-row justify-center items-center">
+            <FacultyCard
+              name={chiefPatron.personName}
+              image={chiefPatron.personImage}
+              line1={chiefPatron.personPosition}
+              line2={chiefPatron.personOrganization}
+              count={2}
+            />
+            <FacultyCard
+              name={patron.personName}
+              image={patron.personImage}
+              line1={patron.personPosition}
+              line2={patron.personOrganization}
+              count={2}
+            />
           </div>
         </div>
-      ))}
-    </div>
-  </>
-)}
-
-        {secondLineMembers.length > 0 && (
+        <h2 className="text-center text-4xl font-bold my-4 text-white bg-primary">Co-Patron</h2>
+        {(
           <>
-            <h2 className="text-center text-4xl font-bold my-4 text-white bg-primary">Chair</h2>
-            <hr className="mb-4 bg-primary" />
-            <div className="flex flex-wrap justify-center md:justify-around bg-primary ">
-            {secondLineMembers.map((member, index) => (
-  <div key={index} className="flex flex-col " style={{ maxWidth: '300px' }}>
-    <div className="relative overflow-hidden transition duration-300 transform rounded-lg hover:scale-105 hover:shadow-3xl hover:-translate-y-2 ">
-      <Image
-        className="object-cover rounded-lg w-100 h-150 lg:w-64 lg:h-64"
-        src={member.personImage}
-        width={700}
-        height={1000}
-        alt={member.personName}
-      ></Image>
-    </div>
-    <div className="px-5 py-4 text-white text-center flex-grow">
-      <p className="mb-4 text-3xl font-bold text-white overflow-hidden text-ellipsis whitespace-nowrap">
-        {member.personName}
-      </p>
-      <p className="mb-4 text-lg lg:text-base text-white">{member.personPosition}</p>
-      <p className="mb-4 text-lg lg:text-base text-white">{member.personOrganization}</p>
-    </div>
-  </div>
-))}
+            <hr className="mb-4"/>
+            <div className="flex flex-col lg:flex-row items-center">
+              {coPatrons.map((coPatron, index) => (
+                <FacultyCard
+                  key={index}
+                  name={coPatron.personName}
+                  image={coPatron.personImage}
+                  line1={coPatron.personPosition}
+                  line2={coPatron.personOrganization}
+                  count={coPatrons.length}
+                />
+              ))}
             </div>
           </>
         )}
 
-        {thirdLineMembers.length > 0 && (
+        <h2 className="text-center text-4xl font-bold my-4 text-white bg-primary">Chair</h2>
+        {(
           <>
-            <h2 className="text-center text-4xl font-bold my-4 text-white bg-primary">Program Chair</h2>
-            <hr className="mb-4 bg-primary" />
-            <div className="flex flex-wrap justify-center md:justify-around bg-primary ">
-            {thirdLineMembers.map((member, index) => (
-  <div key={index} className="flex flex-col " style={{ maxWidth: '300px' }}>
-    <div className="relative overflow-hidden transition duration-300 transform rounded-lg hover:scale-105 hover:shadow-3xl hover:-translate-y-2 ">
-      <Image
-        className="object-cover rounded-lg w-100 h-150 lg:w-64 lg:h-64"
-        src={member.personImage}
-        width={700}
-        height={1000}
-        alt={member.personName}
-      ></Image>
-    </div>
-    <div className="px-5 py-4 text-white text-center flex-grow">
-      <p className="mb-4 text-3xl font-bold text-white overflow-hidden text-ellipsis whitespace-nowrap">
-        {member.personName}
-      </p>
-      <p className="mb-4 text-lg lg:text-base text-white">{member.personPosition}</p>
-      <p className="mb-4 text-lg lg:text-base text-white">{member.personOrganization}</p>
-    </div>
-  </div>
-))}
+            <hr className="mb-4 bg-primary"/>
+            <div className="flex flex-col lg:flex-row items-center">
+              {secondLineMembers.map((member, index) => (
+                <FacultyCard
+                  key={index}
+                  name={member.personName}
+                  image={member.personImage}
+                  line1={member.personPosition}
+                  line2={member.personOrganization}
+                  count={secondLineMembers.length}
+                />
+              ))}
             </div>
           </>
         )}
 
-{fifthLineMembers.length > 0 && (
-  <>
-    <h2 className="text-center text-4xl font-bold my-4 text-white bg-primary">Convener</h2>
-    <hr className="mb-4 bg-primary" />
-    <div className="flex flex-wrap justify-center md:justify-around bg-primary ">
-      {fifthLineMembers.map((member, index) => (
-        <div key={index} className="flex flex-col " style={{ maxWidth: '300px' }}>
-          <div className="relative overflow-hidden transition duration-300 transform rounded-lg hover:scale-105 hover:shadow-3xl hover:-translate-y-2 ">
-            <Image
-              className="object-cover rounded-lg w-100 h-150 lg:w-64 lg:h-64"
-              src={member.personImage}
-              width={700}
-              height={1000}
-              alt={member.personName}
-            ></Image>
-          </div>
-          <div className="px-5 py-4 text-white text-center flex-grow">
-          <p className="mb-4 text-3xl font-bold text-white overflow-hidden text-ellipsis whitespace-nowrap">
-        {member.personName}
-      </p>
-            <p className="mb-4 text-3xl font-bold text-white overflow-hidden text-ellipsis whitespace-nowrap">
-              {member.personPosition}
-            </p>
-            <p className="mb-4 text-lg lg:text-base text-white">{member.personOrganization}</p>
-          </div>
-        </div>
-      ))}
-    </div>
-  </>
-)}
-
-{StudentConvner.length > 0 && (
-  <>
-    <h2 className="text-center text-4xl font-bold my-4 text-white bg-primary">Student Convener 2023-24</h2>
-    <hr className="mb-4 bg-primary" />
-    <div className="flex flex-wrap justify-center md:justify-around md:p-14 bg-primary ">
-      {StudentConvner.map((member, index) => (
-        <div key={index} className="flex flex-col" style={{ maxWidth: '300px' }}>
-          <div className="relative overflow-hidden transition duration-300 transform rounded-lg hover:scale-105 hover:shadow-3xl hover:-translate-y-2 ">
-            <Image
-              className="object-cover rounded-lg w-100 h-150 lg:w-64 lg:h-64"
-              src={member.personImage}
-              width={700}
-              height={1000}
-              alt={member.personName}
-            ></Image>
-            <div className="text-center py-4 hover:text-sky-400">
-              <p className="mb-4 text-xl font-bold text-[#d1d3e3]">{member.personName}</p>
-              {/* <p className="mb-4 text-lg lg:text-base text-wheat">{member.personPosition}</p> */}
+        <h2 className="text-center text-4xl font-bold my-4 text-white bg-primary">Program Chair</h2>
+        {(
+          <>
+            <hr className="mb-4 bg-primary"/>
+            <div className="flex flex-col md:flex-row items-center">
+              {thirdLineMembers.map((member, index) => (
+                <FacultyCard
+                  key={index}
+                  name={member.personName}
+                  image={member.personImage}
+                  line1={member.personPosition}
+                  line2={member.personOrganization}
+                  count={thirdLineMembers.length}
+                />
+              ))}
             </div>
-          </div>
-        </div>
-      ))}
-    </div>
-  </>
-)}
+          </>
+        )}
 
-</div>
+        <h2 className="text-center text-4xl font-bold my-4 text-white bg-primary">Convener</h2>
+        {(
+          <>
+            <hr className="mb-4 bg-primary"/>
+            <div className="flex flex-wrap justify-center md:justify-around bg-primary ">
+              {fifthLineMembers.map((member, index) => (
+                <FacultyCard
+                  key={index}
+                  name={member.personName}
+                  image={member.personImage}
+                  line1={member.personPosition}
+                  line2={member.personOrganization}
+                  count={fifthLineMembers.length}
+                />
+              ))}
+            </div>
+          </>
+        )}
+
+        <h2 className="text-center text-2xl md:text-4xl font-bold my-4 text-white bg-primary">Student Convener
+          2023-24</h2>
+        {(
+          <>
+            <hr className="mb-4 bg-primary"/>
+            <div className="flex flex-col lg:flex-row items-center">
+              {StudentConvener1.map((member, index) => (
+                <FacultyCard
+                  key={index}
+                  name={member.personName}
+                  image={member.personImage}
+                  line1="Student Convener"
+                  line2=""
+                  count={StudentConvener1.length}
+                />
+              ))}
+            </div>
+            <div className="flex flex-col lg:flex-row items-center">
+              {StudentConvener2.map((member, index) => (
+                <FacultyCard
+                  key={index}
+                  name={member.personName}
+                  image={member.personImage}
+                  line1="Student Convener"
+                  line2=""
+                  count={StudentConvener2.length}
+                />
+              ))}
+            </div>
+          </>
+        )}
+      </div>
+    </div>
 
   );
 };
