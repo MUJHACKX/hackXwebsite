@@ -59,7 +59,7 @@ const FAQ = () => {
   }, [controls]);
 
   return (
-    <div className="bg-primary flex flex-col min-h-screen p-4 md:pb-64 lg:px-0 md:pt-24 pt-16">
+    <div className="bg-primary flex flex-col min-h-screen p-4 md:pb-64 lg:px-0 md:pt-24 pt-16 pb-[30%]">
       <div className="w-full h-full flex flex-col gap-24 px-4 pt-20 md:px-8 xl:px-20 2xl:px-40">
         <div className="flex flex-col justify-between items-start sm:items-center gap-12 md:gap-0 md:flex-row md:items-start">
           <div className="flex flex-col items-start gap-8">
@@ -113,10 +113,10 @@ const FAQ = () => {
             ))}
           </div>
         </div>
-        <div className="w-[80%] flex flex-row items-center self-center gap-10">
-          <div className="flex flex-col items-start">
+        <div className="w-full md:w-[90%] flex flex-col md:flex-row items-start md:items-center self-center gap-10">
+          <div className="flex flex-col items-start w-[50%] md:w-[65%]">
             <div className="text-3xl text-left p-4 font-bold inline-flex flex-row items-center gap-3"> <IoCall /> Call Us</div>
-            <div className="flex flex-row px-4 gap-6">
+            <div className="flex flex-col xl:flex-row px-4 gap-6">
               <div className="flex flex-col text-xl">
                 <div>+91 95699 13103</div>
                 <div>Rishi Joshi</div>
@@ -131,15 +131,10 @@ const FAQ = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col items-start">
+          <div className="flex flex-col items-start w-[50%] md:w-[35%]">
             <div className="text-3xl text-left p-4 font-bold inline-flex flex-row items-center gap-3"><IoIosPin /> Address</div>
             <div className="flex flex-col px-4 gap-0.5">
-              <div className="flex flex-col text-xl">
-                Manipal University Jaipur, Jaipur-Ajmer Express Highway, Dehmi Kalan,
-              </div>
-              <div className="flex flex-col text-xl">
-                Near GVK Toll Plaza, Jaipur, Rajasthan 303007
-              </div>
+              Manipal University Jaipur, Jaipur-Ajmer Express Highway, Dehmi Kalan, Near GVK Toll Plaza, Jaipur, Rajasthan 303007
             </div>
           </div>
         </div>
