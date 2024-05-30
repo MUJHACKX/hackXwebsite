@@ -7,7 +7,8 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "../../components/ui/accordion";
-import styles from "../../styles/faq.module.css";
+import { IoCall } from "react-icons/io5";
+import { IoIosPin } from "react-icons/io";
 
 const FAQ = () => {
   const data = [
@@ -58,7 +59,7 @@ const FAQ = () => {
   }, [controls]);
 
   return (
-    <div className="bg-primary flex flex-col min-h-screen p-4 md:pb-64 lg:px-0 md:pt-24 pt-16">
+    <div className="bg-primary flex flex-col min-h-screen p-4 md:pb-64 lg:px-0 md:pt-24 pt-16 pb-[30%]">
       <div className="w-full h-full flex flex-col gap-24 px-4 pt-20 md:px-8 xl:px-20 2xl:px-40">
         <div className="flex flex-col justify-between items-start sm:items-center gap-12 md:gap-0 md:flex-row md:items-start">
           <div className="flex flex-col items-start gap-8">
@@ -83,7 +84,7 @@ const FAQ = () => {
             </div>
             <div>
               <span className="text-gray-200 text-lg font-normal leading-7">
-                Have questions about the hackathon? Explore our FAQ below!
+                Have questions about the hackathon? Explore our FAQ below!&nbsp;
               </span>
               <span className="text-gray-200 text-lg font-normal leading-7">
                 Need further assistance? Don't hesitate to reach out to our
@@ -94,15 +95,15 @@ const FAQ = () => {
           <div className="max-w-[700px]">
             {data.map((item, index) => (
               <Accordion key={index} type="single" collapsible>
-                <AccordionItem value={`item-${index}`} className="py-4 md:p-8">
+                <AccordionItem value={`item-${index}`} className="py-4 md:p-8 !bg-primary">
                   <AccordionTrigger
-                    className="max-w-[592px] text-white text-2xl 
+                    className="max-w-[592px] text-white text-2xl
                     font-medium leading-7"
                   >
                     {item.title}
                   </AccordionTrigger>
                   <AccordionContent
-                    className="max-w-[592px] text-gray-200 text-lg 
+                    className="max-w-[592px] text-gray-200 text-lg
                       font-normal font-['Inter'] leading-7"
                   >
                     {item.content}
@@ -110,6 +111,31 @@ const FAQ = () => {
                 </AccordionItem>
               </Accordion>
             ))}
+          </div>
+        </div>
+        <div className="w-full md:w-[90%] flex flex-col md:flex-row items-start md:items-center self-center gap-10">
+          <div className="flex flex-col items-start w-[50%] md:w-[65%]">
+            <div className="text-3xl text-left p-4 font-bold inline-flex flex-row items-center gap-3"> <IoCall /> Call Us</div>
+            <div className="flex flex-col xl:flex-row px-4 gap-6">
+              <div className="flex flex-col text-xl">
+                <div>+91 95699 13103</div>
+                <div>Rishi Joshi</div>
+              </div>
+              <div className="flex flex-col text-xl">
+                <div>+91 82404 73087</div>
+                <div>Shristi Krishna</div>
+              </div>
+              <div className="flex flex-col text-xl">
+                <div>+91 95608 87855</div>
+                <div>Pulkit Gupta</div>
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col items-start w-[50%] md:w-[35%]">
+            <div className="text-3xl text-left p-4 font-bold inline-flex flex-row items-center gap-3"><IoIosPin /> Address</div>
+            <div className="flex flex-col px-4 gap-0.5">
+              Manipal University Jaipur, Jaipur-Ajmer Express Highway, Dehmi Kalan, Near GVK Toll Plaza, Jaipur, Rajasthan 303007
+            </div>
           </div>
         </div>
       </div>
