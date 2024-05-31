@@ -24,26 +24,31 @@ const Team = () => {
 
   const StudentConvener1 = [{
     personImage: "/preet.jpg",
-    personName: "Preet"
+    personName: "Preet",
+    personLinkedIn:"https://www.linkedin.com/in/preet-kalani/"
   }, {
     personImage: "/Dev.jpg",
-    personName: "Dev Shalinkumar Agrawal"
+    personName: "Dev Shalinkumar Agrawal",
+    personLinkedIn:"https://www.linkedin.com/in/dev-agrawal28/"
   }, {
     personImage: "/Ayush.jpg",
-    personName: "Ayush Poddar"
+    personName: "Ayush Poddar",
+    personLinkedIn:"https://www.linkedin.com/in/ayush-poddar-324909245/"
   }]
 
   const StudentConvener2 = [{
     personImage: "/Aneerban.jpg",
-    personName: "Aneerban Saha"
+    personName: "Aneerban Saha",
+    personLinkedIn:"https://www.linkedin.com/in/aneerban-saha/"
   }, {
     personImage: "/Lakshay.png",
-    personName: "Lakshya Goel"
+    personName: "Lakshya Goel",
+    personLinkedIn:"https://www.linkedin.com/in/ilakshya1/"
   }, {
     personImage: "/Manya.jpg",
-    personName: "Manya Goel"
+    personName: "Manya Goel",
+    personLinkedIn:"https://www.linkedin.com/in/manya-goel-8a6335222/"
   }]
-
 
   return (
     <div className="bg-primary flex items-center justify-center pb-[30%] md:pb-[10%]">
@@ -60,6 +65,7 @@ const Team = () => {
               image={chiefPatron.personImage}
               line1={chiefPatron.personPosition}
               line2={chiefPatron.personOrganization}
+              icon={chiefPatron.personLinkedIn}  // corrected prop
               count={2}
             />
             <FacultyCard
@@ -67,6 +73,7 @@ const Team = () => {
               image={patron.personImage}
               line1={patron.personPosition}
               line2={patron.personOrganization}
+              icon={patron.personLinkedIn}  // corrected prop
               count={2}
             />
           </div>
@@ -83,6 +90,7 @@ const Team = () => {
                   image={coPatron.personImage}
                   line1={coPatron.personPosition}
                   line2={coPatron.personOrganization}
+                  icon={coPatron.personLinkedIn}  // corrected prop
                   count={coPatrons.length}
                 />
               ))}
@@ -102,6 +110,7 @@ const Team = () => {
                   image={member.personImage}
                   line1={member.personPosition}
                   line2={member.personOrganization}
+                  icon={member.personLinkedIn}  // corrected prop
                   count={secondLineMembers.length}
                 />
               ))}
@@ -121,6 +130,7 @@ const Team = () => {
                   image={member.personImage}
                   line1={member.personPosition}
                   line2={member.personOrganization}
+                  icon={member.personLinkedIn}  // corrected prop
                   count={thirdLineMembers.length}
                 />
               ))}
@@ -140,6 +150,7 @@ const Team = () => {
                   image={member.personImage}
                   line1={member.personPosition}
                   line2={member.personOrganization}
+                  icon={member.personLinkedIn}  // corrected prop
                   count={fifthLineMembers.length}
                 />
               ))}
@@ -160,6 +171,7 @@ const Team = () => {
                   image={member.personImage}
                   line1="Student Convener"
                   line2=""
+                  icon={member.personLinkedIn}  // added icon prop
                   count={StudentConvener1.length}
                 />
               ))}
@@ -172,6 +184,7 @@ const Team = () => {
                   image={member.personImage}
                   line1="Student Convener"
                   line2=""
+                  icon={member.personLinkedIn}  // added icon prop
                   count={StudentConvener2.length}
                 />
               ))}
