@@ -21,10 +21,10 @@ const Socials = () => {
     <Link href={'https://linktr.ee/mujhackx'} target="_blank" className=" hover:text-accent translate-all duration 300">
       <button className="bg-transparent hover:text-accent text-white font-semibold hover:text-accent py-2 px-4 border border-transparent hover:border-teansparent rounded">Register</button>
     </Link>
-    {/* <Link href={' '} className=" hover:text-accent translate-all duration 300">
+ <Link href={'https://www.linkedin.com/company/mujhackx'} className=" hover:text-accent translate-all duration 300">
       <RiLinkedinLine />
     </Link>
-    <Link href={' '} className=" hover:text-accent translate-all duration 300">
+      {/*  <Link href={' '} className=" hover:text-accent translate-all duration 300">
       <RiPinterestLine />
     </Link> */}
     
