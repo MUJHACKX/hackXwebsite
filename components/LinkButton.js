@@ -1,5 +1,5 @@
 import {motion} from 'framer-motion';
-import {FaArrowRight} from "react-icons/fa";
+import {FaArrowRight, FaSheetPlastic} from "react-icons/fa6";
 
 const ANIM_STATES = {
   initial: {
@@ -13,10 +13,10 @@ const ANIM_STATES = {
   },
 };
 
-export default function RegisterButton() {
+export default function LinkButton({ps_released = false}) {
   return (
     <motion.a
-      href="https://linktr.ee/mujhackx"
+      href={ps_released ? "https://linktr.ee/mujhackx" : "https://linktr.ee/mujhackx"}
       target="_blank"
       variants={{
         whileHover: {
@@ -46,8 +46,8 @@ export default function RegisterButton() {
           }}
           className="flex z-10 items-center gap-2"
         >
-          <FaArrowRight/>
-          <span className="z-10">Register Now</span>
+          {ps_released ? <FaSheetPlastic/> : <FaArrowRight/>}
+          <span className="z-10">{ps_released ? "Problem Statements" : "Register Now"}</span>
         </motion.div>
         <motion.div
           variants={{
@@ -62,8 +62,8 @@ export default function RegisterButton() {
           }}
           className="flex z-10 items-center gap-2 text-white"
         >
-          <FaArrowRight />
-          <span className="z-10">Register Now</span>
+          {ps_released ? <FaSheetPlastic/> : <FaArrowRight/>}
+          <span className="z-10">{ps_released ? "Problem Statements" : "Register Now"}</span>
         </motion.div>
       </div>
     </motion.a>
