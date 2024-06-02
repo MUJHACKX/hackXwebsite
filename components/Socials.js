@@ -1,11 +1,6 @@
-//links
-import Link from "next/link"
-
-//icons
-import {RiYoutubeLine, RiInstagramLine, RiFacebookLine, RiDribbbleLine, RiPinterestLine, RiLinkedinLine} from 'react-icons/ri'
-import {HiArrowRight} from 'react-icons/hi2';
-
-import { FaLandmarkDome } from "react-icons/fa6";
+import Link from "next/link";
+import {RiInstagramLine, RiDribbbleLine} from 'react-icons/ri';
+import RegisterButton from "./RegisterButton";
 
 const Socials = () => {
   return <div className="flex items-center gap-x-5 mb-8 text-lg">
@@ -18,16 +13,17 @@ const Socials = () => {
     <Link href={'https://jaipur.manipal.edu/'} target="_blank" className=" hover:text-accent translate-all duration 300">
       <RiDribbbleLine />
     </Link>
-    <Link href={'https://linktr.ee/mujhackx'} target="_blank" className=" hover:text-accent translate-all duration 300">
-      <button className="bg-transparent hover:text-accent text-white font-semibold hover:text-accent py-2 px-4 border border-transparent hover:border-teansparent rounded">Register</button>
-    </Link>
+    <RegisterButton />
+    {/*<Link href={'https://linktr.ee/mujhackx'} target="_blank" className=" hover:text-accent translate-all duration 300">*/}
+    {/*  <button className="bg-transparent hover:text-accent text-white font-semibold hover:text-accent py-2 px-4 border border-transparent hover:border-teansparent rounded">Register</button>*/}
+    {/*</Link>*/}
     {/* <Link href={' '} className=" hover:text-accent translate-all duration 300">
       <RiLinkedinLine />
     </Link>
     <Link href={' '} className=" hover:text-accent translate-all duration 300">
       <RiPinterestLine />
     </Link> */}
-    
+
 
   </div>;
 };

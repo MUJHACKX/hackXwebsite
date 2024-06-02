@@ -25,8 +25,8 @@ export default function RegisterButton() {
       }}
       initial="initial"
       whileHover="whileHover"
-      className="hover:cursor-pointer relative h-14 border border-[#5256a2] flex overflow-hidden bg-slate-100 py-3
-      gap-2 pr-4 pl-2 text-black rounded-full uppercase font-medium leading-loose poppins md:text-xl"
+      className="hover:cursor-pointer relative h-10 border border-[#5256a2] flex overflow-hidden bg-slate-100
+      gap-2 pr-4 pl-2 text-black rounded-full uppercase font-medium leading-loose poppins text-[1rem] py-[0.125rem]"
     >
       <motion.div
         variants={ANIM_STATES}
@@ -56,7 +56,7 @@ export default function RegisterButton() {
               opacity: 0,
             },
             whileHover: {
-              y: -27,
+              y: -31.5,
               opacity: 1,
             },
           }}
