@@ -25,7 +25,7 @@ export default function RegisterButton() {
       }}
       initial="initial"
       whileHover="whileHover"
-      className="hover:cursor-pointer relative h-10 border border-[#5256a2] flex overflow-hidden bg-slate-100
+      className="w-max hover:cursor-pointer relative h-10 border border-[#5256a2] flex overflow-hidden bg-slate-100
       gap-2 pr-4 pl-2 text-black rounded-full uppercase font-medium leading-loose poppins text-[1rem] py-[0.125rem]"
     >
       <motion.div
