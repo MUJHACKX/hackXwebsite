@@ -1,6 +1,6 @@
-import { motion } from "framer-motion";
+import {motion} from "framer-motion";
 
-const FlipCard = ({ value, heading }) => {
+const FlipCard = ({value, heading}) => {
   // this will be used to animate the Flip Counter
   const digit1 = Math.floor(value / 10);
   const digit2 = value % 10;
@@ -17,7 +17,6 @@ const FlipCard = ({ value, heading }) => {
         >
           {digit2}
         </motion.p>
-
       </div>
 
       <p className="lg:text-xl pb-4">{heading}</p>
