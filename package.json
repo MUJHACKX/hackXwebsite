@@ -29,7 +29,8 @@
     "swiper": "^9.4.0",
     "tailwind-merge": "^2.3.0",
     "tailwind-scrollbar": "^3.0.4",
-    "tsparticles": "^2.9.3"
+    "tsparticles": "^2.9.3",
+    "typewriter-effect": "^2.21.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
