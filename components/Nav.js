@@ -3,7 +3,8 @@ import { HiHome, HiRectangleGroup } from 'react-icons/hi2';
 import { MdTimeline } from "react-icons/md";
 import { AiOutlineTeam } from "react-icons/ai";
 import { RiGalleryLine } from "react-icons/ri";
-import { FaUserGraduate } from "react-icons/fa";
+import { FaQuestionCircle } from 'react-icons/fa';
+
 
 // nav data
 export const navData = [
@@ -17,7 +18,17 @@ export const navData = [
   //   path: '/testimonials',
   //   icon: <HiChatBubbleBottomCenterText />,
   // },
-  { name: 'faqs', path: '/contact', icon: <FaUserGraduate /> },
+  { name: 'faqs', path: '/contact', icon: <svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 24 24"
+  width="24"
+  height="24"
+  fill="currentColor"
+>
+  <path d="M20 2H4C2.9 2 2 2.9 2 4v14c0 1.1.9 2 2 2h4l4 4 4-4h4c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 8h12v2H6V8zm0 4h12v2H6v-2zm0 4h7v2H6v-2z"/>
+
+</svg>
+},
 ];
 
 //next link
