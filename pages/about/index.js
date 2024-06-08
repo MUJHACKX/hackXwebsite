@@ -59,14 +59,14 @@ const About = () => {
   const [currentTheme, setCurrentTheme] = useState(0);
   return (
     <div className='bg-primary bg-fixed'>
-      <div className='pb-[30%] md:pb-[10%] pt-[45%] md:pt-[10%] h-full bg-primary flex items-center flex-col'>
+      <div className='pb-[30%] md:pb-[10%] pt-[45%] xl:pt-[10%] lg:pt-[15%] md:pt-[20%] h-full bg-primary flex items-center flex-col'>
         <div className="w-full md:w-auto flex flex-col items-center">
           <div className="text-4xl md:text-6xl text-center font-bold bg-gradient-to-r ease-in-out via-purple-500 bg-clip-text text-transparent
             from-indigo-300 to-indigo-300 animate-text">
             WHY PARTICIPATE IN HACKX?
           </div>
           <div
-            className="flex flex-row flex-wrap mt-12 items-center w-[90%] md:w-[85%] bg-gradient-to-r from-[#9d00ff1f] to-[#5600ff4d] rounded-2xl pt-4 md:pt-0">
+            className="flex  justify-center flex-wrap mt-12 items-center w-[90%] md:w-[85%] bg-gradient-to-r from-[#9d00ff1f] to-[#5600ff4d] rounded-2xl pt-4 md:pt-0">
             {
               advantages.map((advantage, index) => (
                 <ParticipateAdvantage key={index} icon={advantage.icon} heading={advantage.heading}
