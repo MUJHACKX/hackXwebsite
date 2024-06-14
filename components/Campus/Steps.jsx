@@ -29,7 +29,10 @@ const Steps = () => {
             </div>
           </div>
         </div>
+      
+   
       </div>
+      
     </div>
   );
 }

@@ -20,7 +20,7 @@ const WhyApplySection = () => {
           You will also receive exclusive training and mentorship, have the chance to earn rewards and recognition, and be part of a dynamic and supportive community.
         </p>
         <motion.img
-          src="images (2).jpg" // Replace this URL with the actual URL of the online image you want to use
+          src="Poster.png" // Replace this URL with the actual URL of the online image you want to use
           alt="Why Apply"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}

@@ -9,8 +9,8 @@ const FAQSection = () => {
 
   const faqs = [
     {
-      question: "What is HackerEarth Campus Ambassador Program?",
-      answer: "The HackerEarth Campus Ambassador Program is a platform for students to become representatives of HackerEarth at their universities. Ambassadors help promote coding culture and organize events."
+      question: "What is MujHackx Campus Ambassador Program?",
+      answer: "The MujHackx Campus Ambassador Program is a platform for students to become representatives of MujHackx at their universities. Ambassadors help promote coding culture and organize events."
     },
     {
       question: "Who can apply for the Campus Ambassador Program?",
@@ -18,7 +18,7 @@ const FAQSection = () => {
     },
     {
       question: "What are the benefits of being a Campus Ambassador?",
-      answer: "Benefits include gaining leadership experience, networking opportunities, access to exclusive HackerEarth events, and the chance to improve your coding skills."
+      answer: "Benefits include gaining leadership experience, networking opportunities, access to exclusive MujHackx events, and the chance to improve your coding skills."
     },
     {
       question: "How long does the Campus Ambassador Program last?",
@@ -26,7 +26,7 @@ const FAQSection = () => {
     },
     {
       question: "What are the responsibilities of a Campus Ambassador?",
-      answer: "Responsibilities include promoting HackerEarth events, organizing coding workshops, engaging with the student community, and providing feedback to HackerEarth."
+      answer: "Responsibilities include promoting MujHackx events, organizing coding workshops, engaging with the student community, and providing feedback to MujHackx."
     }
   ];
 

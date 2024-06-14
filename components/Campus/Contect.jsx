@@ -17,14 +17,7 @@ const Contact = ({ image, name, contact, socialIcons }) => {
       transition={{ duration: 0.6 }}
       whileHover={{ scale: 1.05 }}
     >
-      <motion.img
-        src={image}
-        alt={name}
-        className="rounded-full w-32 h-32 object-cover bg-gray-300"
-        initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.6 }}
-      />
+     
       <h2 className="text-2xl font-bold mt-4 text-slate-50 text-center">{name}</h2>
       <p className="text-lg mt-2 text-slate-100 text-center">{contact}</p>
       <div className="flex mt-4 text-slate-200">
