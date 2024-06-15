@@ -68,7 +68,7 @@ const WhyApplySection = () => {
           </p>
         </div>
         <motion.img
-          src="images (1).jpg" // Replace this URL with the actual URL of the online image you want to use
+          src="images (2).jpg" // Replace this URL with the actual URL of the online image you want to use
           alt="Responsibilities"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}

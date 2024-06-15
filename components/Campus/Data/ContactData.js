@@ -1,7 +1,7 @@
 const contactData = [
     {
         image: "download.jpg",
-        name: "Naad Dantla",
+        name: "Naad Dantale",
         contact: "+91 77220 87410",
         socialLinks: {
             // twitter: "https://x.com/khushveermalvi",
@@ -42,7 +42,7 @@ const contactData = [
     
     {
         image: "download (2).jpg",
-        name: "pulkit Gupta",
+        name: "Pulkit Gupta",
         contact: "+91 95608 87855",
         socialLinks: {
             // twitter: "https://x.com/khushveermalvi",
