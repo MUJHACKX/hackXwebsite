@@ -14,10 +14,10 @@ const AboutSection = () => {
           About
         </h2>
         <p className="mt-4 text-gray-600 text-base md:text-lg lg:text-xl">
-          Our <span className='text-black font-extrabold'>Campus Ambassador program </span>is an incredible opportunity for students to represent our brand and help us spread the word about our mission. As a Campus Ambassador, you will gain valuable experience, enhance your leadership skills, and connect with like-minded individuals.
+          Our <span className='text-black font-extrabold'>Campus Ambassador program </span>is an incredible opportunity for students to represent our College and help us spread the word about our mission. As a Campus Ambassador, you will gain valuable experience, enhance your leadership skills, and connect with like-minded individuals.
         </p>
         <p className="mt-4 text-gray-600 text-base md:text-lg lg:text-xl">
-          You will be the face of our company on your campus, organizing events, sharing our story, and promoting our values. This role is perfect for proactive, enthusiastic, and passionate students who want to make a difference.
+          You will be the face of our hackathon on your campus, organizing events, sharing our story, and promoting our values. This role is perfect for proactive, enthusiastic, and passionate students who want to make a difference.
         </p>
       </motion.div>
     </div>

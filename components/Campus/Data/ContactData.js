@@ -25,7 +25,7 @@ const contactData = [
         contact: "+91 95699 13103",
         socialLinks: {
             // twitter: "https://x.com/khushveermalvi",
-            linkedin: "https://www.linkedin.com/in/khushveermalviya/",
+            linkedin: "https://www.linkedin.com/in/rishijoshi1410/",
             // github: "https://github.com/khushveermalviya/"
         }
     },
@@ -35,7 +35,7 @@ const contactData = [
         contact: "+91 82404 73087",
         socialLinks: {
             // twitter: "https://x.com/khushveermalvi",
-            linkedin: "https://www.linkedin.com/in/khushveermalviya/",
+            linkedin: "https://www.linkedin.com/in/shristikrishna/",
             // github: "https://github.com/khushveermalviya/"
         }
     },
@@ -46,7 +46,7 @@ const contactData = [
         contact: "+91 95608 87855",
         socialLinks: {
             // twitter: "https://x.com/khushveermalvi",
-            linkedin: "https://www.linkedin.com/in/khushveermalviya/",
+            linkedin: "https://www.linkedin.com/in/pulkit-gupta-abb638249/",
             // github: "https://github.com/khushveermalviya/"
         }
     },
