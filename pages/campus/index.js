@@ -21,10 +21,11 @@ const Campus = () => {
       </div>
       <div id="responsibilities">
         <WhyApplySection />
-        <Steps />
         <div className='w-full h-auto bg-white'>
         <img src='hackx2.png'  className='w-full h-101'></img>
         </div>
+        <Steps />
+       
         
       <Banner />
       <FAQSection />
