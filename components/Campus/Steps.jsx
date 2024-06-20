@@ -17,7 +17,7 @@ const Steps = () => {
           <div className="flex items-center p-4 bg-white shadow-md rounded-lg">
             <div className="flex items-center justify-center w-12 h-12 mr-4 text-2xl font-bold text-white bg-blue-600 rounded-full">2</div>
             <div>
-              <p className="font-semibold text-black">Take the assesment!</p>
+              <p className="font-semibold text-black">Once you receive an email from us, you are officially a MujHackX2.0 Campus Ambassador!</p>
             </div>
           </div>
         </div>
@@ -25,7 +25,7 @@ const Steps = () => {
           <div className="flex items-center p-4 bg-white shadow-md rounded-lg">
             <div className="flex items-center justify-center w-12 h-12 mr-4 text-2xl font-bold text-white bg-blue-600 rounded-full">3</div>
             <div>
-              <p className="font-semibold text-black">You are officially a MujHackx Campus Ambassador if you pass the test!</p>
+              <p className="font-semibold text-black">Get your referral code, start promoting MuJ HackX on your campus, and enjoy various perks!</p>
             </div>
           </div>
         </div>
