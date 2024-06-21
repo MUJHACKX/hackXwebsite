@@ -64,7 +64,7 @@ const Home = () => {
 
         <div className="text-2xl lg:text-4xl p-10 cursor-default">
           💵 Prize Pool{" "}
-          <span className="text-green-500 font-bold">₹2,00,000/-</span>
+          <span className="text-green-500 font-bold">₹5,00,000/-</span>
         </div>
         <div className="flex flex-col w-[90%] items-center justify-center">
           <div className="text-4xl lg:text-5xl font-bold bg-gradient-to-r ease-in-out via-purple-500 bg-clip-text text-purple-400 pb-4 md:pt-6">
