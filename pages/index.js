@@ -1,3 +1,4 @@
+
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 import Typewriter from "typewriter-effect/dist/core";
@@ -29,7 +30,7 @@ const Home = () => {
       />
       <div className="z-[1] w-full flex flex-col items-center pt-[45%] sm:pt-[25%] md:pt-[20%] lg:pt-[10%] xl:pt-[7.5%]">
         <motion.div
-          className="text-9xl lg:text-11xl text-center mb-12 text-accent font-bold bg-gradient-to-r ease-in-out via-purple-500 bg-clip-text text-transparent from-indigo-300 to-indigo-300 animate-text shadow"
+          className="text-5xl lg:text-9xl text-center mb-12 text-accent font-bold bg-gradient-to-r ease-in-out via-purple-500 bg-clip-text text-transparent from-indigo-300 to-indigo-300 animate-text shadow"
           style={{
             fontFamily: "Iceland, sans-serif",
             marginTop: "10%", // Adjust this value to add padding
@@ -43,7 +44,7 @@ const Home = () => {
         </motion.div>
 
         <div
-          className="text-6xl lg:text-4xl text-center mb-4 text-white font-bold shadow select-none cursor-default"
+          className="text-4xl lg:text-6xl text-center mb-4 text-white font-bold shadow select-none cursor-default"
           style={{ fontFamily: "Iceland, sans-serif" }}
         >
           MUJ's Premier 36 Hours Hackathon
@@ -51,7 +52,7 @@ const Home = () => {
 
         <div
           id="typewriter"
-          className="text-7xl lg:text-2xl text-center mb-12 text-accent font-bold shadow select-none cursor-default"
+          className="text-2xl lg:text-2xl text-center mb-12 text-accent font-bold shadow select-none cursor-default"
         ></div>
 
         <button
