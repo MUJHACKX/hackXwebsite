@@ -43,18 +43,25 @@ const Home = () => {
         </motion.div>
 
         <div
+          className="text-6xl lg:text-4xl text-center mb-4 text-white font-bold shadow select-none cursor-default"
+          style={{ fontFamily: "Iceland, sans-serif" }}
+        >
+          MUJ's Premier 36 Hours Hackathon
+        </div>
+
+        <div
           id="typewriter"
           className="text-7xl lg:text-2xl text-center mb-12 text-accent font-bold shadow select-none cursor-default"
         ></div>
-        
+
         <button
           className="flex items-center px-6 py-3 mt-4 text-black bg-white border border-black rounded-lg button-glow"
           style={{ borderRadius: "8px" }}
         >
-          <img src="/unstop.png" alt="Unstop logo" className="w-6 h-6 mr-2" />
+          <img src="/unstop-logo.png" alt="Unstop logo" className="w-6 h-6 mr-2" />
           <span className="text-lg font-bold">Apply through Unstop</span>
         </button>
-        
+
         <div className="text-2xl lg:text-4xl p-10 cursor-default">
           💵 Prize Pool{" "}
           <span className="text-green-500 font-bold">₹2,00,000/-</span>
@@ -63,7 +70,9 @@ const Home = () => {
           <div className="text-4xl lg:text-5xl font-bold bg-gradient-to-r ease-in-out via-purple-500 bg-clip-text text-purple-400 pb-4 md:pt-6">
             Time to go!
           </div>
-          <Countdown date={new Date("2024-09-05T00:00:00")} />
+          <div className="text-red-500">
+            <Countdown date={new Date("2024-09-05T00:00:00")} />
+          </div>
         </div>
       </div>
     </div>
