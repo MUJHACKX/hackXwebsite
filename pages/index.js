@@ -58,7 +58,7 @@ const Home = () => {
           className="flex items-center px-6 py-3 mt-4 text-black bg-white border border-black rounded-lg button-glow"
           style={{ borderRadius: "8px" }}
         >
-          <img src="/unstop-logo.png" alt="Unstop logo" className="w-6 h-6 mr-2" />
+          <img src="/unstop.png" alt="Unstop logo" className="w-6 h-6 mr-2" />
           <span className="text-lg font-bold">Apply through Unstop</span>
         </button>
 
