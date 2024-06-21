@@ -46,6 +46,15 @@ const Home = () => {
           id="typewriter"
           className="text-7xl lg:text-2xl text-center mb-12 text-accent font-bold shadow select-none cursor-default"
         ></div>
+        
+        <button
+          className="flex items-center px-6 py-3 mt-4 text-black bg-white border border-black rounded-lg button-glow"
+          style={{ borderRadius: "8px" }}
+        >
+          <img src="/unstop.png" alt="Unstop logo" className="w-6 h-6 mr-2" />
+          <span className="text-lg font-bold">Apply through Unstop</span>
+        </button>
+        
         <div className="text-2xl lg:text-4xl p-10 cursor-default">
           💵 Prize Pool{" "}
           <span className="text-green-500 font-bold">₹2,00,000/-</span>
