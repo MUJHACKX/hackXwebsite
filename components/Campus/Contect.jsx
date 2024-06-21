@@ -11,7 +11,7 @@ const Contact = ({ image, name, contact, socialIcons }) => {
 
   return (
     <motion.section
-      className="flex flex-col items-center justify-center mb-7 mt-6 h-96 w-72 p-6 rounded-lg bg-gradient-to-b from-gray-800 to-gray-900 shadow-lg"
+      className="flex flex-col items-center justify-center mb-7 mt-6 mx-4 h-50 w-72 p-6 rounded-lg bg-gradient-to-b from-gray-800 to-gray-900 shadow-lg"
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
