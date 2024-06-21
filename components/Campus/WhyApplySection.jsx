@@ -11,22 +11,22 @@ const WhyApplySection = () => {
         className="max-w-7xl mx-auto text-center"
       >
         <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900">
-          Why Should You Apply?
+          Why Should You Apply? 
         </h2>
-        <p className="mt-4 text-gray-600 text-base md:text-lg lg:text-xl">
+   <div className="l lg:mr-8 lg:flex justify-between mt-8 ">
+   <div className='flex flex-col lg:w-1/2 '>
+        <p className="mt-4 text-gray-600 text-base md:text-lg lg:text-4xl">
           Becoming a Campus Ambassador offers a unique opportunity to develop your professional skills, network with industry leaders, and gain invaluable experience that will set you apart in the job market.
         </p>
-        <p className="mt-4 text-gray-600 text-base md:text-lg lg:text-xl">
+        <p className="mt-4 text-gray-600 text-base md:text-lg lg:text-3xl">
           You will also receive exclusive training and mentorship, have the chance to earn rewards and recognition, and be part of a dynamic and supportive community.
         </p>
-        <motion.img
+        </div>
+        <img
           src="Poster.png" // Replace this URL with the actual URL of the online image you want to use
-          alt="Why Apply"
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.6 }}
-          className="mt-8 w-full max-w-md mx-auto"
+          className="mt-8 w-full max-w-md  lg:w-1/2 lg:h-100 lg:mt-3 border-rounded-lg"
         />
+         </div>
       </motion.div>
 
       <motion.div
@@ -35,6 +35,7 @@ const WhyApplySection = () => {
         transition={{ duration: 0.6, delay: 0.5 }}
         className="max-w-7xl mx-auto mt-16 flex flex-col lg:flex-row items-center justify-center lg:justify-between"
       >
+      
         <div className="lg:w-1/2 lg:mr-8">
           <h3 className="text-2xl md:text-3xl font-bold text-gray-900 text-center lg:text-left">
             Perks
@@ -68,7 +69,7 @@ const WhyApplySection = () => {
           </p>
         </div>
         <motion.img
-          src="images (2).jpg" // Replace this URL with the actual URL of the online image you want to use
+          src="images (1).jpg" // Replace this URL with the actual URL of the online image you want to use
           alt="Responsibilities"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}

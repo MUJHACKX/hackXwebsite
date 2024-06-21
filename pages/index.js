@@ -70,7 +70,7 @@ const Home = () => {
           <div className="text-4xl lg:text-5xl font-bold bg-gradient-to-r ease-in-out via-purple-500 bg-clip-text text-purple-400 pb-4 md:pt-6">
             Time to go!
           </div>
-          <div className="text-red-500">
+          <div className="text-red-500 mb-40">
             <Countdown date={new Date("2024-09-05T00:00:00")} />
           </div>
         </div>
