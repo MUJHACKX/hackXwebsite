@@ -1,5 +1,5 @@
 import React from 'react';
-import About from "../../components/Campus/About.jsx"
+
 import Contact from "../../components/Campus/Contect.jsx"
 import Footer from "../../components/Campus/Footer.jsx"
 import ContactData from "../../components/Campus/Data/ContactData.js"
@@ -17,7 +17,7 @@ const Campus = () => {
         <Main />
       </div>
       <div id="about">
-        <About />
+     
       </div>
       <div id="responsibilities">
         <WhyApplySection />
