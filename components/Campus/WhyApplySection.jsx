@@ -23,9 +23,10 @@ const AboutAndWhyApplySection = () => {
           transition={{ duration: 0.6 }}
           className="max-w-7xl mx-auto text-center"
         >
-           <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900">
-          About
-        </h2>
+        <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 text-center lg:text-left lg:ml-[14rem]">
+  About
+</h2>
+
         
           <div className="lg:flex justify-between mt-8">
             <div className='flex flex-col lg:w-1/2'>

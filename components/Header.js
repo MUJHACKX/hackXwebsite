@@ -7,14 +7,14 @@ const Header = () => {
   return (
     <>
       <Head>
-        <link rel="icon" href="/logo.svg" />
+        <link rel="icon" href="/logo.png" />
       </Head>
       <header className="absolute z-30 w-full flex items-center px-16 xl:px-0 xl:h-[90px]">
         <div className="container mx-auto">
           <div className="flex flex-col lg:flex-row justify-between items-center gao-y-6 py-8">
             {/* LOGaO */}
             <Link href={'/'}>
-              <Image src={'/logo.svg'} 
+              <Image src={'/logo.png'} 
               width={220} 
               height={48} 
               alt= '' 
