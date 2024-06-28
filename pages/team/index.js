@@ -25,7 +25,7 @@ const Team = () => {
       team.personName === "Dr. Dinesh Saini"
   );
   const secondLineMembers2024 = [
-    { personName: "Dr. Sandeep Chaurasia", personImage: "/SandeepCaurasia.jpg", personPosition: "Chair", personOrganization: "" },
+    { personName: "Dr. Sandeep Chaurasia", personImage: "/SandeepCaurasia.webp", personPosition: "Chair", personOrganization: "" },
     { personName: "Dr. Sandeep Joshi", personImage: "/SandeepJoshi.jpeg", personPosition: "CEO AIC", personOrganization: "" },
   ];
 
