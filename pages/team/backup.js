@@ -7,37 +7,18 @@ const Team = () => {
 
   const chiefPatron = TeamData.find((team) => team.personPosition === "CHIEF PATRON");
   const patron = TeamData.find((team) => team.personPosition === "PATRON");
-
-  const coPatrons2023 = TeamData.filter((team) => team.personPosition === "CO-PATRON");
-  const coPatrons2024 = coPatrons2023.map((coPatron) => {
-    if (coPatron.personName === "Dr. Thammaiah CS") {
-      return { ...coPatron, personName: "Dr. Jawar N Jangir", personImage: "/JawarJangir.jpg" };
-    } else if (coPatron.personName === "Dr. Arun Shanbhag") {
-      return { ...coPatron, personName: "Dr. Amit Soni", personImage: "/AmitSoni.jpg" };
-    }
-    return coPatron;
-  });
-
-  const secondLineMembers2023 = TeamData.filter(
+  const coPatrons = TeamData.filter((team) => team.personPosition === "CO-PATRON");
+  const secondLineMembers = TeamData.filter(
     (team) =>
       team.personName === "Dr. Sandeep Chaurasia" ||
       team.personName === "Dr. Amit Soni" ||
       team.personName === "Dr. Dinesh Saini"
   );
-  const secondLineMembers2024 = [
-    { personName: "Dr. Sandeep Chaurasia", personImage: "/SandeepCaurasia.jpg", personPosition: "Chair", personOrganization: "" },
-    { personName: "Dr. Sandeep Joshi", personImage: "/SandeepJoshi.jpeg", personPosition: "CEO AIC", personOrganization: "" },
-  ];
-
-  const thirdLineMembers2023 = TeamData.filter(
+  const thirdLineMembers = TeamData.filter(
     (team) =>
       team.personName === "Dr. Neha Chaudhary" ||
       team.personName === "Dr. Santosh Kumar Vishwakarma"
   );
-  const thirdLineMembers2024 = [
-    { personName: "Dr. Neha Chaudhary", personImage: "/NehaChaudhary.jpg", personPosition: "Program Chair", personOrganization: "" },
-  ];
-
   const fifthLineMembers = TeamData.filter(
     (team) =>
       team.personName === "Dr. Juhi Singh" ||
@@ -66,6 +47,7 @@ const Team = () => {
     personName: "Manya Goel"
   }]
 
+  // New Student Conveners for 2024-25
   const StudentConvener2024_25 = [{
     personImage: "/dummy1.jpg",
     personName: "Naad Dantale"
@@ -77,7 +59,7 @@ const Team = () => {
     personName: "Srishti Krishna"
   }, {
     personImage: "/dummy4.jpg",
-    personName: "Pulkit Gupta"
+    personName: "Pulkit Gupta "
   }, {
     personImage: "/dummy5.jpg",
     personName: "Roshmeet Chakraborty"
@@ -87,12 +69,10 @@ const Team = () => {
   }]
 
   return (
-    <div className="bg-primary flex items-center justify-center pb-[30%] md:pb-[10%] relative z-10">
+    <div className="bg-primary flex items-center justify-center pb-[30%] md:pb-[10%]">
       <div className="w-full md:w-[80%]">
         <h2 className="h2 text-center mb-12 text-accent pt-[20vh] font-bold bg-gradient-to-r ease-in-out via-purple-500 bg-clip-text text-transparent
-            from-indigo-300 to-indigo-300 animate-text">
-          {year === 2023 ? "Team HackX 2023" : "Team HackX 2024"}
-        </h2>
+            from-indigo-300 to-indigo-300 animate-text">TEAM</h2>
 
         <div className="flex items-center w-[70%] md:w-[50%] text-xl h-16 mt-8 md:mt-16 mx-auto">
           <button
@@ -129,20 +109,19 @@ const Team = () => {
             />
           </div>
         </div>
-
         <h2 className="text-center text-4xl font-bold my-4 text-white bg-primary">Co-Patron</h2>
         {(
           <>
             <hr className="mb-4" />
             <div className="flex flex-col lg:flex-row items-center">
-              {(year === 2023 ? coPatrons2023 : coPatrons2024).map((coPatron, index) => (
+              {coPatrons.map((coPatron, index) => (
                 <FacultyCard
                   key={index}
                   name={coPatron.personName}
                   image={coPatron.personImage}
                   line1={coPatron.personPosition}
                   line2={coPatron.personOrganization}
-                  count={coPatrons2023.length}
+                  count={coPatrons.length}
                 />
               ))}
             </div>
@@ -154,14 +133,14 @@ const Team = () => {
           <>
             <hr className="mb-4 bg-primary" />
             <div className="flex flex-col lg:flex-row items-center">
-              {(year === 2023 ? secondLineMembers2023 : secondLineMembers2024).map((member, index) => (
+              {secondLineMembers.map((member, index) => (
                 <FacultyCard
                   key={index}
                   name={member.personName}
                   image={member.personImage}
                   line1={member.personPosition}
                   line2={member.personOrganization}
-                  count={secondLineMembers2024.length}
+                  count={secondLineMembers.length}
                 />
               ))}
             </div>
@@ -173,14 +152,14 @@ const Team = () => {
           <>
             <hr className="mb-4 bg-primary" />
             <div className="flex flex-col md:flex-row items-center">
-              {(year === 2023 ? thirdLineMembers2023 : thirdLineMembers2024).map((member, index) => (
+              {thirdLineMembers.map((member, index) => (
                 <FacultyCard
                   key={index}
                   name={member.personName}
                   image={member.personImage}
                   line1={member.personPosition}
                   line2={member.personOrganization}
-                  count={thirdLineMembers2024.length}
+                  count={thirdLineMembers.length}
                 />
               ))}
             </div>
