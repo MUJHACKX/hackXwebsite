@@ -3,7 +3,7 @@ import TeamData from "../../data/teamData";
 import FacultyCard from "../../components/FacultyCard";
 
 const Team = () => {
-  const [year, setYear] = useState(2023);
+  const [year, setYear] = useState(2024);
 
   const chiefPatron = TeamData.find((team) => team.personPosition === "CHIEF PATRON");
   const patron = TeamData.find((team) => team.personPosition === "PATRON");
@@ -67,22 +67,22 @@ const Team = () => {
   }]
 
   const StudentConvener2024_25 = [{
-    personImage: "/dummy1.jpg",
+    personImage: "/naad.png",
     personName: "Naad Dantale"
   }, {
-    personImage: "/dummy2.jpg",
+    personImage: "/rishi.png",
     personName: "Rishi Joshi"
   }, {
-    personImage: "/dummy3.jpg",
+    personImage: "/krishna.png",
     personName: "Srishti Krishna"
   }, {
-    personImage: "/dummy4.jpg",
+    personImage: "/pulkit.png",
     personName: "Pulkit Gupta"
   }, {
-    personImage: "/dummy5.jpg",
+    personImage: "/roshmeet.png",
     personName: "Roshmeet Chakraborty"
   }, {
-    personImage: "/dummy6.jpg",
+    personImage: "/image 1.png",
     personName: "Abhijeet Anand Jha"
   }]
 
@@ -241,7 +241,7 @@ const Team = () => {
             <hr className="mb-4 bg-primary" />
             <div className="flex flex-wrap justify-center md:justify-around bg-primary">
               {StudentConvener2024_25.map((member, index) => (
-                <div key={index} className="flex flex-col items-center">
+                <div key={index} className="flex flex-col items-center w-[30%] p-4">
                   <FacultyCard
                     name={member.personName}
                     image={member.personImage}
