@@ -42,7 +42,7 @@ const TeamData = [
         personLinkedIn: "https://www.linkedin.com/in/pujan-modha/"
     },
     {
-        personImage: '/SandeepCaurasia.webp',
+        personImage: '/SandeepChaurasia.webp',
         personName: "Dr. Sandeep Chaurasia",
         personPosition: "GENERAL CHAIR",
         personOrganization: "DIRECTOR SCSE,MUJ",
