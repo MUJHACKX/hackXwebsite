@@ -20,16 +20,16 @@ const Home = () => {
   return (
     <div className="h-screen flex flex-col items-center overflow-y-auto">
       <div
-        className="absolute h-full w-full opacity-30 bg-center md:bg-top"
+        className="absolute h-full w-full opacity-90 bg-center md:bg-top"
         style={{
-          backgroundImage: 'url("/dotsanimation.svg")',
+          backgroundImage: 'url("/xbackground.png")',
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
         }}
       />
       <div className="z-[1] w-full flex flex-col items-center pt-[45%] sm:pt-[25%] md:pt-[20%] lg:pt-[10%] xl:pt-[7.5%]">
         <motion.div
-          className="text-5xl lg:text-9xl text-center mb-12 text-accent font-bold bg-gradient-to-r ease-in-out via-purple-500 bg-clip-text text-transparent from-indigo-300 to-indigo-300 animate-text shadow"
+          className="text-5xl lg:text-9xl text-center mb-12 text-white font-bold bg-gradient-to-r ease-in-out via-purple-500 bg-clip-text text-transparent from-indigo-300 to-indigo-300 animate-text shadow"
           style={{
             fontFamily: "Iceland, sans-serif",
             marginTop: "10%", // Adjust this value to add padding
@@ -39,7 +39,7 @@ const Home = () => {
           animate="show"
           exit="hidden"
         >
-          MUJHackx 2.0
+          MUJHackX 2.0
         </motion.div>
 
         <div
