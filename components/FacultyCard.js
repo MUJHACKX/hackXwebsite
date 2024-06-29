@@ -3,7 +3,7 @@ import { FaLinkedin } from "react-icons/fa";
 
 const FacultyCard = ({ name, image, line1, line2, count, icon }) => {
   return (
-    <div className={`flex flex-col items-center w-full md:w-[${(100/count).toFixed(0)}%]`}>
+    <div className={`flex flex-col items-center w-full md:w-[${(100 / count).toFixed(0)}%]`}>
       <div
         className="transition duration-300 transform rounded-lg shadow-2xl hover:scale-105 hover:shadow-3xl">
         <Image
@@ -20,8 +20,10 @@ const FacultyCard = ({ name, image, line1, line2, count, icon }) => {
         <h2 className="mb-2 md:text-lg lg:text-base text-white">{line1}</h2>
         <h3 className="mb-4 md:text-lg lg:text-base text-white">{line2}</h3>
       </div>
-      <div className="flex justify-center mb-3  cursor-pointer">
-           <a href={icon} target="_blank" rel="noopener noreferrer"><FaLinkedin  size="1.5em" className="ml-2 hover:text-blue-500" /></a>
+      <div className="flex justify-center mb-3 cursor-pointer">
+        <a href={icon} target="_blank" rel="noopener noreferrer">
+          <FaLinkedin size="1.5em" className="ml-2 hover:text-blue-500" />
+        </a>
       </div>
     </div>
   );
