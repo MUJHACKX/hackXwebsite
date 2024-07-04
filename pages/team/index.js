@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import TeamData from "../../data/teamData";
 import FacultyCard from "../../components/FacultyCard";
+import Footer from '../../components/Footer';
 
 const Team = () => {
   const [year, setYear] = useState(2024);  // Default to 2024
@@ -35,7 +36,7 @@ const Team = () => {
     "Abhijeet Anand Jha": "https://www.linkedin.com/in/abhijeet-anand-jha-b517b7249/",
     "Samvrant Samantaray": "https://www.linkedin.com/in/samvrant-samanataray/",
     "Aeshna Kala": "https://www.linkedin.com/in/aeshna-kala-929191233/"
-    };
+  };
 
   const getTeamMemberWithIcon = (team) => {
     return team.map((member) => ({
@@ -79,9 +80,9 @@ const Team = () => {
   // advisory
   const fourthLineMembers2024 = getTeamMemberWithIcon(TeamData.filter(
     (team) =>
-     team.personName === "Manya Goel" ||
-     team.personName === "Samvrant Samantaray" ||
-     team.personName === "Aeshna Kala" 
+      team.personName === "Manya Goel" ||
+      team.personName === "Samvrant Samantaray" ||
+      team.personName === "Aeshna Kala"
   ));
   // advisory
   const fifthLineMembers = getTeamMemberWithIcon(TeamData.filter(
@@ -112,7 +113,7 @@ const Team = () => {
   ]);
 
   return (
-    <div className="bg-primary flex items-center justify-center pb-[30%] md:pb-[10%] relative z-10">
+    <div className="bg-primary flex items-center justify-center  relative z-10">
       <div className="w-full md:w-[80%]">
         <h2 className="h2 text-center mb-12 text-accent pt-[20vh] font-bold bg-gradient-to-r ease-in-out via-purple-500 bg-clip-text text-transparent from-indigo-300 to-indigo-300 animate-text">
           {year === 2023 ? "Team HackX 2023" : "Team HackX 2024"}
@@ -203,7 +204,7 @@ const Team = () => {
             />
           ))}
         </div>
-        
+
         <h2 className="text-center text-4xl font-bold my-4 text-white bg-primary">Convener</h2>
         <hr className="mb-4" />
         <div className="flex flex-wrap justify-center md:justify-around bg-primary ">
@@ -219,7 +220,7 @@ const Team = () => {
             />
           ))}
         </div>
-        
+
 
         {year === 2023 ? (
           <>
@@ -255,20 +256,20 @@ const Team = () => {
         ) : (
           <>
             <h2 className="text-center text-4xl font-bold my-4 text-white bg-primary">MUJ HackX 2.0 Advisories</h2>
-        <hr className="mb-4" />
-        <div className="flex flex-col md:flex-row items-center">
-          {(year === 2024 ? fourthLineMembers2024 : fourthLineMembers2024).map((member, index) => (
-            <FacultyCard
-              key={index}
-              name={member.personName}
-              image={member.personImage}
-              line1={member.personPosition}
-              line2={member.personOrganization}
-              count={fourthLineMembers2024.length}
-              icon={member.icon}
-            />
-          ))}
-        </div>
+            <hr className="mb-4" />
+            <div className="flex flex-col md:flex-row items-center">
+              {(year === 2024 ? fourthLineMembers2024 : fourthLineMembers2024).map((member, index) => (
+                <FacultyCard
+                  key={index}
+                  name={member.personName}
+                  image={member.personImage}
+                  line1={member.personPosition}
+                  line2={member.personOrganization}
+                  count={fourthLineMembers2024.length}
+                  icon={member.icon}
+                />
+              ))}
+            </div>
             <h2 className="text-center text-2xl md:text-4xl font-bold my-4 text-white bg-primary">Student Convener 2024-25</h2>
             <hr className="mb-4" />
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 justify-center bg-primary">
@@ -287,7 +288,9 @@ const Team = () => {
             </div>
           </>
         )}
+        <Footer></Footer>
       </div>
+
     </div>
   );
 };

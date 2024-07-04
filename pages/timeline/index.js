@@ -1,8 +1,9 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import AOS from "aos";
 import TimelineCard from "../../components/TimelineCard";
 import "aos/dist/aos.css";
 import timelineData from "../../data/timelineData";
+import Footer from "../../components/Footer";
 
 const Schedule = () => {
   useEffect(() => {
@@ -69,6 +70,8 @@ const Schedule = () => {
           </div>
         </div>
       </div>
+      <Footer></Footer>
+
     </div>
   )
 }

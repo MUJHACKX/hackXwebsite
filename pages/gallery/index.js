@@ -2,6 +2,7 @@ import Image from "next/image";
 import { fadeIn } from "../../variants";
 import { motion } from "framer-motion";
 import MasonryCarousel from "../../components/carousel";
+import Footer from "../../components/Footer";
 const gallery = () => {
   return (
     <div className="font bg-[#131424] h-auto ">
@@ -265,6 +266,7 @@ const gallery = () => {
           },
         ]}
       ></MasonryCarousel>
+      <Footer></Footer>
     </div>
   );
 };

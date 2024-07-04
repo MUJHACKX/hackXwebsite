@@ -12,22 +12,22 @@ import Steps from '../../components/Campus/Steps.jsx';
 const Campus = () => {
   return (
     <div className="bg-white">
-      
+
       <div id="home">
         <Main />
       </div>
       <div id="about">
-     
+
       </div>
       <div id="responsibilities">
         <WhyApplySection />
         <Steps />
         <div className='w-full h-auto bg-white'>
-        <img src='hackx2.png'  className='w-full h-101'></img>
+          <img src='hackx2.png' className='w-full h-101'></img>
         </div>
-        
-      <Banner />
-      <FAQSection />
+
+        <Banner />
+        <FAQSection />
       </div>
       <h3 className="text-black text-6xl font-bold text-center w-full mb-6 bg-white">Contact Us</h3>
       <div id="contact" className="flex flex-row justify-evenly flex-wrap md:flex-nowrap bg-white mb-7 py-8 rounded-lg ">
@@ -41,7 +41,7 @@ const Campus = () => {
           />
         ))}
       </div>
-     
+
       <Footer />
     </div>
   );
