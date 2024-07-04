@@ -74,7 +74,14 @@ const Team = () => {
   const thirdLineMembers2024 = getTeamMemberWithIcon([
     { personName: "Dr. Neha Chaudhary", personImage: "/NehaChaudhary.jpg", personPosition: "Program Chair", personOrganization: "" }
   ]);
-
+  // advisory
+  const fourthLineMembers2024 = getTeamMemberWithIcon(TeamData.filter(
+    (team) =>
+     team.personName === "Manya Goel" ||
+     team.personName === "Samvrant Samantaray" ||
+     team.personName === "Aeshna Kala" 
+  ));
+  // advisory
   const fifthLineMembers = getTeamMemberWithIcon(TeamData.filter(
     (team) =>
       team.personName === "Dr. Juhi Singh" ||
@@ -194,7 +201,7 @@ const Team = () => {
             />
           ))}
         </div>
-
+        
         <h2 className="text-center text-4xl font-bold my-4 text-white bg-primary">Convener</h2>
         <hr className="mb-4" />
         <div className="flex flex-wrap justify-center md:justify-around bg-primary ">
@@ -210,6 +217,7 @@ const Team = () => {
             />
           ))}
         </div>
+        
 
         {year === 2023 ? (
           <>
@@ -244,6 +252,21 @@ const Team = () => {
           </>
         ) : (
           <>
+            <h2 className="text-center text-4xl font-bold my-4 text-white bg-primary">MUJ HackX 2.0 Advisories</h2>
+        <hr className="mb-4" />
+        <div className="flex flex-col md:flex-row items-center">
+          {(year === 2024 ? fourthLineMembers2024 : fourthLineMembers2024).map((member, index) => (
+            <FacultyCard
+              key={index}
+              name={member.personName}
+              image={member.personImage}
+              line1={member.personPosition}
+              line2={member.personOrganization}
+              count={fourthLineMembers2024.length}
+              icon={member.icon}
+            />
+          ))}
+        </div>
             <h2 className="text-center text-2xl md:text-4xl font-bold my-4 text-white bg-primary">Student Convener 2024-25</h2>
             <hr className="mb-4" />
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 justify-center bg-primary">

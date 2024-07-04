@@ -104,6 +104,27 @@ const TeamData = [
         personOrganization: "MUJ",
         personLinkedIn: "https://www.linkedin.com/in/pujan-modha/"
     },
+    {
+        personImage: '/SamvrantSamantaray.png',
+        personName: "Samvrant Samantaray",
+        personPosition: "Advisor",
+        personOrganization: "MUJ",
+        personLinkedIn: "https://www.linkedin.com/in/pujan-modha/"
+    },
+    {
+        personImage: '/Manya.jpg',
+        personName: "Manya Goel",
+        personPosition: "Advisor",
+        personOrganization: "MUJ",
+        personLinkedIn: "https://www.linkedin.com/in/pujan-modha/"
+    },
+    {
+        personImage: '/AeshnaKala.png',
+        personName: "Aeshna Kala",
+        personPosition: "Advisor",
+        personOrganization: "MUJ",
+        personLinkedIn: "https://www.linkedin.com/in/pujan-modha/"
+    },
 ];
 
 export default TeamData;
