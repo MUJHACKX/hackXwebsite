@@ -6,7 +6,7 @@ const FlipCard = ({ value, heading }) => {
   const digit2 = value % 10;
   return (
     <div className="flex flex-col   justify-center items-center ">
-      <div className="flex flex-row  items-center w-[95px]  lg:w-[14rem] ">
+      <div className="flex flex-row  items-center w-[85px]  lg:w-[14rem] ">
         <div className="lg:ml-4 ml-1 flex flex-col w-3/4 items-center justify-center bg-[#1c153b] border-y-2 border-[#363151] rounded-xl text-center">
 
           <p
@@ -27,7 +27,7 @@ const FlipCard = ({ value, heading }) => {
         </div>
         {heading != "Seconds" ? <span className="text-4xl ">:</span> : <span></span>}
       </div>
-      <p className="lg:text-xl py-6 text-lg font-medium text-white">{heading}</p>
+      <p className="lg:text-xl py-2 text-lg font-medium text-white">{heading}</p>
 
     </div>
 
