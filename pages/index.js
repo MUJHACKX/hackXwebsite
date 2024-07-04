@@ -1,11 +1,12 @@
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 import Typewriter from "typewriter-effect/dist/core";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Countdown from "../components/Countdown";
 import Link from "next/link";
 import { CanvasRevealEffect } from "../components/BinaryCard";
 import { CanvasRevealEffectDemo } from "../components/CanvaReveal";
+import { update } from "three/examples/jsm/libs/tween.module.js";
 
 
 const Home = () => {
@@ -20,7 +21,6 @@ const Home = () => {
   //       loop: true,
   //     });
   //   }, []);
-
   return (
 
     // <div className="h-screen flex flex-col items-center overflow-y-auto">
@@ -111,7 +111,7 @@ const Home = () => {
 
         <div>
           <h1
-            className={`text-white text-6xl sm:text-7xl lg:text-8xl mb-8`}
+            className={`text-white text-5xl sm:text-7xl lg:text-8xl mb-8`}
             style={{ fontFamily: "Space Grotesk, sans-serif" }}
           >
             <span style={{ textShadow: '0 0 3px rgba(255, 255, 255, 0.4), 0 0 6px rgba(255, 255, 255, 0.4)' }}>
@@ -142,7 +142,7 @@ const Home = () => {
         </div>
 
         <div className="text-center pb-6">
-          <div className="text-base sm:text-md lg:text-lg">
+          <div className="text-sm sm:text-md lg:text-lg">
             Registrations open till <span className="font-bold">14th</span> August, 2024 11:59 PM
           </div>
         </div>
@@ -193,7 +193,7 @@ const Home = () => {
         </div>
       </div>
       <div className="pt-10 text-center ">
-        <div className="lg:text-5xl md:text-4xl text-3xl " style={{ fontFamily: "Space Grotesk, sans-serif" }}>Get ready for something big</div>
+        <div className="lg:text-5xl md:text-4xl text-2xl " style={{ fontFamily: "Space Grotesk, sans-serif" }}>Get ready for something big</div>
       </div>
       <div className="pt-8 flex justify-center items-center md:mx-6 mx-3">
         <video className="w-full  " controls muted autoPlay loop>
