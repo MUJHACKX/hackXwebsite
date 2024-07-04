@@ -310,7 +310,7 @@ const Home = () => {
       </div>
       <div>
         <div className="flex p-8  items-center justify-center">
-          <Link href="https://linktr.ee/mujhackx" target="_blank">
+          <Link href="/about">
             <button className="text-white px-4 py-2 rounded-lg font-bold sm:text-lg lg:text-xl text-base bg-gradient-to-r ease-in-out hover:animate-text from-[#ae40c0] via-violet-600 to-indigo-600" style={{ fontFamily: "Epilogue, sans-serif" }}>
               Explore more about MUJHackX 2.0
             </button>
