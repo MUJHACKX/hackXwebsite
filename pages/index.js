@@ -127,7 +127,7 @@ const Home = () => {
           </h1>
         </div>
 
-        <div className="text-center w-4/5">
+        <div className="text-center ">
           <div className="text-xl xl:text-2xl text-white mb-7">
             Join the ultimate tech showdown a hackathon where your ideas ignite, your code transforms, and your innovations shine!
           </div>
