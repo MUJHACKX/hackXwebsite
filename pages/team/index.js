@@ -33,6 +33,8 @@ const Team = () => {
     "Pulkit Gupta": "https://www.linkedin.com/in/pulkit-gupta-abb638249/",
     "Roshmeet Chakraborty": "https://www.linkedin.com/in/roshmeet/",
     "Abhijeet Anand Jha": "https://www.linkedin.com/in/abhijeet-anand-jha-b517b7249/",
+    "Samvrant Samantaray": "https://www.linkedin.com/in/samvrant-samanataray/",
+    "Aeshna Kala": "https://www.linkedin.com/in/aeshna-kala-929191233/"
     };
 
   const getTeamMemberWithIcon = (team) => {
