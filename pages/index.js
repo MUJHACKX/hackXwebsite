@@ -223,7 +223,7 @@ const Home = () => {
           <img src="/s7.png" alt="circles" className="w-full" />
           <img src="/s8.png" alt="circles" className="w-full" />
           <img src="/s9.png" alt="circles" className="w-full" />
-          <img src="/s10.png" alt="circles" className="w-full" />\
+          <img src="/s10.png" alt="circles" className="w-full" />
         </div>
       </div>
     </div>
