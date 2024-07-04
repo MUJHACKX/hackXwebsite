@@ -7,7 +7,12 @@ import Link from "next/link";
 import { CanvasRevealEffect } from "../components/BinaryCard";
 import { CanvasRevealEffectDemo } from "../components/CanvaReveal";
 import { update } from "three/examples/jsm/libs/tween.module.js";
-
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "../components/ui/accordion";
 
 const Home = () => {
   //   useEffect(() => {
@@ -21,6 +26,42 @@ const Home = () => {
   //       loop: true,
   //     });
   //   }, []);
+  const data = [
+    {
+      title: "How do I register ?",
+      content: "REVEALED SOON",
+    },
+    {
+      title: "How many team members do I need ?",
+      content:
+        "You can participate individually or in teams of 3 to 4 members.",
+    },
+    {
+      title: "How much are the participation fees?",
+      content: "REVEALED SOON",
+    },
+    {
+      title: "Will the Hackathon be in person or online ?",
+      content:
+        "MUJHackX 2.0 will be conducted in complete offline/in-person mode.",
+    },
+    {
+      title: "What is the venue for MUJHackX 2.0 ?",
+      content:
+        "Manipal University Jaipur, explore our beautiful campus while thinking about innovating some crazy thing.",
+    },
+    {
+      title: "What are the prerequisites to participate in this hackathon ?",
+      content:
+        "No prerequisites are required to participate in this hackathon. This event is open to participants of all skill levels.",
+    },
+    {
+      title:
+        "Can my friend join our team after we have already submitted the application for review ?",
+      content:
+        "Yes, your friend can join the team by submitting an individual application. Once both your friend's individual application and your team's application are accepted, you will be able to add your friend to the team.",
+    },
+  ];
   const [wheight, setwHeight] = useState(1000);
   useEffect(() => {
     const updateHeight = () => {
@@ -123,12 +164,12 @@ const Home = () => {
             style={{ fontFamily: "Space Grotesk, sans-serif" }}
           >
             <span style={{ textShadow: '0 0 3px rgba(255, 255, 255, 0.4), 0 0 6px rgba(255, 255, 255, 0.4)' }}>
-              MUJ </span>
+              MUJ&nbsp;</span>
             <span
               className='font-bold animate-blink'
               style={{ textShadow: '0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.5)' }}
             >
-              HACK </span>
+              HACK&nbsp;</span>
             <span style={{ textShadow: '0 0 3px rgba(255, 255, 255, 0.4), 0 0 6px rgba(255, 255, 255, 0.4)' }}>
               2.0
             </span>
@@ -232,6 +273,47 @@ const Home = () => {
           <img src="/s8.png" alt="circles" className="w-full" />
           <img src="/s9.png" alt="circles" className="w-full" />
           <img src="/s10.png" alt="circles" className="w-full" />
+        </div>
+      </div>
+      <div>
+        <div className="flex flex-col jusitfy-center items-center pt-10">
+          <div className="flex flex-col ">
+            <div className="text-center font-bold text-2xl md:text-3xl lg:text-4xl ">
+              Frequently Asked Questions
+            </div>
+
+          </div>
+
+          <div className="max-w-[690px] pt-8">
+            {data.map((item, index) => (
+              <Accordion key={index} type="single" collapsible>
+                <AccordionItem value={`item-${index}`} className=" py-4 md:py-8 !bg-[#010223] font-medium font-[inter]">
+                  <AccordionTrigger
+                    className="max-w-[592px] text-white text-2xl
+                    font-medium leading-7"
+                  >
+                    {item.title}
+                  </AccordionTrigger>
+                  <AccordionContent
+                    className="max-w-[592px] text-gray-200 text-lg
+                      font-normal font-['Inter'] leading-7"
+                  >
+                    {item.content}
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
+            ))}
+
+          </div>
+        </div>
+      </div>
+      <div>
+        <div className="flex p-8  items-center justify-center">
+          <Link href="https://linktr.ee/mujhackx" target="_blank">
+            <button className="text-white px-4 py-2 rounded-lg font-bold sm:text-lg lg:text-xl text-base bg-gradient-to-r ease-in-out hover:animate-text from-[#ae40c0] via-violet-600 to-indigo-600" style={{ fontFamily: "Epilogue, sans-serif" }}>
+              Explore more about MUJHackX 2.0
+            </button>
+          </Link>
         </div>
       </div>
     </div>
