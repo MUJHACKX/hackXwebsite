@@ -170,7 +170,7 @@ const Home = () => {
               className='font-bold animate-blink'
               style={{ textShadow: '0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.5)' }}
             >
-              HACK&nbsp;</span>
+              HACKX&nbsp;</span>
             <span style={{ textShadow: '0 0 3px rgba(255, 255, 255, 0.4), 0 0 6px rgba(255, 255, 255, 0.4)' }}>
               2.0
             </span>
@@ -186,14 +186,14 @@ const Home = () => {
         <div className="flex pb-6">
           <Link href="https://linktr.ee/mujhackx" target="_blank">
             <button className="text-white px-4 py-2 rounded-lg font-bold sm:text-lg lg:text-xl text-base bg-gradient-to-r ease-in-out hover:animate-text from-[#ae40c0] via-violet-600 to-indigo-600" style={{ fontFamily: "Epilogue, sans-serif" }}>
-              Register now for Free
+              Register now
             </button>
           </Link>
         </div>
 
         <div className="text-center pb-6">
           <div className="text-sm sm:text-md lg:text-lg">
-            Registrations open till <span className="font-bold">14th</span> August, 2024 11:59 PM
+            Registrations open till <span className="font-bold">25th</span> August, 2024 11:59 PM
           </div>
         </div>
 
