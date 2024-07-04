@@ -4,6 +4,8 @@ import Typewriter from "typewriter-effect/dist/core";
 import { useEffect } from "react";
 import Countdown from "../components/Countdown";
 import Link from "next/link";
+import { CanvasRevealEffect } from "../components/BinaryCard";
+import { CanvasRevealEffectDemo } from "../components/CanvaReveal";
 
 
 const Home = () => {
@@ -113,14 +115,12 @@ const Home = () => {
             style={{ fontFamily: "Space Grotesk, sans-serif" }}
           >
             <span style={{ textShadow: '0 0 3px rgba(255, 255, 255, 0.4), 0 0 6px rgba(255, 255, 255, 0.4)' }}>
-              MUJ
-            </span>
+              MUJ </span>
             <span
               className='font-bold animate-blink'
               style={{ textShadow: '0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.5)' }}
             >
-              HACK
-            </span>
+              HACK </span>
             <span style={{ textShadow: '0 0 3px rgba(255, 255, 255, 0.4), 0 0 6px rgba(255, 255, 255, 0.4)' }}>
               2.0
             </span>
@@ -178,7 +178,35 @@ const Home = () => {
           <Countdown date={new Date("2024-09-05T00:00:00")} />
         </div>
       </div>
+      <div className="pt-12">
+        <div className="lg:mx-10 mx-4 grid grid-cols-4 gap-3 sm:grid-cols-6 lg:grid-cols-7 xl:grid-cols-9">
+          <img src="/sdg_1.svg" alt="circles" className="w-full" />
+          <img src="/sdg_2.svg" alt="circles" className="w-full" />
+          <img src="/sdg_3.svg" alt="circles" className="w-full" />
+          <img src="/sdg_4.svg" alt="circles" className="w-full" />
+          <img src="/sdg_5.svg" alt="circles" className="w-full" />
+          <img src="/sdg_6.svg" alt="circles" className="w-full" />
+          <img src="/sdg_7.svg" alt="circles" className="w-full" />
+          <img src="/sdg_8.svg" alt="circles" className="w-full" />
+          <img src="/sdg_9.svg" alt="circles" className="w-full" />
+
+        </div>
+      </div>
+      <div className="pt-10 text-center ">
+        <div className="lg:text-5xl md:text-4xl text-3xl " style={{ fontFamily: "Space Grotesk, sans-serif" }}>Get ready for something big</div>
+      </div>
+      <div className="pt-8 flex justify-center items-center md:mx-6 mx-3">
+        <video className="w-full  " controls muted autoPlay>
+          <source src="/teaser.mp4" type="Video/mp4" />
+          Stop doing wrong to yourself!
+        </video>
+      </div>
+      <div className="pt-12 text-center ">
+        <div className="lg:text-5xl md:text-4xl text-3xl">THEMES</div>
+      </div>
+
     </div>
+
 
   );
 };
