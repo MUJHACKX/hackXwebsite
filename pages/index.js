@@ -178,7 +178,7 @@ const Home = () => {
           <Countdown date={new Date("2024-09-05T00:00:00")} />
         </div>
       </div>
-      <div className="pt-12">
+      <div className="pt-80">
         <div className="lg:mx-10 mx-4 grid grid-cols-4 gap-3 sm:grid-cols-6 lg:grid-cols-7 xl:grid-cols-9">
           <img src="/sdg_1.svg" alt="circles" className="w-full" />
           <img src="/sdg_2.svg" alt="circles" className="w-full" />
