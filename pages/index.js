@@ -21,7 +21,15 @@ const Home = () => {
   //       loop: true,
   //     });
   //   }, []);
-  return (
+  const [wheight, setwHeight] = useState(1000);
+  useEffect(() => {
+    const updateHeight = () => {
+      setwHeight(window.innerHeight);
+    };
+
+    // Function to check if window is defined (client-side)
+    updateHeight();
+  }, []); return (
 
     // <div className="h-screen flex flex-col items-center overflow-y-auto">
     //   <div
@@ -178,7 +186,7 @@ const Home = () => {
           <Countdown date={new Date("2024-09-05T00:00:00")} />
         </div>
       </div>
-      <div className="pt-80">
+      <div className={wheight < 800 ? wheight < 700 ? `pt-80` : `pt-56` : `pt-20`}>
         <div className="lg:mx-10 mx-4 grid grid-cols-4 gap-3 sm:grid-cols-6 lg:grid-cols-7 xl:grid-cols-9">
           <img src="/sdg_1.svg" alt="circles" className="w-full" />
           <img src="/sdg_2.svg" alt="circles" className="w-full" />
