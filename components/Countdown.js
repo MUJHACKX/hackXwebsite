@@ -1,9 +1,9 @@
 "use client";
 
-import {useEffect, useState} from "react";
+import { useEffect, useState } from "react";
 import FlipCard from "./FlipCard";
 
-const Countdown = ({date}) => {
+const Countdown = ({ date }) => {
   const [days, setDays] = useState(0);
   const [hours, setHours] = useState(0);
   const [minutes, setMinutes] = useState(0);
@@ -24,10 +24,10 @@ const Countdown = ({date}) => {
 
   return (
     <div className="flex justify-center gap-2 text-white select-none cursor-default">
-      <FlipCard value={days} heading="Days"/>
-      <FlipCard value={hours} heading="Hours"/>
-      <FlipCard value={minutes} heading="Minutes"/>
-      <FlipCard value={seconds} heading="Seconds"/>
+      <FlipCard value={days} heading="Days" />
+      <FlipCard value={hours} heading="Hours" />
+      <FlipCard value={minutes} heading="Minutes" />
+      <FlipCard value={seconds} heading="Seconds" />
     </div>
   );
 }
