@@ -196,7 +196,7 @@ const Home = () => {
         <div className="lg:text-5xl md:text-4xl text-3xl " style={{ fontFamily: "Space Grotesk, sans-serif" }}>Get ready for something big</div>
       </div>
       <div className="pt-8 flex justify-center items-center md:mx-6 mx-3">
-        <video className="w-full  " controls muted autoPlay>
+        <video className="w-full  " controls muted autoPlay loop>
           <source src="/teaser.mp4" type="Video/mp4" />
           Stop doing wrong to yourself!
         </video>
