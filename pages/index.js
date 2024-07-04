@@ -285,7 +285,7 @@ const Home = () => {
 
           </div>
 
-          <div className="max-w-[690px] w-fit mx-3 pt-8">
+          <div className="max-w-[690px] w-fit mx-4 pt-8">
             {data.map((item, index) => (
               <Accordion key={index} type="single" collapsible>
                 <AccordionItem value={`item-${index}`} className=" py-4 md:py-8 !bg-[#010223] font-medium font-[inter]">
