@@ -9,6 +9,7 @@ import {
 } from "../../components/ui/accordion";
 import { IoCall } from "react-icons/io5";
 import { IoIosPin } from "react-icons/io";
+import Footer from "../../components/Footer";
 
 const FAQ = () => {
   const data = [
@@ -59,7 +60,7 @@ const FAQ = () => {
   }, [controls]);
 
   return (
-    <div className="bg-primary flex flex-col min-h-screen p-4 md:pb-64 lg:px-0 md:pt-24 pt-[150px] pb-[30%]">
+    <div className="bg-primary flex flex-col min-h-screen p-4  lg:px-0 md:pt-24 pt-[150px] ">
       <div className="w-full h-full flex flex-col gap-24 px-4 pt-20 md:px-8 xl:px-20 2xl:px-40">
         <div className="flex flex-col items-center justify-center  gap-8">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={controls} className=" font-bold text-[1.8rem] md:text-[2.5rem] lg:text-[3.3rem] bg-gradient-to-r ease-in-out via-purple-500 bg-clip-text text-transparent
@@ -150,6 +151,7 @@ const FAQ = () => {
           </div>
         </div>
       </div>
+      <Footer></Footer>
     </div>
   );
 };
