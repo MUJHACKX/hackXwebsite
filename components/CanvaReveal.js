@@ -8,7 +8,7 @@ export function CanvasRevealEffectDemo() {
     return (
         <>
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 lg place-items-center   w-full gap-4 mx-auto">
-                <div className="w-[370px] bg-black ">
+                <div className="w-[350px] bg-black ">
                     <Card title="EdTech" icon={<HackXIcon />}>
                         <CanvasRevealEffect
                             animationSpeed={5.1}
@@ -16,7 +16,7 @@ export function CanvasRevealEffectDemo() {
                         />
                     </Card>
                 </div>
-                <div className="w-[370px] bg-black ">
+                <div className="w-[350px] bg-black ">
                     <Card title="FinTech" icon={<HackXIcon />}>
                         <CanvasRevealEffect
                             animationSpeed={3}
@@ -31,7 +31,7 @@ export function CanvasRevealEffectDemo() {
                         <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" />
                     </Card>
                 </div>
-                <div className="w-[370px] bg-black ">
+                <div className="w-[350px] bg-black ">
 
                     <Card title="BlockChain" icon={<HackXIcon />}>
                         <CanvasRevealEffect
@@ -41,7 +41,7 @@ export function CanvasRevealEffectDemo() {
                         />
                     </Card>
                 </div>
-                <div className="w-[370px] bg-black ">
+                <div className="w-[350px] bg-black ">
                     <Card title="Supply Chain and Logistics" icon={<HackXIcon />}>
                         <CanvasRevealEffect
                             animationSpeed={5.1}
@@ -49,7 +49,7 @@ export function CanvasRevealEffectDemo() {
                         />
                     </Card>
                 </div>
-                <div className="w-[370px] bg-black ">
+                <div className="w-[350px] bg-black ">
                     <Card title="Disaster Response" icon={<HackXIcon />}>
                         <CanvasRevealEffect
                             animationSpeed={3}
@@ -64,7 +64,7 @@ export function CanvasRevealEffectDemo() {
                         <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" />
                     </Card>
                 </div>
-                <div className="w-[370px] bg-black ">
+                <div className="w-[350px] bg-black ">
 
                     <Card title="Environmental Impact" icon={<HackXIcon />}>
                         <CanvasRevealEffect
@@ -74,7 +74,7 @@ export function CanvasRevealEffectDemo() {
                         />
                     </Card>
                 </div>
-                <div className="w-[370px] bg-black ">
+                <div className="w-[350px] bg-black ">
                     <Card title="Health Care" icon={<HackXIcon />}>
                         <CanvasRevealEffect
                             animationSpeed={5.1}
@@ -82,7 +82,7 @@ export function CanvasRevealEffectDemo() {
                         />
                     </Card>
                 </div>
-                <div className="w-[370px] bg-black ">
+                <div className="w-[350px] bg-black ">
                     <Card title="Arial Robots" icon={<HackXIcon />}>
                         <CanvasRevealEffect
                             animationSpeed={3}
@@ -97,7 +97,7 @@ export function CanvasRevealEffectDemo() {
                         <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" />
                     </Card>
                 </div>
-                <div className="w-[370px] bg-black ">
+                <div className="w-[350px] bg-black ">
 
                     <Card title="Open Innovation" icon={<HackXIcon />}>
                         <CanvasRevealEffect

@@ -13,6 +13,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "../components/ui/accordion";
+import Footer from "../components/Footer";
 
 const Home = () => {
   //   useEffect(() => {
@@ -259,7 +260,7 @@ const Home = () => {
 
       </div>
       <div className="text-[#c8d3ef] flex flex-col justify-center items-center">
-        <div className="pt-16 md:text-3xl lg:text-5xl text-2xl ">
+        <div className="pt-16 md:text-3xl lg:text-5xl sm:text-2xl text-xl ">
           Previous Year Top Sponsors of HACKX
         </div>
         <div className="w-4/5  lg:w-3/5 xl:w-3/6 pt-6 grid grid-cols-4 gap-3 sm:grid-cols-5 lg:grid-cols-5 place-items-center">
@@ -284,7 +285,7 @@ const Home = () => {
 
           </div>
 
-          <div className="max-w-[690px] pt-8">
+          <div className="max-w-[690px] w-fit pt-8">
             {data.map((item, index) => (
               <Accordion key={index} type="single" collapsible>
                 <AccordionItem value={`item-${index}`} className=" py-4 md:py-8 !bg-[#010223] font-medium font-[inter]">
@@ -316,6 +317,7 @@ const Home = () => {
           </Link>
         </div>
       </div>
+      <Footer></Footer>
     </div>
 
 
