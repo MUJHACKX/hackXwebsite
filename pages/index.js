@@ -204,6 +204,11 @@ const Home = () => {
       <div className="pt-12 text-center ">
         <div className="lg:text-5xl md:text-4xl text-3xl">THEMES</div>
       </div>
+      <div className="pt-12">
+
+        <CanvasRevealEffectDemo></CanvasRevealEffectDemo>
+
+      </div>
 
     </div>
 
