@@ -209,7 +209,23 @@ const Home = () => {
         <CanvasRevealEffectDemo></CanvasRevealEffectDemo>
 
       </div>
-
+      <div className="text-[#c8d3ef] flex flex-col justify-center items-center">
+        <div className="pt-16 md:text-3xl lg:text-5xl text-2xl ">
+          Previous Year Top Sponsors of HACKX
+        </div>
+        <div className="w-4/5  lg:w-3/5 xl:w-3/6 pt-6 grid grid-cols-4 gap-3 sm:grid-cols-5 lg:grid-cols-5 place-items-center">
+          <img src="/s1.png" alt="circles" className="w-full" />
+          <img src="/s2.png" alt="circles" className="w-full" />
+          <img src="/s3.png" alt="circles" className="w-full" />
+          <img src="/s4.png" alt="circles" className="w-full" />
+          <img src="/s5.png" alt="circles" className="w-full" />
+          <img src="/s6.png" alt="circles" className="w-full" />
+          <img src="/s7.png" alt="circles" className="w-full" />
+          <img src="/s8.png" alt="circles" className="w-full" />
+          <img src="/s9.png" alt="circles" className="w-full" />
+          <img src="/s10.png" alt="circles" className="w-full" />\
+        </div>
+      </div>
     </div>
 
 
