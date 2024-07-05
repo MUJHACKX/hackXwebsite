@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FaTwitter, FaLinkedin, FaGithub } from 'react-icons/fa';
 
-const Contact = ({ image, name, contact, socialIcons }) => {
+const Contact = ({ name, contact, socialIcons }) => {
   const iconComponents = {
     twitter: FaTwitter,
     linkedin: FaLinkedin,
@@ -17,7 +17,6 @@ const Contact = ({ image, name, contact, socialIcons }) => {
       transition={{ duration: 0.6 }}
       whileHover={{ scale: 1.05 }}
     >
-     
       <h2 className="text-2xl font-bold mt-4 text-slate-50 text-center">{name}</h2>
       <p className="text-lg mt-2 text-slate-100 text-center">{contact}</p>
       <div className="flex mt-4 text-slate-200">
@@ -33,7 +32,7 @@ const Contact = ({ image, name, contact, socialIcons }) => {
               whileHover={{ scale: 1.2 }}
               whileTap={{ scale: 0.9 }}
             >
-              <IconComponent className="w-6 h-6" />
+              <IconComponent className="w-6 h-6 fill-current" />
             </motion.a>
           );
         })}
