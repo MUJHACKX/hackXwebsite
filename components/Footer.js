@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { IoEarthOutline } from "react-icons/io5";
 import { FaInstagram, FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
@@ -15,6 +15,19 @@ export const navData = [
 ];
 
 export default function Footer() {
+    const [visitorCount, setVisitorCount] = useState(0);
+
+    useEffect(() => {
+        // Replace this with actual API call to fetch visitor count
+        const fetchVisitorCount = async () => {
+            // Simulated API call
+            const count = await new Promise((resolve) => setTimeout(() => resolve(1165), 1000));
+            setVisitorCount(count);
+        };
+
+        fetchVisitorCount();
+    }, []);
+
     return (
         <div>
             <hr className="border-0 h-[1px] bg-gradient-to-r from-transparent via-gray-700 to-transparent mt-10 " />
@@ -24,7 +37,7 @@ export default function Footer() {
                     {navData.map((item, index) => (
                         <li key={index}>
                             <Link href={item.path}>
-                                <div className={`flex flex-col items-center justify-center  mx-1 `} >
+                                <div className={`flex flex-col items-center justify-center mx-1`}>
                                     <div className='text-lg font-thin'>{item.name}</div>
                                 </div>
                             </Link>
@@ -35,6 +48,11 @@ export default function Footer() {
                     <Link href={'/'}>
                         <Image src={'/logo.svg'} width={288} height={64} alt='' priority={true} />
                     </Link>
+                </div>
+                <div className="text-center mb-4">
+                    <p className="text-sm text-gray-500">
+                        Visitor Count: <span className="font-bold text-gray-700">{visitorCount}</span>
+                    </p>
                 </div>
                 <div className="flex items-center gap-6 mb-4 footer-list text-2xl">
                     <Link href="https://jaipur.manipal.edu/" legacyBehavior>
