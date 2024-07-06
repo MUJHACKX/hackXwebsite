@@ -9,6 +9,7 @@ import {
 } from "../../components/ui/accordion";
 import { IoCall } from "react-icons/io5";
 import { IoIosPin } from "react-icons/io";
+import Footer from "../../components/Footer";
 
 const FAQ = () => {
   const data = [
@@ -59,69 +60,69 @@ const FAQ = () => {
   }, [controls]);
 
   return (
-    <div className="bg-primary flex flex-col min-h-screen p-4 md:pb-64 lg:px-0 md:pt-24 pt-[150px] pb-[30%]">
+    <div className="bg-primary flex flex-col min-h-screen p-4  lg:px-0 md:pt-24 pt-[150px] ">
       <div className="w-full h-full flex flex-col gap-24 px-4 pt-20 md:px-8 xl:px-20 2xl:px-40">
-          <div className="flex flex-col items-center justify-center  gap-8">
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={controls} className=" font-bold text-[1.8rem] md:text-[2.5rem] lg:text-[3.3rem] bg-gradient-to-r ease-in-out via-purple-500 bg-clip-text text-transparent
+        <div className="flex flex-col items-center justify-center  gap-8">
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={controls} className=" font-bold text-[1.8rem] md:text-[2.5rem] lg:text-[3.3rem] bg-gradient-to-r ease-in-out via-purple-500 bg-clip-text text-transparent
             from-indigo-300 to-indigo-300 animate-text">
             EVERYTHING YOU NEED TO KNOW
-            </motion.div>
-            <motion.p
-              className="flex items-center justify-center md:text-[1.25rem] "
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.4 }}
-            >
-              Have questions, need assistance, or just want to connect? Feel
-              free to reach out!
-            </motion.p>
-          </div>
+          </motion.div>
+          <motion.p
+            className="flex items-center justify-center md:text-[1.25rem] "
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+          >
+            Have questions, need assistance, or just want to connect? Feel
+            free to reach out!
+          </motion.p>
+        </div>
         <div className="flex flex-col lg:justify-around justify-center lg:items-start items-center  lg:flex-row gap-5 lg:gap-32">
           <div className="">
-          <div className="flex flex-col max-w-[448px]">
-            <div className=" text-3xl md:text-4xl pb-4 xl:pb-6 font-medium leading-[44px] bg-gradient-to-r ease-in-out from-indigo-500 via-purple-500 to-pink-500   text-transparent bg-clip-text">
-              FAQs
+            <div className="flex flex-col max-w-[448px]">
+              <div className=" text-3xl md:text-4xl pb-4 xl:pb-6 font-medium leading-[44px] bg-gradient-to-r ease-in-out from-indigo-500 via-purple-500 to-pink-500   text-transparent bg-clip-text">
+                FAQs
+              </div>
+              <div className="flex flex-col justify-center items-center">
+                <span className="text-gray-200 text-lg font-normal leading-7">
+                  Have questions about the hackathon? Explore our FAQ below!&nbsp;
+                </span>
+                <span className="text-gray-200 text-lg font-normal leading-7">
+                  Need further assistance? Don't hesitate to reach out to our
+                  team.
+                </span>
+              </div>
             </div>
-            <div className="flex flex-col justify-center items-center">
-              <span className="text-gray-200 text-lg font-normal leading-7">
-                Have questions about the hackathon? Explore our FAQ below!&nbsp;
-              </span>
-              <span className="text-gray-200 text-lg font-normal leading-7">
-                Need further assistance? Don't hesitate to reach out to our
-                team.
-              </span>
-            </div>
-          </div>
-          
-          <div className="max-w-[700px] pt-8">
-            {data.map((item, index) => (
-              <Accordion key={index} type="single" collapsible>
-                <AccordionItem value={`item-${index}`} className=" py-4 md:py-8 !bg-primary">
-                  <AccordionTrigger
-                    className="max-w-[592px] text-white text-2xl
+
+            <div className="max-w-[700px] pt-8">
+              {data.map((item, index) => (
+                <Accordion key={index} type="single" collapsible>
+                  <AccordionItem value={`item-${index}`} className=" py-4 md:py-8 !bg-primary">
+                    <AccordionTrigger
+                      className="max-w-[592px] text-white text-2xl
                     font-medium leading-7"
-                  >
-                    {item.title}
-                  </AccordionTrigger>
-                  <AccordionContent
-                    className="max-w-[592px] text-gray-200 text-lg
+                    >
+                      {item.title}
+                    </AccordionTrigger>
+                    <AccordionContent
+                      className="max-w-[592px] text-gray-200 text-lg
                       font-normal font-['Inter'] leading-7"
-                  >
-                    {item.content}
-                  </AccordionContent>
-                </AccordionItem>
-              </Accordion>
-            ))}
-          </div>
+                    >
+                      {item.content}
+                    </AccordionContent>
+                  </AccordionItem>
+                </Accordion>
+              ))}
+            </div>
           </div>
           <div className="lg:pt-16">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.8772831810866!2d75.5652343!3d26.8438552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396c4850e05bee9b%3A0x1b8d67402d4eb863!2sManipal%20University%20Jaipur!5e0!3m2!1sen!2sin!4v1717828681903!5m2!1sen!2sin" 
-          width="600" 
-          height="450" 
-          className="rounded-2xl xl:w-[600px] lg:w-[500px] sm:w-[600px] w-[350px] h-[500px] lg:h-[800px] xl:h-[900px]"
-          allowfullscreen="" 
-          loading="lazy"
-           referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.8772831810866!2d75.5652343!3d26.8438552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396c4850e05bee9b%3A0x1b8d67402d4eb863!2sManipal%20University%20Jaipur!5e0!3m2!1sen!2sin!4v1717828681903!5m2!1sen!2sin"
+              width="600"
+              height="450"
+              className="rounded-2xl xl:w-[600px] lg:w-[500px] sm:w-[600px] w-[350px] h-[500px] lg:h-[800px] xl:h-[900px]"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
         <hr className="border-0 h-1 bg-gradient-to-r from-transparent via-gray-500 to-transparent my-6" />        <div className="w-full md:w-[90%] flex flex-col md:flex-row items-start md:items-center self-center gap-10">
@@ -150,6 +151,7 @@ const FAQ = () => {
           </div>
         </div>
       </div>
+      <Footer></Footer>
     </div>
   );
 };

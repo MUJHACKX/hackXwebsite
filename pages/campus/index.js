@@ -1,5 +1,5 @@
 import React from 'react';
-import About from "../../components/Campus/About.jsx"
+
 import Contact from "../../components/Campus/Contect.jsx"
 import Footer from "../../components/Campus/Footer.jsx"
 import ContactData from "../../components/Campus/Data/ContactData.js"
@@ -12,23 +12,29 @@ import Steps from '../../components/Campus/Steps.jsx';
 const Campus = () => {
   return (
     <div className="bg-white">
-      
+
       <div id="home">
         <Main />
       </div>
       <div id="about">
-        <About />
+
       </div>
       <div id="responsibilities">
         <WhyApplySection />
         <div className='w-full h-auto bg-white'>
-        <img src='hackx2.png'  className='w-full h-101'></img>
+          <img src='hackx2.png' className='w-full h-101'></img>
         </div>
+<<<<<<< HEAD
         <Steps />
        
         
       <Banner />
       <FAQSection />
+=======
+
+        <Banner />
+        <FAQSection />
+>>>>>>> main
       </div>
       <h3 className="text-black text-6xl font-bold text-center w-full mb-6 bg-white">Contact Us</h3>
       <div id="contact" className="flex flex-row justify-evenly flex-wrap md:flex-nowrap bg-white mb-7 py-8 rounded-lg ">
@@ -42,7 +48,7 @@ const Campus = () => {
           />
         ))}
       </div>
-     
+
       <Footer />
     </div>
   );

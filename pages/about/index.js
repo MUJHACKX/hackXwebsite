@@ -1,8 +1,8 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import ThemeCard from "../../components/ThemeCard";
 import CountAnimation from "../../components/CountAnimation";
 import ParticipateAdvantage from "../../components/ParticipateAdvantage";
-import {motion} from "framer-motion"
+import { motion } from "framer-motion"
 import Image from "next/image";
 import themesData from "../../data/themesData";
 
@@ -19,6 +19,7 @@ import SponsorImage10 from "../../public/sponsors/img10.png";
 import SponsorImage11 from "../../public/sponsors/img11.png";
 import SponsorImage12 from "../../public/sponsors/img12.png";
 import SponsorImage13 from "../../public/sponsors/img13.jpg";
+import Footer from "../../components/Footer";
 
 
 
@@ -70,7 +71,7 @@ const About = () => {
             {
               advantages.map((advantage, index) => (
                 <ParticipateAdvantage key={index} icon={advantage.icon} heading={advantage.heading}
-                                      description={advantage.description}/>
+                  description={advantage.description} />
               ))
             }
           </div>
@@ -106,15 +107,15 @@ const About = () => {
             className="flex flex-row mt-6 md:mt-8 items-center w-full md:w-[80%] flex-grow"
           >
             <div className="flex flex-col flex-grow items-center">
-              <CountAnimation targetValue={30}/>
+              <CountAnimation targetValue={30} />
               <div className="md:text-3xl text-center text-slate-200">Universities</div>
             </div>
             <div className="flex flex-col flex-grow items-center">
-              <CountAnimation targetValue={1000}/>
+              <CountAnimation targetValue={1000} />
               <div className="md:text-3xl text-center text-slate-200">Participants</div>
             </div>
             <div className="flex flex-col flex-grow items-center">
-              <CountAnimation targetValue={850}/>
+              <CountAnimation targetValue={850} />
               <div className="md:text-3xl text-center text-slate-200">Projects</div>
             </div>
           </motion.div>
@@ -125,22 +126,23 @@ const About = () => {
             PAST PARTNERS & SPONSORS
           </div>
           <div className="flex flex-row flex-wrap mt-12 items-center w-[90%] md:w-[60%] rounded-2xl justify-center">
-            <Image src={SponsorImage1} alt="sponsor" className="m-4" width={0} height={0} style={{height: '8rem', width: 'auto'}} />
-            <Image src={SponsorImage2} alt="sponsor" className="m-4" width={0} height={0} style={{height: '8rem', width: 'auto'}} />
-            <Image src={SponsorImage3} alt="sponsor" className="m-4" width={0} height={0} style={{height: '8rem', width: 'auto'}} />
-            <Image src={SponsorImage4} alt="sponsor" className="m-4" width={0} height={0} style={{height: '8rem', width: 'auto'}} />
-            <Image src={SponsorImage5} alt="sponsor" className="m-4" width={0} height={0} style={{height: '8rem', width: 'auto'}} />
-            <Image src={SponsorImage6} alt="sponsor" className="m-4" width={0} height={0} style={{height: '8rem', width: 'auto'}} />
-            <Image src={SponsorImage7} alt="sponsor" className="m-4" width={0} height={0} style={{height: '8rem', width: 'auto'}} />
-            <Image src={SponsorImage8} alt="sponsor" className="m-4" width={0} height={0} style={{height: '8rem', width: 'auto'}} />
-            <Image src={SponsorImage9} alt="sponsor" className="m-4" width={0} height={0} style={{height: '8rem', width: 'auto'}} />
-            <Image src={SponsorImage10} alt="sponsor" className="m-4" width={0} height={0} style={{height: '8rem', width: 'auto'}} />
-            <Image src={SponsorImage11} alt="sponsor" className="m-4" width={0} height={0} style={{height: '8rem', width: 'auto'}} />
-            <Image src={SponsorImage12} alt="sponsor" className="m-4" width={0} height={0} style={{height: '8rem', width: 'auto'}} />
-            <Image src={SponsorImage13} alt="sponsor" className="m-4" width={0} height={0} style={{height: '8rem', width: 'auto'}} />
+            <Image src={SponsorImage1} alt="sponsor" className="m-4" width={0} height={0} style={{ height: '8rem', width: 'auto' }} />
+            <Image src={SponsorImage2} alt="sponsor" className="m-4" width={0} height={0} style={{ height: '8rem', width: 'auto' }} />
+            <Image src={SponsorImage3} alt="sponsor" className="m-4" width={0} height={0} style={{ height: '8rem', width: 'auto' }} />
+            <Image src={SponsorImage4} alt="sponsor" className="m-4" width={0} height={0} style={{ height: '8rem', width: 'auto' }} />
+            <Image src={SponsorImage5} alt="sponsor" className="m-4" width={0} height={0} style={{ height: '8rem', width: 'auto' }} />
+            <Image src={SponsorImage6} alt="sponsor" className="m-4" width={0} height={0} style={{ height: '8rem', width: 'auto' }} />
+            <Image src={SponsorImage7} alt="sponsor" className="m-4" width={0} height={0} style={{ height: '8rem', width: 'auto' }} />
+            <Image src={SponsorImage8} alt="sponsor" className="m-4" width={0} height={0} style={{ height: '8rem', width: 'auto' }} />
+            <Image src={SponsorImage9} alt="sponsor" className="m-4" width={0} height={0} style={{ height: '8rem', width: 'auto' }} />
+            <Image src={SponsorImage10} alt="sponsor" className="m-4" width={0} height={0} style={{ height: '8rem', width: 'auto' }} />
+            <Image src={SponsorImage11} alt="sponsor" className="m-4" width={0} height={0} style={{ height: '8rem', width: 'auto' }} />
+            <Image src={SponsorImage12} alt="sponsor" className="m-4" width={0} height={0} style={{ height: '8rem', width: 'auto' }} />
+            <Image src={SponsorImage13} alt="sponsor" className="m-4" width={0} height={0} style={{ height: '8rem', width: 'auto' }} />
           </div>
         </div>
       </div>
+      <Footer></Footer>
     </div>
   )
 };
