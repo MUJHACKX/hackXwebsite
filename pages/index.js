@@ -1,25 +1,4 @@
-<<<<<<< HEAD
-import Heading from '../components/LandingPage/Heading.jsx'
-import Cards from '../components/LandingPage/Cards.jsx'
-import Sponsor from '../components/LandingPage/Sponsor.jsx'
-import Teaser from '../components/LandingPage/Teaser.jsx'
-import Footer from '../components/LandingPage/Footer.jsx'
 
-const Home = () => {
- 
-
-  return (
- 
-<div className='w-full h-full' style={{ backgroundColor: '#010113' }}>
-<Heading /> 
-<Cards/>
-<Sponsor/>
-<Teaser />
-<Footer />
-
-    </div>
-    
-=======
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 import Typewriter from "typewriter-effect/dist/core";
@@ -251,17 +230,19 @@ const Home = () => {
         </div>
       </div>
       <div className={wheight < 800 ? wheight < 700 ? `pt-80` : `pt-56` : `pt-20`}>
-        <div className="lg:mx-10 mx-4 grid grid-cols-4 gap-3 sm:grid-cols-6 lg:grid-cols-7 xl:grid-cols-9">
-          <img src="/sdg_1.svg" alt="circles" className="w-full" />
-          <img src="/sdg_2.svg" alt="circles" className="w-full" />
-          <img src="/sdg_3.svg" alt="circles" className="w-full" />
-          <img src="/sdg_4.svg" alt="circles" className="w-full" />
-          <img src="/sdg_5.svg" alt="circles" className="w-full" />
-          <img src="/sdg_6.svg" alt="circles" className="w-full" />
-          <img src="/sdg_7.svg" alt="circles" className="w-full" />
-          <img src="/sdg_8.svg" alt="circles" className="w-full" />
-          <img src="/sdg_9.svg" alt="circles" className="w-full" />
+        <div className="grid grid-cols-2 gap-3 mx-6">
+        <img src="/sdg_1.svg" alt="circles" className="w-full" />
+  <img src="/sdg_2.svg" alt="circles" className="w-full" />
+  <img src="/sdg_3.svg" alt="circles" className="w-full" />
+  <img src="/sdg_4.svg" alt="circles" className="w-full" />
+  <img src="/sdg_5.svg" alt="circles" className="w-full" />
+  <img src="/sdg_6.svg" alt="circles" className="w-full" />
+  <img src="/sdg_7.svg" alt="circles" className="w-full" />
+  <img src="/sdg_8.svg" alt="circles" className="w-full" />
 
+  <div className="col-span-2 flex justify-center">
+    <img src="/sdg_9.svg" alt="circles" className="w-full max-w-xs" />
+  </div>
         </div>
       </div>
       <div className="pt-10 text-center ">
@@ -343,7 +324,7 @@ const Home = () => {
     </div>
 
 
->>>>>>> main
+
   );
 };
 
