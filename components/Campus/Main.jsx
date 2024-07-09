@@ -2,11 +2,11 @@ import React from 'react';
 
 const Main = () => {
   return (
-    <div className='h-full w-full font-mono mt-16 mb-20 lg:mt-4 ' style={{backgroundColor: '#261B4B'}}>
+    <div className='h-full w-full font-mono mt-16 mb-20 lg:mt-4 ' s>
       <div className='flex justify-center flex-col w-full items-start h-screen gap-24'>
         <div className='flex justify-center lg:flex-row flex-col  gap-10'>
           <h1 className='text-6xl lg:w-1/3 text-center'>About us</h1>
-          <p className='w-50 lg:w-1/2 text-center hover:text-violet-700 transition-transform'>
+          <p className='w-50 lg:w-1/2 text-center transition-transform'>
             Our Campus Ambassador program is an incredible opportunity for 
             students to represent our College and help us spread the word about
             our mission. As a Campus Ambassador, you will gain valuable experience,

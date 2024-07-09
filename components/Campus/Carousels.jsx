@@ -61,12 +61,12 @@ export default function Carousels() {
   }, []);
 
   return (
-    <div ref={sectionRef} className="flex justify-center flex-col w-full h-full gap-6 py-20 font-mono "style={{backgroundColor: '#261B4B'}}>
+    <div ref={sectionRef} className="flex justify-center flex-col w-full h-full gap-6 py-20  lg:py-10  font-mono ">
 
 <div className='flex w-full text-4xl justify-center mt-16 mb-7'>
-<h1 className='text-center'>PERKS YOU WILL BE BENEFITTED WITH </h1>
-
-
+<h1 className='text-center' style={{ textShadow: '0 0 1px #FFF, 0 0 3px #FFF, 0 0 8px #FFF, 0 0 6px #FFF' }}>
+  PERKS YOU WILL BE BENEFITTED WITH
+</h1>
 </div>
 
       <div className="md:flex justify-center w-full h-full grid grid-flow-col-2 md:flex-col items-center lg:flex-row gap-6 lg:px-36 md:px-28">
@@ -77,7 +77,7 @@ export default function Carousels() {
           >
             <img src={item.img} alt="icon" className="w-24 h-24 mb-4 mt-6" />
             <div className="flex justify-center items-end align-bottom h-1/2 w-full">
-              <p className="text-xl text-center w-full h-10 bg-black hover:text-white">{item.title}</p>
+              <p className="text-xl text-center w-full h-10 bg-black text-white">{item.title}</p>
             </div>
           </div>
         ))}
@@ -90,7 +90,7 @@ export default function Carousels() {
           >
             <img src={item.img} alt="icon" className="w-24 h-24 mb-4 mt-6" />
             <div className="flex justify-center items-end align-bottom h-1/2 w-full">
-              <p className="text-xl text-center w-full h-10 bg-black hover:text-white transition-transform">{item.title}</p>
+              <p className="text-xl text-center w-full h-10 bg-black text-white transition-transform">{item.title}</p>
             </div>
           </div>
         ))}

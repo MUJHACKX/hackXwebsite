@@ -9,7 +9,7 @@ const Campus = () => {
 
 
   return (
-    <div className='w-full  font-poppins'style={{backgroundColor: '#261B4B'}}> 
+    <div className='w-full font-poppins' style={{ backgroundColor: '#000' }}>
       <Banner/>
       <Main/>
      <Carousels/>
