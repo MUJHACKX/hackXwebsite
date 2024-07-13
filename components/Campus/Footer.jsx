@@ -29,11 +29,11 @@ export default function Footer() {
     }, []);
 
     return (
-        <div>
+        <div >
             <hr className="border-0 h-[1px] bg-gradient-to-r from-transparent via-gray-700 to-transparent mt-10 " />
 
-            <div className="flex items-center flex-col w-full h-full bg-hack footer-list p-16 lg:p-10 lg:pt-16 lg:pb-8">
-                <ul className="hidden items-center gap-5 xl:gap-10 text-base-1xl flex-col lg:flex-row footer-list lg:flex mb-4 space-x-5">
+            <div className="flex items-center flex-col w-full h-full bg-hack footer-list p-16 lg:p-10 lg:pt-16 lg:pb-8" style={{backgroundColor: '#261B4B'}}>
+                <ul className="hidden items-center gap-5 xl:gap-10 text-base-1xl flex-col lg:flex-row footer-list lg:flex mb-4 space-x-5" style={{backgroundColor: '#261B4B'}}>
                     {navData.map((item, index) => (
                         <li key={index}>
                             <Link href={item.path}>

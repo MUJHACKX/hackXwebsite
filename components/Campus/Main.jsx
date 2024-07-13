@@ -1,24 +1,37 @@
 import React from 'react';
-import RotatingText from 'react-rotating-text';
+
 const Main = () => {
-  const words = ["representative", "ambassador", "leader", "advocate"];
   return (
-    <section className="relative bg-cover bg-center h-screen" style={{ backgroundImage: "url('/meeting.jpg')" }}>
-      <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-      <div className="relative z-10 flex items-center justify-center h-full">
-        <div className="text-center px-4 sm:px-6 lg:px-8">
-          <h1 className="text-white text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 bg-gradient-to-r from-amber-200 via-amber-200 to-amber-400 bg-clip-text text-transparent  ">Campus Ambassador <span className='bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent'  >MujHackx</span></h1>
-          <p className="text-white text-lg sm:text-xl lg:text-2xl mb-8">
-            Be the <RotatingText items={words} /> of your campus!
-        </p><a className="bg-gradient-to-r from-violet-600 to-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-blue-800 transition duration-300"
-   href="https://forms.gle/WgQjJWdB7bgGH6fw5"
-   role="button"
-   target="_blank"
-   rel="noopener noreferrer"
-   >Apply Now</a>
+    <div className='h-full w-full font-mono mt-16 mb-20 lg:mt-4 ' s>
+      <div className='flex justify-center flex-col w-full items-start h-screen gap-24'>
+        <div className='flex justify-center lg:flex-row flex-col  gap-10'>
+          <h1 className='text-6xl lg:w-1/3 text-center'>About us</h1>
+          <p className='w-50 lg:w-1/2 text-center transition-transform'>
+            Our Campus Ambassador program is an incredible opportunity for 
+            students to represent our College and help us spread the word about
+            our mission. As a Campus Ambassador, you will gain valuable experience,
+            enhance your leadership skills, and connect with like-minded individuals.
+
+            You will be the face of our hackathon on your campus, organizing
+            events, sharing our story, and promoting our values. This role is perfect
+            for proactive, enthusiastic, and passionate students who want to make
+            a difference.
+          </p>
+        </div>
+        <div className='flex justify-center lg:flex-row flex-col gap-10 pt-10'>
+          <h1 className='text-3xl lg:w-1/3 text-center'>Why choose our Campus Ambassador Program</h1>
+          <p className='w-50 lg:w-1/2 text-center'>
+            Becoming a Campus Ambassador offers a unique opportunity to develop
+            your professional skills, network with industry leaders, and gain
+            invaluable experience that will set you apart in the job market.
+
+            You will also receive exclusive training and mentorship, have the chance
+            to earn rewards and recognition, and be part of a dynamic and
+            supportive community.
+          </p>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

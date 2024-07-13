@@ -31,31 +31,64 @@ const FAQSection = () => {
   ];
 
   return (
-    <div className="p-6 bg-gray-50 sm:p-12">
-      <h2 className="mb-6 text-3xl font-bold text-center text-blue-600">Frequently Asked Questions</h2>
-      <div className="w-full max-w-2xl mx-auto">
-        {faqs.map((faq, index) => (
-          <div key={index} className="mb-4 bg-white rounded-lg shadow-md">
-            <button
-              onClick={() => toggle(index)}
-              className="w-full px-4 py-4 text-left text-lg font-medium text-blue-700 transition-colors duration-200 ease-in-out bg-blue-100 rounded-t-lg hover:bg-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-500"
-            >
-              {faq.question}
-              <span className={`float-right transition-transform ${open === index ? 'rotate-180' : 'rotate-0'}`}>
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
-                </svg>
-              </span>
-            </button>
+    <section className="py-24">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="mb-16">
+          <h6 className="text-lg text-indigo-600 font-medium text-center mb-2">
+            FAQs
+          </h6>
+          <h2 className="text-4xl font-manrope text-center font-bold leading-[3.25rem]">
+            Frequently asked questions
+          </h2>
+        </div>
+
+        <div className="accordion-group" data-accordion="default-accordion">
+          {faqs.map((faq, index) => (
             <div
-              className={`px-4 py-4 overflow-hidden transition-all duration-300 ease-in-out bg-white rounded-b-lg ${open === index ? 'max-h-screen' : 'max-h-0'}`}
+              key={index}
+              className="accordion py-8 px-6 border-b border-solid border-gray-200 transition-all duration-500 rounded-2xl accordion-active:bg-indigo-50"
+              id={`basic-heading-${index}`}
             >
-              <p className={`text-gray-700 ${open === index ? 'block' : 'hidden'}`}>{faq.answer}</p>
+              <button
+                className="accordion-toggle group inline-flex items-center justify-between leading-8 w-full transition duration-500 text-left hover:text-indigo-600 accordion-active:font-medium accordion-active:text-indigo-600"
+                aria-controls={`basic-collapse-${index}`}
+                onClick={() => toggle(index)}
+              >
+                <h5>{faq.question}</h5>
+                <svg
+                  className={`text-gray-500 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 ${
+                    open === index ? 'rotate-180' : ''
+                  }`}
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25"
+                    stroke="currentColor"
+                    strokeWidth="1.6"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                id={`basic-collapse-${index}`}
+                className={`accordion-content w-full px-0 overflow-hidden transition-max-height duration-500 ${
+                  open === index ? 'max-h-96' : 'max-h-0'
+                }`}
+                aria-labelledby={`basic-heading-${index}`}
+                style={{ maxHeight: open === index ? '250px' : '0px' }}
+              >
+                <p className="text-base  leading-6">{faq.answer}</p>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
