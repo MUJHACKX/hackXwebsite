@@ -11,8 +11,8 @@ const timelineData = {
     customText: null,
     data: [
       {
-        direction: "left",
-        heading1: "July 15 - Aug 27",
+        direction: "right",
+        heading1: "July 15 - Aug 27 2024",
         heading2: "Registration Begins",
         heading3: "Registration open thoughtout on Unstop.",
         progress: 1 / 7,
@@ -22,8 +22,8 @@ const timelineData = {
         bottomLine: true,
       },
       {
-        direction: "right",
-        heading1: "September 5",
+        direction: "left",
+        heading1: "September 5 2024",
         heading2: "Opening",
         heading3: "Kick-off event, welcome, and event introduction.",
         progress: 2 / 7,
@@ -33,8 +33,8 @@ const timelineData = {
         bottomLine: true,
       },
       {
-        direction: "left",
-        heading1: "September 5",
+        direction: "right",
+        heading1: "September 5 2024",
         heading2: "Round 1",
         heading3: "Participants work on initial hacking projects.",
         progress: 3 / 7,
@@ -44,8 +44,8 @@ const timelineData = {
         bottomLine: true,
       },
       {
-        direction: "right",
-        heading1: "September 6",
+        direction: "left",
+        heading1: "September 6 2024",
         heading2: "Round 1 Results",
         heading3: "Announce round 1 winners and achievements.",
         progress: 4 / 7,
@@ -55,8 +55,8 @@ const timelineData = {
         bottomLine: true,
       },
       {
-        direction: "left",
-        heading1: "September 6",
+        direction: "right",
+        heading1: "September 6 2024",
         heading2: "Round 2",
         heading3: "Participants advance to the next hacking phase.",
         progress: 5 / 7,
@@ -66,8 +66,8 @@ const timelineData = {
         bottomLine: true,
       },
       {
-        direction: "right",
-        heading1: "September 6",
+        direction: "left",
+        heading1: "September 6 2024",
         heading2: "Presentation",
         heading3: "Teams present their projects and innovations.",
         progress: 6 / 7,
@@ -77,8 +77,8 @@ const timelineData = {
         bottomLine: true,
       },
       {
-        direction: "left",
-        heading1: "September 6",
+        direction: "right",
+        heading1: "September 6 2024",
         heading2: "Result Declared",
         heading3: "Announce final winners and award prizes.",
         progress: 7 / 7,
