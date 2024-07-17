@@ -8,13 +8,13 @@ import trophyImage from "../public/trophy.png";
 
 const timelineData = {
   2024: {
-    customText: "Coming soon!",
+    customText: null,
     data: [
       {
         direction: "left",
-        heading1: "Oct 3 - Oct 24",
+        heading1: "July 15 - Aug 27",
         heading2: "Registration Begins",
-        heading3: "Register from Oct 3 - 24 for extended hackathon participation.",
+        heading3: "Registration open thoughtout on Unstop.",
         progress: 1 / 7,
         label: "1/7",
         image: registerImage,
@@ -23,7 +23,7 @@ const timelineData = {
       },
       {
         direction: "right",
-        heading1: "Oct 25",
+        heading1: "September 5",
         heading2: "Opening",
         heading3: "Kick-off event, welcome, and event introduction.",
         progress: 2 / 7,
@@ -34,7 +34,7 @@ const timelineData = {
       },
       {
         direction: "left",
-        heading1: "Oct 26",
+        heading1: "September 5",
         heading2: "Round 1",
         heading3: "Participants work on initial hacking projects.",
         progress: 3 / 7,
@@ -45,7 +45,7 @@ const timelineData = {
       },
       {
         direction: "right",
-        heading1: "Oct 27",
+        heading1: "September 6",
         heading2: "Round 1 Results",
         heading3: "Announce round 1 winners and achievements.",
         progress: 4 / 7,
@@ -56,7 +56,7 @@ const timelineData = {
       },
       {
         direction: "left",
-        heading1: "Oct 27",
+        heading1: "September 6",
         heading2: "Round 2",
         heading3: "Participants advance to the next hacking phase.",
         progress: 5 / 7,
@@ -67,7 +67,7 @@ const timelineData = {
       },
       {
         direction: "right",
-        heading1: "Oct 27",
+        heading1: "September 6",
         heading2: "Presentation",
         heading3: "Teams present their projects and innovations.",
         progress: 6 / 7,
@@ -78,7 +78,7 @@ const timelineData = {
       },
       {
         direction: "left",
-        heading1: "Oct 27",
+        heading1: "September 6",
         heading2: "Result Declared",
         heading3: "Announce final winners and award prizes.",
         progress: 7 / 7,
@@ -169,8 +169,8 @@ const timelineData = {
         topLine: true,
         bottomLine: false,
       },
-    ]
-  }
-}
+    ],
+  },
+};
 
 export default timelineData;

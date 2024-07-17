@@ -14,18 +14,18 @@ const Schedule = () => {
       debounceDelay: 50,
       throttleDelay: 99,
       offset: 120,
-      // delay: 200,
       duration: 400,
       easing: 'ease',
       anchorPlacement: 'top-bottom',
     });
-  }, [])
+  }, []);
+
   const [year, setYear] = React.useState(2023);
+
   return (
     <div className='bg-primary bg-fixed'>
       <div className='md:pb-[10%] pb-[30%] pt-[45%] md:pt-[10%] h-full bg-primary flex items-center flex-col'>
-        <div className="text-4xl md:text-6xl text-center font-bold bg-gradient-to-r ease-in-out via-purple-500 bg-clip-text text-transparent
-            from-indigo-300 to-indigo-300 animate-text">
+        <div className="text-4xl md:text-6xl text-center font-bold bg-gradient-to-r ease-in-out via-purple-500 bg-clip-text text-transparent from-indigo-300 to-indigo-300 animate-text">
           Timeline
         </div>
         <div className="flex items-center w-[70%] md:w-[50%] text-xl h-16 mt-8 md:mt-16">
@@ -39,15 +39,10 @@ const Schedule = () => {
             onClick={() => setYear(2023)}
           >2023
           </button>
-
         </div>
         <div className='justify-center flex' data-aos="fade-up">
-          {/*component*/}
-          <div
-            className="bg-primary bg-fixed container justify-center items-center justify-items-center align-middle flex">
+          <div className="bg-primary bg-fixed container justify-center items-center justify-items-center align-middle flex">
             <div className="bg-primary bg-fixed flex flex-col text-dracxt">
-              {timelineData[year].customText &&
-                <h1 className="text-4xl font-bold text-center mt-20 h-[44vh]">{timelineData[year].customText}</h1>}
               {!timelineData[year].customText && timelineData[year].data.map((data, index) => (
                 <TimelineCard
                   key={index}
@@ -62,6 +57,11 @@ const Schedule = () => {
                   bottomLine={data.bottomLine}
                 />
               ))}
+              {timelineData[year].customText && (
+                <h1 className="text-4xl font-bold text-center mt-20 h-[44vh]">
+                  {timelineData[year].customText}
+                </h1>
+              )}
             </div>
           </div>
         </div>
@@ -70,10 +70,9 @@ const Schedule = () => {
           </div>
         </div>
       </div>
-      <Footer></Footer>
-
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
 export default Schedule;
