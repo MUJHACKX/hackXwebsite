@@ -20,7 +20,7 @@ const Schedule = () => {
     });
   }, []);
 
-  const [year, setYear] = React.useState(2023);
+  const [year, setYear] = React.useState(2024);
 
   return (
     <div className='bg-primary bg-fixed'>
