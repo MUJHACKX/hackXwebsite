@@ -81,7 +81,7 @@ const Nav = () => {
             </ul>
           </div>
           <div className='lg:flex hidden'>
-            <Link href="https://linktr.ee/mujhackx" target="_blank">
+            <Link href="https://unstop.com/hackathons/muj-hackx-20-manipal-university-mu-jaipur-1068307" target="_blank">
               <button className='text-white px-3 py-1 rounded-xl font-bold bg-gradient-to-r ease-in-out hover:animate-text from-violet-600 to-indigo-600'>Register now</button>
             </Link>
           </div>
