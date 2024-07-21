@@ -184,7 +184,7 @@ const Home = () => {
         </div>
 
         <div className="flex pb-6">
-          <Link href="https://linktr.ee/mujhackx" target="_blank">
+          <Link href="https://unstop.com/hackathons/muj-hackx-20-manipal-university-mu-jaipur-1068307" target="_blank">
             <button className="text-white px-4 py-2 rounded-lg font-bold sm:text-lg lg:text-xl text-base bg-gradient-to-r ease-in-out hover:animate-text from-[#ae40c0] via-violet-600 to-indigo-600" style={{ fontFamily: "Epilogue, sans-serif" }}>
               Register now
             </button>
