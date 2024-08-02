@@ -9,7 +9,7 @@ const Team = () => {
   // Define LinkedIn URLs for all members
   const linkedInUrls = {
     "Mr. S. Vaitheeswaran": "https://www.linkedin.com/in/vaitheeswaran/",
-    "Dr. G K Prabhu": "https://www.linkedin.com/in/gkprabhu/",
+    "Dr. N N Sharma": "https://www.linkedin.com/in/sharma-nn-7988182/",
     "Dr. Nitu Bhatnagar": "https://www.linkedin.com/in/nitu-bhatnagar-496980172/",
     "Dr. Thammaiah CS": "https://www.linkedin.com/in/dr-thammaiah-chekkera-6014184/",
     "Dr. Jawar N Jangir": "https://www.linkedin.com/in/commodore-dr-jawaharjangir/",

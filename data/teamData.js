@@ -7,8 +7,8 @@ const TeamData = [
         personLinkedIn: "https://www.linkedin.com/in/pujan-modha/"
     },
     {
-        personImage: '/GopalakrishnaPrabhu.jpg',
-        personName: "Dr. G K Prabhu",
+        personImage: '/NNSharma.png',
+        personName: "Dr. N N Sharma",
         personPosition: "PATRON",
         personOrganization: "PRESIDENT, MUJ",
         personLinkedIn: "https://www.linkedin.com/in/arunabha-mukhopadhyay/"
