@@ -76,28 +76,6 @@ const About = () => {
             }
           </div>
         </div>
-        <div className="w-full md:w-auto mt-28">
-          <div className="text-4xl md:text-6xl text-center font-bold bg-gradient-to-r ease-in-out via-purple-500 bg-clip-text text-transparent
-            from-indigo-300 to-indigo-300 animate-text">
-            THEMES
-          </div>
-          <div className="flex-col mt-6 md:mt-12 flex items-center">
-            <div className="text-2xl md:text-3xl">
-              Big Reveal Ahead!
-            </div>
-            {/*<div className="flex flex-row w-[90%] md:w-[85%] flex-wrap">*/}
-            {/*  {*/}
-            {/*    themesData.map((theme, index) => (*/}
-            {/*      <ThemeCard key={index} index={index} theme={theme} currentTheme={currentTheme}*/}
-            {/*                 setCurrentTheme={setCurrentTheme}/>*/}
-            {/*    ))*/}
-            {/*  }*/}
-            {/*</div>*/}
-            {/*<div className="flex flex-row p-3 w-[80%]">*/}
-            {/*  <div className="md:text-xl mt-4 md:mt-8 ml-2 text-slate-200">{themesData[currentTheme].desc}</div>*/}
-            {/*</div>*/}
-          </div>
-        </div>
         <div className="w-full mt-32 flex flex-col items-center">
           <div className="text-4xl md:text-6xl text-center font-bold bg-gradient-to-r ease-in-out via-purple-500 bg-clip-text text-transparent
             from-indigo-300 to-indigo-300 animate-text">
