@@ -83,7 +83,7 @@ export function CanvasRevealEffectDemo() {
                     </Card>
                 </div>
                 <div className="w-[350px] bg-black ">
-                    <Card title="Arial Robots" icon={<HackXIcon />}>
+                    <Card title="Aerial Robots" icon={<HackXIcon />}>
                         <CanvasRevealEffect
                             animationSpeed={3}
                             containerClassName="bg-black"
