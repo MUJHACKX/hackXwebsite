@@ -30,26 +30,26 @@ const Home = () => {
   const data = [
     {
       title: "How do I register ?",
-      content: "REVEALED SOON",
+      content: "Click on the register now button on the nav menu of the website.",
     },
     {
       title: "How many team members do I need ?",
       content:
-        "You can participate individually or in teams of 3 to 4 members.",
+        "You can participate individually or in teams of 2 to 4 members.",
     },
     {
       title: "How much are the participation fees?",
-      content: "REVEALED SOON",
+      content: "Rs 699 for each participating team, be it 2 or 4 members.",
     },
     {
       title: "Will the Hackathon be in person or online ?",
       content:
-        "MUJHackX 2.0 will be conducted in complete offline/in-person mode.",
+        "MUJHackX 2.0 will be conducted in complete offline/in-person mode at Manipal University Jaipur",
     },
     {
       title: "What is the venue for MUJHackX 2.0 ?",
       content:
-        "Manipal University Jaipur, explore our beautiful campus while thinking about innovating some crazy thing.",
+        "Manipal University Jaipur, Dahmi Kalan, Bagru P.O, Jaipur Ajmer Road 303007, Rajasthan, India",
     },
     {
       title: "What are the prerequisites to participate in this hackathon ?",
@@ -154,8 +154,8 @@ const Home = () => {
               clipRule="evenodd"
             />
           </svg>
-          <div className="text-white lg:text-lg text-sm">
-            Win from the Biggest Prize Pool of ₹5,00,000/-
+          <div className="text-white lg:text-lg text-sm"> 
+          Compete for a Grand Prize Pool of ₹5,00,000 ($6,000)!"
           </div>
         </div>
 
@@ -285,27 +285,27 @@ const Home = () => {
 
           </div>
 
-          <div className="max-w-[690px] w-fit mx-4 pt-8">
-            {data.map((item, index) => (
-              <Accordion key={index} type="single" collapsible>
-                <AccordionItem value={`item-${index}`} className=" py-4 md:py-8 !bg-[#010223] font-medium font-[inter]">
-                  <AccordionTrigger
-                    className="max-w-[592px] text-white text-2xl
-                    font-medium leading-7 font-['Inter']"
-                  >
-                    {item.title}
-                  </AccordionTrigger>
-                  <AccordionContent
-                    className="max-w-[592px] text-gray-200 text-lg
+          <div className="max-w-[700px] pt-8">
+              {data.map((item, index) => (
+                <Accordion key={index} type="single" collapsible>
+                  <AccordionItem value={`item-${index}`} className=" py-4 md:py-8">
+                    <AccordionTrigger
+                      className="max-w-[592px] text-white text-2xl
+                    font-medium leading-7"
+                    >
+                      {item.title}
+                    </AccordionTrigger>
+                    <AccordionContent
+                      className="max-w-[592px] text-gray-200 text-lg
                       font-normal font-['Inter'] leading-7"
-                  >
-                    {item.content}
-                  </AccordionContent>
-                </AccordionItem>
-              </Accordion>
-            ))}
+                    >
+                      {item.content}
+                    </AccordionContent>
+                  </AccordionItem>
+                </Accordion>
+              ))}
+            </div>
 
-          </div>
         </div>
       </div>
       <div>
