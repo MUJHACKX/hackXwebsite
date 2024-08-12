@@ -23,7 +23,7 @@ const AccordionItem = React.forwardRef(({ className, ...props }, ref) => (
     >
       <AccordionPrimitive.Item
         ref={ref}
-        className={cn(" data-[state=open]:bg-[#353535]", className)}
+        className={cn(" data-[state=open]:bg-[]", className)}
         {...props}
       />
     </motion.div>
