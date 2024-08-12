@@ -15,26 +15,26 @@ const FAQ = () => {
   const data = [
     {
       title: "How do I register ?",
-      content: "REVEALED SOON",
+      content: "Click on the register now button on the nav menu of the website.",
     },
     {
       title: "How many team members do I need ?",
       content:
-        "You can participate individually or in teams of 3 to 4 members.",
+        "You can participate individually or in teams of 2 to 4 members.",
     },
     {
       title: "How much are the participation fees?",
-      content: "REVEALED SOON",
+      content: "Rs 699 for each participating team, be it 2 or 4 members.",
     },
     {
       title: "Will the Hackathon be in person or online ?",
       content:
-        "MUJHackX 2.0 will be conducted in complete offline/in-person mode.",
+        "MUJHackX 2.0 will be conducted in complete offline/in-person mode at Manipal University Jaipur",
     },
     {
       title: "What is the venue for MUJHackX 2.0 ?",
       content:
-        "Manipal University Jaipur, explore our beautiful campus while thinking about innovating some crazy thing.",
+        "Manipal University Jaipur, Dahmi Kalan, Bagru P.O, Jaipur Ajmer Road 303007, Rajasthan, India",
     },
     {
       title: "What are the prerequisites to participate in this hackathon ?",
