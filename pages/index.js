@@ -16,21 +16,11 @@ import {
 import Footer from "../components/Footer";
 
 const Home = () => {
-  //   useEffect(() => {
-  //     new Typewriter("#typewriter", {
-  //       strings: [
-  //         "Innovate. Code. Create.",
-  //         "Building Tomorrows Solutions Today",
-  //         "Unleash Your Creativity",
-  //       ],
-  //       autoStart: true,
-  //       loop: true,
-  //     });
-  //   }, []);
   const data = [
     {
       title: "How do I register ?",
-      content: "Click on the register now button on the nav menu of the website.",
+      content:
+        "Click on the register now button on the nav menu of the website.",
     },
     {
       title: "How many team members do I need ?",
@@ -71,66 +61,8 @@ const Home = () => {
 
     // Function to check if window is defined (client-side)
     updateHeight();
-  }, []); return (
-
-    // <div className="h-screen flex flex-col items-center overflow-y-auto">
-    //   <div
-    //     className="absolute h-full w-full opacity-30 "
-    //     style={{
-    //       backgroundImage: 'url("/dotsanimation.svg")',
-    //       backgroundSize: "cover",
-    //       backgroundRepeat: "no-repeat",
-    //     }}
-    //   />
-    //   <div className="z-[1] w-full flex flex-col items-center pt-[45%] sm:pt-[25%] md:pt-[20%] lg:pt-[10%] xl:pt-[7.5%]">
-    //     <motion.div
-    //       className="text-5xl lg:text-9xl text-center mb-12 text-accent font-bold bg-gradient-to-r ease-in-out via-purple-500 bg-clip-text text-transparent from-indigo-300 to-indigo-300 animate-text shadow"
-    //       style={{
-    //         fontFamily: "Iceland, sans-serif",
-    //         marginTop: "10%", // Adjust this value to add padding
-    //       }}
-    //       variants={fadeIn("down", 0.2)}
-    //       initial="hidden"
-    //       animate="show"
-    //       exit="hidden"
-    //     >
-    //       MUJHackx 2.0
-    //     </motion.div>
-
-    //     <div
-    //       className="text-4xl lg:text-6xl text-center mb-4 text-white font-bold shadow select-none cursor-default"
-    //       style={{ fontFamily: "Iceland, sans-serif" }}
-    //     >
-    //       MUJ's Premier 36 Hours Hackathon
-    //     </div>
-
-    //     <div
-    //       id="typewriter"
-    //       className="text-2xl lg:text-2xl text-center mb-12 text-accent font-bold shadow select-none cursor-default"
-    //     ></div>
-
-    //     <button
-    //       className="flex items-center px-6 py-3 mt-4 text-black bg-white border border-black rounded-lg button-glow"
-    //       style={{ borderRadius: "8px" }}
-    //     >
-    //       <img src="/unstop.png" alt="Unstop logo" className="w-6 h-6 mr-2" />
-    //       <span className="text-lg font-bold">Apply through Unstop</span>
-    //     </button>
-
-    //     <div className="text-2xl lg:text-4xl p-10 cursor-default">
-    //       💵 Prize Pool{" "}
-    //       <span className="text-green-500 font-bold">₹5,00,000/-</span>
-    //     </div>
-    //     <div className="flex flex-col w-[90%] items-center justify-center">
-    //       <div className="text-4xl lg:text-5xl font-bold bg-gradient-to-r ease-in-out via-purple-500 bg-clip-text text-purple-400 pb-4 md:pt-6">
-    //         Time to go!
-    //       </div>
-    //       <div className="text-red-500 mb-40">
-    //         <Countdown date={new Date("2024-09-05T00:00:00")} />
-    //       </div>
-    //     </div>
-    //   </div>
-    // </div>
+  }, []);
+  return (
     <div className="bg-[#010223] w-full">
       <div
         className="h-screen flex flex-col items-center "
@@ -154,8 +86,8 @@ const Home = () => {
               clipRule="evenodd"
             />
           </svg>
-          <div className="text-white lg:text-lg text-sm"> 
-          Compete for a Grand Prize Pool of ₹5,00,000 ($6,000)!"
+          <div className="text-white lg:text-lg text-sm">
+            Compete for a Grand Prize Pool of ₹5,00,000 ($6,000)!"
           </div>
         </div>
 
@@ -164,14 +96,29 @@ const Home = () => {
             className={`text-white text-5xl sm:text-7xl lg:text-8xl mb-8`}
             style={{ fontFamily: "Space Grotesk, sans-serif" }}
           >
-            <span style={{ textShadow: '0 0 3px rgba(255, 255, 255, 0.4), 0 0 6px rgba(255, 255, 255, 0.4)' }}>
-              MUJ&nbsp;</span>
             <span
-              className='font-bold animate-blink'
-              style={{ textShadow: '0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.5)' }}
+              style={{
+                textShadow:
+                  "0 0 3px rgba(255, 255, 255, 0.4), 0 0 6px rgba(255, 255, 255, 0.4)",
+              }}
             >
-              HACKX&nbsp;</span>
-            <span style={{ textShadow: '0 0 3px rgba(255, 255, 255, 0.4), 0 0 6px rgba(255, 255, 255, 0.4)' }}>
+              MUJ&nbsp;
+            </span>
+            <span
+              className="font-bold animate-blink"
+              style={{
+                textShadow:
+                  "0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.5)",
+              }}
+            >
+              HACKX&nbsp;
+            </span>
+            <span
+              style={{
+                textShadow:
+                  "0 0 3px rgba(255, 255, 255, 0.4), 0 0 6px rgba(255, 255, 255, 0.4)",
+              }}
+            >
               2.0
             </span>
           </h1>
@@ -179,13 +126,20 @@ const Home = () => {
 
         <div className="text-center ">
           <div className="text-xl xl:text-2xl text-white mb-7">
-            Join the ultimate tech showdown a hackathon where your ideas ignite, your code transforms, and your innovations shine!
+            Join the ultimate tech showdown a hackathon where your ideas ignite,
+            your code transforms, and your innovations shine!
           </div>
         </div>
 
         <div className="flex pb-6">
-          <Link href="https://unstop.com/hackathons/muj-hackx-20-manipal-university-mu-jaipur-1068307" target="_blank">
-            <button className="text-white px-4 py-2 rounded-lg font-bold sm:text-lg lg:text-xl text-base bg-gradient-to-r ease-in-out hover:animate-text from-[#ae40c0] via-violet-600 to-indigo-600" style={{ fontFamily: "Epilogue, sans-serif" }}>
+          <Link
+            href="https://unstop.com/hackathons/muj-hackx-20-manipal-university-mu-jaipur-1068307"
+            target="_blank"
+          >
+            <button
+              className="text-white px-4 py-2 rounded-lg font-bold sm:text-lg lg:text-xl text-base bg-gradient-to-r ease-in-out hover:animate-text from-[#ae40c0] via-violet-600 to-indigo-600"
+              style={{ fontFamily: "Epilogue, sans-serif" }}
+            >
               Register now
             </button>
           </Link>
@@ -193,7 +147,8 @@ const Home = () => {
 
         <div className="text-center pb-6">
           <div className="text-sm sm:text-md lg:text-lg">
-            Registrations open till <span className="font-bold">25th</span> August, 2024 11:59 PM
+            Registrations open till <span className="font-bold">25th</span>{" "}
+            August, 2024 11:59 PM
           </div>
         </div>
 
@@ -212,9 +167,80 @@ const Home = () => {
           </div>
         </div>
 
+        <div className="flex items-center pb-10">
+          <span className="mr-4">Our Language Partner</span>
+          <div className="bg-white rounded-lg flex justify-center items-center px-1">
+            <a
+              href="https://quillbot.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div
+                className="py-4 px-11"
+                style={{
+                  backgroundImage: 'url("/QuillbotLogo.jpg")',
+                  backgroundRepeat: "no-repeat",
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                }}
+              ></div>
+            </a>
+          </div>
+        </div>
+        <div className="flex flex-col items-center pb-10">
+  <span className="text-center">Explore tools by QuillBot</span>
+  <div className="flex mt-4 space-x-6">
+    <a
+      href="https://quillbot.com/paragraph-rewriter"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:scale-105 transform transition-transform duration-200"
+    >
+      <img
+        src="QuillbotLogo.jpg"
+        alt="QuillBot Rewriter"
+        className="w-20 h-20 hover:shadow-lg hover:shadow-indigo-500/50 transition-shadow duration-200"
+      />
+    </a>
+    <a
+      href="https://languagetool.org/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:scale-105 transform transition-transform duration-200"
+    >
+      <img
+        src="QuillBotLanguageToolLogo.png"
+        alt="QuillBot Language Tool"
+        className="w-20 h-20 hover:shadow-lg hover:shadow-blue-500/50 transition-shadow duration-200"
+      />
+    </a>
+    <a
+      href="https://www.scribbr.com/citation/generator/apa/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:scale-105 transform transition-transform duration-200"
+    >
+      <img
+        src="QuillBotScribbrLogo.png"
+        alt="QuillBot Scribbr"
+        className="w-20 h-20 hover:shadow-lg hover:shadow-green-500/50 transition-shadow duration-200"
+      />
+    </a>
+  </div>
+</div>
+
         <div className="pb-10">
-          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M17.0391 1.17849C16.8637 1.00305 16.6574 0.915462 16.4204 0.915738C16.1834 0.915737 15.9772 1.00339 15.8019 1.17869L8.99598 7.9846L2.19008 1.17869C2.01477 1.00339 1.80853 0.915807 1.57136 0.915945C1.33404 0.915944 1.12774 1.0036 0.952433 1.1789C0.776991 1.35434 0.689409 1.56058 0.689684 1.79762C0.689684 2.03466 0.777336 2.24083 0.952639 2.41613L8.25042 9.71391C8.46161 9.9251 8.71013 10.0308 8.99598 10.0309C9.28183 10.0308 9.53035 9.9251 9.74153 9.71391L17.0393 2.41613C17.2146 2.24083 17.3022 2.03459 17.3021 1.79741C17.3021 1.5601 17.2144 1.35379 17.0391 1.17849ZM17.0469 8.59527C16.8715 8.41983 16.6653 8.33218 16.4284 8.33231C16.1914 8.33231 15.9852 8.41997 15.8099 8.59527L9.00382 15.4014L2.19791 8.59548C2.02261 8.42017 1.81637 8.33245 1.57919 8.33232C1.34202 8.33245 1.13571 8.42024 0.96027 8.59568C0.784966 8.77099 0.697314 8.97716 0.697314 9.2142C0.69759 9.45123 0.785379 9.6574 0.960683 9.83271L8.25826 17.1303C8.46959 17.3416 8.71811 17.4473 9.00382 17.4473C9.28966 17.4474 9.53825 17.3418 9.74958 17.1305L17.0474 9.83271C17.2227 9.6574 17.3102 9.45116 17.3101 9.21399C17.31 8.97681 17.2223 8.77057 17.0469 8.59527Z" fill="#A684C1" />
+          <svg
+            width="18"
+            height="18"
+            viewBox="0 0 18 18"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M17.0391 1.17849C16.8637 1.00305 16.6574 0.915462 16.4204 0.915738C16.1834 0.915737 15.9772 1.00339 15.8019 1.17869L8.99598 7.9846L2.19008 1.17869C2.01477 1.00339 1.80853 0.915807 1.57136 0.915945C1.33404 0.915944 1.12774 1.0036 0.952433 1.1789C0.776991 1.35434 0.689409 1.56058 0.689684 1.79762C0.689684 2.03466 0.777336 2.24083 0.952639 2.41613L8.25042 9.71391C8.46161 9.9251 8.71013 10.0308 8.99598 10.0309C9.28183 10.0308 9.53035 9.9251 9.74153 9.71391L17.0393 2.41613C17.2146 2.24083 17.3022 2.03459 17.3021 1.79741C17.3021 1.5601 17.2144 1.35379 17.0391 1.17849ZM17.0469 8.59527C16.8715 8.41983 16.6653 8.33218 16.4284 8.33231C16.1914 8.33231 15.9852 8.41997 15.8099 8.59527L9.00382 15.4014L2.19791 8.59548C2.02261 8.42017 1.81637 8.33245 1.57919 8.33232C1.34202 8.33245 1.13571 8.42024 0.96027 8.59568C0.784966 8.77099 0.697314 8.97716 0.697314 9.2142C0.69759 9.45123 0.785379 9.6574 0.960683 9.83271L8.25826 17.1303C8.46959 17.3416 8.71811 17.4473 9.00382 17.4473C9.28966 17.4474 9.53825 17.3418 9.74958 17.1305L17.0474 9.83271C17.2227 9.6574 17.3102 9.45116 17.3101 9.21399C17.31 8.97681 17.2223 8.77057 17.0469 8.59527Z"
+              fill="#A684C1"
+            />
           </svg>
         </div>
 
@@ -228,7 +254,11 @@ const Home = () => {
           <Countdown date={new Date("2024-09-05T00:00:00")} />
         </div>
       </div>
-      <div className={wheight < 800 ? wheight < 700 ? `pt-80` : `pt-56` : `pt-20`}>
+      <div
+        className={
+          wheight < 800 ? (wheight < 700 ? `pt-80` : `pt-56`) : `pt-20`
+        }
+      >
         <div className="lg:mx-10 mx-4 grid grid-cols-4 gap-3 sm:grid-cols-6 lg:grid-cols-7 xl:grid-cols-9">
           <img src="/sdg_1.svg" alt="circles" className="w-full" />
           <img src="/sdg_2.svg" alt="circles" className="w-full" />
@@ -239,11 +269,15 @@ const Home = () => {
           <img src="/sdg_7.svg" alt="circles" className="w-full" />
           <img src="/sdg_8.svg" alt="circles" className="w-full" />
           <img src="/sdg_9.svg" alt="circles" className="w-full" />
-
         </div>
       </div>
       <div className="pt-10 text-center ">
-        <div className="lg:text-5xl md:text-4xl text-2xl " style={{ fontFamily: "Space Grotesk, sans-serif" }}>Get ready for something big</div>
+        <div
+          className="lg:text-5xl md:text-4xl text-2xl "
+          style={{ fontFamily: "Space Grotesk, sans-serif" }}
+        >
+          Get ready for something big
+        </div>
       </div>
       <div className="pt-8 flex justify-center items-center md:mx-6 mx-3">
         <video className="w-full  " controls muted autoPlay loop>
@@ -255,9 +289,7 @@ const Home = () => {
         <div className="lg:text-5xl md:text-4xl text-3xl">THEMES</div>
       </div>
       <div className="pt-12">
-
         <CanvasRevealEffectDemo></CanvasRevealEffectDemo>
-
       </div>
       <div className="text-[#c8d3ef] flex flex-col justify-center items-center">
         <div className="pt-16 md:text-3xl lg:text-5xl sm:text-2xl text-xl ">
@@ -282,36 +314,40 @@ const Home = () => {
             <div className="text-center font-bold text-2xl md:text-3xl lg:text-4xl ">
               Frequently Asked Questions
             </div>
-
           </div>
 
           <div className="max-w-[700px] pt-8">
-              {data.map((item, index) => (
-                <Accordion key={index} type="single" collapsible>
-                  <AccordionItem value={`item-${index}`} className=" py-4 md:py-8">
-                    <AccordionTrigger
-                      className="max-w-[592px] text-white text-2xl
+            {data.map((item, index) => (
+              <Accordion key={index} type="single" collapsible>
+                <AccordionItem
+                  value={`item-${index}`}
+                  className=" py-4 md:py-8"
+                >
+                  <AccordionTrigger
+                    className="max-w-[592px] text-white text-2xl
                     font-medium leading-7"
-                    >
-                      {item.title}
-                    </AccordionTrigger>
-                    <AccordionContent
-                      className="max-w-[592px] text-gray-200 text-lg
+                  >
+                    {item.title}
+                  </AccordionTrigger>
+                  <AccordionContent
+                    className="max-w-[592px] text-gray-200 text-lg
                       font-normal font-['Inter'] leading-7"
-                    >
-                      {item.content}
-                    </AccordionContent>
-                  </AccordionItem>
-                </Accordion>
-              ))}
-            </div>
-
+                  >
+                    {item.content}
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
+            ))}
+          </div>
         </div>
       </div>
       <div>
         <div className="flex p-8  items-center justify-center">
           <Link href="/about">
-            <button className="text-white px-4 py-2 rounded-lg font-bold sm:text-lg lg:text-xl text-base bg-gradient-to-r ease-in-out hover:animate-text from-[#ae40c0] via-violet-600 to-indigo-600" style={{ fontFamily: "Epilogue, sans-serif" }}>
+            <button
+              className="text-white px-4 py-2 rounded-lg font-bold sm:text-lg lg:text-xl text-base bg-gradient-to-r ease-in-out hover:animate-text from-[#ae40c0] via-violet-600 to-indigo-600"
+              style={{ fontFamily: "Epilogue, sans-serif" }}
+            >
               Explore more about MUJHackX 2.0
             </button>
           </Link>
@@ -319,8 +355,6 @@ const Home = () => {
       </div>
       <Footer></Footer>
     </div>
-
-
   );
 };
 
