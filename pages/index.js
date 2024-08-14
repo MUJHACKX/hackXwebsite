@@ -188,46 +188,43 @@ const Home = () => {
           </div>
         </div>
         <div className="flex flex-col items-center pb-10">
-  <span className="text-center">Explore tools by QuillBot</span>
-  <div className="flex mt-4 space-x-6">
-    <a
-      href="https://quillbot.com/paragraph-rewriter"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="hover:scale-105 transform transition-transform duration-200"
-    >
-      <img
-        src="QuillbotLogo.jpg"
-        alt="QuillBot Rewriter"
-        className="w-20 h-20 hover:shadow-lg hover:shadow-indigo-500/50 transition-shadow duration-200"
-      />
-    </a>
-    <a
-      href="https://languagetool.org/"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="hover:scale-105 transform transition-transform duration-200"
-    >
-      <img
-        src="QuillBotLanguageToolLogo.png"
-        alt="QuillBot Language Tool"
-        className="w-20 h-20 hover:shadow-lg hover:shadow-blue-500/50 transition-shadow duration-200"
-      />
-    </a>
-    <a
-      href="https://www.scribbr.com/citation/generator/apa/"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="hover:scale-105 transform transition-transform duration-200"
-    >
-      <img
-        src="QuillBotScribbrLogo.png"
-        alt="QuillBot Scribbr"
-        className="w-20 h-20 hover:shadow-lg hover:shadow-green-500/50 transition-shadow duration-200"
-      />
-    </a>
-  </div>
-</div>
+          <span className="text-center">Explore tools by QuillBot</span>
+          <div className="flex mt-4 space-x-4">
+            <a
+              href="https://quillbot.com/paragraph-rewriter"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="QuillbotLogo.jpg"
+                alt="QuillBot Rewriter"
+                className="w-20 h-20"
+              />
+            </a>
+            <a
+              href="https://languagetool.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="QuillBotLanguageToolLogo.png"
+                alt="QuillBot Language Tool"
+                className="w-20 h-20"
+              />
+            </a>
+            <a
+              href="https://www.scribbr.com/citation/generator/apa/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="QuillBotScribbrLogo.png"
+                alt="QuillBot Scribbr"
+                className="w-20 h-20"
+              />
+            </a>
+          </div>
+        </div>
 
         <div className="pb-10">
           <svg
@@ -259,6 +256,7 @@ const Home = () => {
           wheight < 800 ? (wheight < 700 ? `pt-80` : `pt-56`) : `pt-20`
         }
       >
+        <div className="pt-40"></div>
         <div className="lg:mx-10 mx-4 grid grid-cols-4 gap-3 sm:grid-cols-6 lg:grid-cols-7 xl:grid-cols-9">
           <img src="/sdg_1.svg" alt="circles" className="w-full" />
           <img src="/sdg_2.svg" alt="circles" className="w-full" />
