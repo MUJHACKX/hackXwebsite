@@ -30,7 +30,7 @@ const Team = () => {
     "Manya Goel": "https://www.linkedin.com/in/manya-goel-8a6335222/",
     "Naad Dantale": "https://www.linkedin.com/in/naad/",
     "Rishi Joshi": "https://www.linkedin.com/in/rishijoshi1410/",
-    "Srishti Krishna": "https://www.linkedin.com/in/shristikrishna/",
+    "Shristi Krishna": "https://www.linkedin.com/in/shristikrishna/",
     "Pulkit Gupta": "https://www.linkedin.com/in/pulkit-gupta-abb638249/",
     "Roshmeet Chakraborty": "https://www.linkedin.com/in/roshmeet/",
     "Abhijeet Anand Jha": "https://www.linkedin.com/in/abhijeet-anand-jha-b517b7249/",
