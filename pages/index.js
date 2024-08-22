@@ -289,23 +289,184 @@ const Home = () => {
       <div className="pt-12">
         <CanvasRevealEffectDemo></CanvasRevealEffectDemo>
       </div>
+
+      {/* SPONSORS OF 2024 HACKX 2.0 */}
+      {/*
       <div className="text-[#c8d3ef] flex flex-col justify-center items-center">
         <div className="pt-16 md:text-3xl lg:text-5xl sm:text-2xl text-xl ">
-          Previous Year Top Sponsors of HACKX
-        </div>
-        <div className="w-4/5  lg:w-3/5 xl:w-3/6 pt-6 grid grid-cols-4 gap-3 sm:grid-cols-5 lg:grid-cols-5 place-items-center">
-          <img src="/s1.png" alt="circles" className="w-full" />
-          <img src="/s2.png" alt="circles" className="w-full" />
-          <img src="/s3.png" alt="circles" className="w-full" />
-          <img src="/s4.png" alt="circles" className="w-full" />
-          <img src="/s5.png" alt="circles" className="w-full" />
-          <img src="/s6.png" alt="circles" className="w-full" />
-          <img src="/s7.png" alt="circles" className="w-full" />
-          <img src="/s8.png" alt="circles" className="w-full" />
-          <img src="/s9.png" alt="circles" className="w-full" />
-          <img src="/s10.png" alt="circles" className="w-full" />
+          Introducing CDAC as Official Technical Partner 
         </div>
       </div>
+      */}
+      <div className="text-[#c8d3ef] flex flex-col justify-center items-center">
+        <div className="pt-16 md:text-3xl lg:text-5xl sm:text-2xl text-xl ">
+          MUJHACKX 2.0 Official Sponsors
+        </div>
+      </div>
+      <div className="text-[#c8d3ef] flex flex-col justify-center items-center">
+        <div className="pt-16 md:text-3xl lg:text-5xl sm:text-2xl text-xl ">
+          Hiring Partner
+        </div>
+
+        <div className="w-4/5 lg:w-3/5 xl:w-3/6 pt-6 grid grid-cols-1 gap-10 place-items-center">
+          {/* Sponsor 1 */}
+          <div className="flex flex-col items-center">
+            <img
+              src="/sponsors/prog.png"
+              alt="Title Sponsor 1"
+              className="w-full"
+            />
+            <div className="text-center pt-4">
+              <p className="text-lg font-semibold"></p>
+              <p className="text-md">Programming Pathshala</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="text-[#c8d3ef] flex flex-col justify-center items-center">
+        <div className="pt-16 md:text-3xl lg:text-5xl sm:text-2xl text-xl ">
+          Knowledge Partner
+        </div>
+
+        <div className="w-4/5 lg:w-3/5 xl:w-3/6 pt-6 grid grid-cols-2 gap-10 place-items-center">
+          {/* Sponsor 1 */}
+          <div className="flex flex-col items-center">
+            <img
+              src="/sponsors/Oracle.png"
+              alt="Title Sponsor 1"
+              className="w-full"
+            />
+            <div className="text-center pt-4">
+              <p className="text-lg font-semibold"></p>
+              <p className="text-md">Oracle Academy</p>
+            </div>
+          </div>
+
+          {/* Sponsor 2 */}
+          <div className="flex flex-col items-center">
+            <img
+              src="/sponsors/Axure2.png"
+              alt="Co-Sponsor 1"
+              className="w-full"
+            />
+            <div className="text-center pt-4">
+              <p className="text-lg font-semibold"></p>
+              <p className="text-md">Axure</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="text-[#c8d3ef] flex flex-col justify-center items-center">
+        <div className="pt-16 md:text-3xl lg:text-5xl sm:text-2xl text-xl ">
+          Startup Partner
+        </div>
+
+        <div className="w-4/5 lg:w-3/5 xl:w-3/6 pt-6 grid grid-cols-2 gap-10 place-items-center">
+          {/* Sponsor 1 */}
+          <div className="flex flex-col items-center">
+            <img
+              src="/sponsors/DesignStudio.png"
+              alt="Title Sponsor 1"
+              className="w-full"
+            />
+            <div className="text-center pt-4">
+              <p className="text-lg font-semibold"></p>
+              <p className="text-md">Say Design Studio</p>
+            </div>
+          </div>
+
+          {/* Sponsor 2 */}
+          <div className="flex flex-col items-center">
+            <img
+              src="/sponsors/Bikesetu2.png"
+              alt="Co-Sponsor 1"
+              className="w-full"
+            />
+            <div className="text-center pt-4">
+              <p className="text-lg font-semibold"></p>
+              <p className="text-md">Bikesetu</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div className="text-[#c8d3ef] flex flex-col justify-center items-center">
+        <div className="pt-16 md:text-3xl lg:text-5xl sm:text-2xl text-xl ">
+          Technical Partner
+        </div>
+
+        <div className="w-4/5 lg:w-3/5 xl:w-3/6 pt-6 grid grid-cols-1 gap-10 place-items-center">
+          {/* Sponsor 1 */}
+            
+            <div className="text-center">
+              <p className="text-lg font-semibold"></p>
+              <p className="pt-16 md:text-3xl lg:text-5xl sm:text-2xl text-xl">C-DAC, India</p>
+            </div>
+        
+        </div>
+      </div>
+      <div className="text-[#c8d3ef] flex flex-col justify-center items-center">
+        <div className="pt-16 md:text-3xl lg:text-5xl sm:text-2xl text-xl ">
+          Healthcare Partner
+        </div>
+
+        <div className="w-4/5 lg:w-3/5 xl:w-3/6 pt-6 grid grid-cols-1 gap-10 place-items-center">
+          {/* Sponsor 1 */}
+          <div className="flex flex-col items-center">
+            <img
+              src="/sponsors/Femease.png"
+              alt="Title Sponsor 1"
+              className="w-full"
+            />
+            <div className="text-center pt-4">
+              <p className="text-lg font-semibold"></p>
+              <p className="text-md">Femease</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="text-[#c8d3ef] flex flex-col justify-center items-center">
+        <div className="pt-16 md:text-3xl lg:text-5xl sm:text-2xl text-xl ">
+          Blog Partner
+        </div>
+
+        <div className="w-4/5 lg:w-3/5 xl:w-3/6 pt-6 grid grid-cols-1 gap-10 place-items-center">
+          {/* Sponsor 1 */}
+          <div className="flex flex-col items-center">
+            <img
+              src="/sponsors/ed.png"
+              alt="Title Sponsor 1"
+              className="w-full"
+            />
+            <div className="text-center pt-4">
+              <p className="text-lg font-semibold"></p>
+              <p className="text-md">ED Times</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="text-[#c8d3ef] flex flex-col justify-center items-center">
+        <div className="pt-16 md:text-3xl lg:text-5xl sm:text-2xl text-xl ">
+          Partner
+        </div>
+
+        <div className="w-4/5 lg:w-3/5 xl:w-3/6 pt-6 grid grid-cols-1 gap-10 place-items-center">
+          {/* Sponsor 1 */}
+          <div className="flex flex-col items-center">
+            <img
+              src="/sponsors/Fanstore.png"
+              alt="Title Sponsor 1"
+              className="w-full"
+            />
+            <div className="text-center pt-4">
+              <p className="text-lg font-semibold"></p>
+              <p className="text-md">Bobble AI Fanstore</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
       <div>
         <div className="flex flex-col jusitfy-center items-center pt-10">
           <div className="flex flex-col ">
