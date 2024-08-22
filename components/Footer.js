@@ -65,7 +65,7 @@ export default function Footer() {
                             <FaInstagram className="cursor-pointer" />
                         </a>
                     </Link>
-                    <Link href="https://www.linkedin.com/company/mujhackx/" legacyBehavior>
+                    <Link href="https://www.linkedin.com/company/arktechorg/" legacyBehavior>
                         <a target="_blank" rel="noopener noreferrer">
                             <FaLinkedin className="cursor-pointer" />
                         </a>
