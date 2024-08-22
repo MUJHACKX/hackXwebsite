@@ -147,8 +147,7 @@ const Home = () => {
 
         <div className="text-center pb-6">
           <div className="text-sm sm:text-md lg:text-lg">
-            Registrations open till <span className="font-bold">25th</span>{" "}
-            August, 2024 11:59 PM
+            Registrations are closed now. We'll see you next year.
           </div>
         </div>
 
