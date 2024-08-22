@@ -312,7 +312,7 @@ const Home = () => {
           {/* Sponsor 1 */}
           <div className="flex flex-col items-center">
             <img
-              src="/sponsors/prog.png"
+              src="/sponsors/Prog.png"
               alt="Title Sponsor 1"
               className="w-full"
             />
@@ -434,7 +434,7 @@ const Home = () => {
           {/* Sponsor 1 */}
           <div className="flex flex-col items-center">
             <img
-              src="/sponsors/ed.png"
+              src="/sponsors/ED.png"
               alt="Title Sponsor 1"
               className="w-full"
             />
