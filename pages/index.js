@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import Countdown from "../components/Countdown";
 import Link from "next/link";
 import { CanvasRevealEffect } from "../components/BinaryCard";
+import FacultyCard from "../components/FacultyCard";
 import { CanvasRevealEffectDemo } from "../components/CanvaReveal";
 import { update } from "three/examples/jsm/libs/tween.module.js";
 import {
@@ -288,6 +289,69 @@ const Home = () => {
       <div className="pt-12">
         <CanvasRevealEffectDemo></CanvasRevealEffectDemo>
       </div>
+      
+      {/* Faculty Cards in 3-2 Grid */}
+      <div className="text-[#c8d3ef] flex flex-col justify-center items-center">
+        <div className="pt-16 md:text-3xl lg:text-5xl sm:text-2xl text-xl ">
+          Keynote Speakers and Judges
+        </div>
+      </div>
+    <div className="pt-12 flex flex-col items-center"> {/* Center the entire card section */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 w-full md:w-4/5 lg:w-3/4 xl:w-2/3"> {/* Top Row - 3 Cards, adjust width for responsiveness */}
+        <FacultyCard 
+          name="Anoop Gupta" 
+          image="/anup.jpeg" 
+          line1="Co- Founder"
+          line2="Programming Patshala"
+          count={3} 
+          icon="https://www.linkedin.com/in/example-profile1" 
+        />
+        <FacultyCard 
+          name="Dr. Buddha Chandrashekhar" 
+          image="/buddha.jpeg" 
+          line1="COO AICTE"
+          line2="GOH Speaker"
+          count={3} 
+          icon="https://www.linkedin.com/in/example-profile2" 
+        />
+<FacultyCard 
+  name="Hiten Lulla" 
+  image="/hitenlulla.jpeg" 
+  line1="Content Creator @hiten.codes"
+  line2="Software Development @Zee Entertainment"
+  count={3} 
+  icons={[
+    { type: "linkedin", url: "https://www.linkedin.com/in/example-profile3" },
+    { type: "instagram", url: "https://www.instagram.com/example-profile" }
+  ]}
+/>
+      </div>
+    </div>
+    {/* Faculty Cards in 3-2 Grid */}
+    <div className="pt-12 flex flex-col items-center"> {/* Center the entire card section */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 w-full md:w-4/5 lg:w-3/4 xl:w-2/3"> {/* Top Row - 3 Cards, adjust width for responsiveness */}
+        <FacultyCard 
+          name="Suraaj Hasija" 
+          image="/suraj.png" 
+          line1="Senior Manager"
+          line2="Scaler"
+          count={3} 
+          icon="https://www.linkedin.com/in/example-profile1" 
+        />
+        <FacultyCard 
+          name="Rohit Kumar Mishra" 
+          image="/rohit.png" 
+          line1="Project Engineer"
+          line2="CDAC-DRDO"
+          count={3} 
+          icon="https://www.linkedin.com/in/example-profile2" 
+        />
+        
+      </div>
+    </div>
+
+
+
 
       {/* SPONSORS OF 2024 HACKX 2.0 */}
       {/*
