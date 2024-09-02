@@ -1,10 +1,13 @@
-// icons
 import { HiHome, HiRectangleGroup } from 'react-icons/hi2';
 import { MdTimeline } from "react-icons/md";
 import { AiOutlineTeam } from "react-icons/ai";
 import { RiGalleryLine } from "react-icons/ri";
 import { FaQuestionCircle } from 'react-icons/fa';
 import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+import Socials from './Socials';
+import Image from 'next/image';
 
 // nav data
 export const navData = [
@@ -16,14 +19,6 @@ export const navData = [
   { name: 'Gallery', path: '/gallery', icon: <RiGalleryLine /> },
   { name: 'Faqs', path: '/contact', icon: <FaQuestionCircle /> },
 ];
-
-//next link
-import Link from 'next/link';
-
-// next router
-import { useRouter } from 'next/router'
-import Socials from './Socials';
-import Image from 'next/image';
 
 const Nav = () => {
   const router = useRouter();
@@ -80,9 +75,16 @@ const Nav = () => {
               ))}
             </ul>
           </div>
-          <div className='lg:flex hidden'>
+          <div className='lg:flex hidden gap-4'>
             <Link href="https://unstop.com/hackathons/muj-hackx-20-manipal-university-mu-jaipur-1068307" target="_blank">
-              <button className='text-white px-3 py-1 rounded-xl font-bold bg-gradient-to-r ease-in-out hover:animate-text from-violet-600 to-indigo-600'>Register now</button>
+              <button className='text-white px-3 py-1 rounded-xl font-bold bg-gradient-to-r ease-in-out hover:animate-text from-violet-600 to-indigo-600'>
+                Register now
+              </button>
+            </Link>
+            <Link href="/problem-statements" target="_blank">
+              <button className='text-violet-600 px-3 py-1 rounded-xl font-bold bg-white hover:bg-gray-200'>
+                Problem Statements
+              </button>
             </Link>
           </div>
           <div className='flex lg:hidden'>
@@ -124,7 +126,16 @@ const SideNavComp = ({ toggleSideNav, pathname }) => {
         </div>
         <div className='flex p-4 pt-8'>
           <Link href="https://unstop.com/hackathons/muj-hackx-20-manipal-university-mu-jaipur-1068307" target="_blank">
-            <button className='text-white px-4 py-2 rounded-xl font-bold bg-gradient-to-r ease-in-out  hover:animate-text from-violet-600 to-indigo-600'>Register now</button>
+            <button className='text-white px-4 py-2 rounded-xl font-bold bg-gradient-to-r ease-in-out  hover:animate-text from-violet-600 to-indigo-600'>
+              Register now
+            </button>
+          </Link>
+        </div>
+        <div className='flex p-4 pt-8'>
+          <Link href="/problem-statements" target="_blank">
+            <button className='text-violet-600 px-4 py-2 rounded-xl font-bold bg-white hover:bg-gray-200'>
+              Problem Statements
+            </button>
           </Link>
         </div>
         <div className='p-4 pl-6'>
@@ -136,38 +147,3 @@ const SideNavComp = ({ toggleSideNav, pathname }) => {
 }
 
 export default Nav;
-
-/*
- <nav className='flex flex-col items-center xl:justify-center gap-y-4 fixed h-max
-  bottom-0 mt-auto xl:right-[2%] z-50 top-0 w-full xl:w-16 xl:max-w-md xl:h-screen'>
-
-    { inner }
-    <div className='flex w-full xl:flex-col items-center
-     justify-between xl:justify-center gap-y-10 px-4 md:px-40
-     xl:px-0 h-[80px] xl:h-max py-8 bg-secondary/90 backdrop-blue-sm text-3xl xl:textxl
-     xl:rounded-full '>
-
-      {navData.map((link, index)=> {
-        return(
-        <Link className={`${link.path === pathname && 'text-accent'} relative flex items-center
-         group hover:text-accent`}
-         href={link.path}
-         key = {index}
-        >
-          { tooltip }
-          <div className='absolute pr-14 right-0 hidden xl:group-hover:flex '>
-            <div className='bg-white relative flex text-primary items-center p-[6px] rounded-[3px]'>
-              <div className='text-[12px] leading-none font-semibold capitalize'>
-                {link.name}
-              </div>
-              {triangle }
-              <div className='border-solid border-l-white border-l-8 border-y-transparent border-y-[6px]
-              border-r-0 absolute -right-2'></div>
-            </div>
-          </div>
-          <div>{link.icon}</div>
-        </Link>);
-      })}
-    </div>
-    </nav>
-    */
