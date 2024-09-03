@@ -323,14 +323,14 @@ const Home = () => {
       </div>
     {/* Faculty Cards in 3-2 Grid */}
     <div className="pt-12 flex flex-col items-center"> {/* Center the entire card section */}
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-8 w-full md:w-4/5 lg:w-3/4 xl:w-2/3"> {/* Top Row - 3 Cards, adjust width for responsiveness */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 w-full md:w-4/5 lg:w-3/4 xl:w-2/3"> {/* Top Row - 3 Cards, adjust width for responsiveness */}
         <FacultyCard 
-          name="Suraaj Hasija" 
-          image="/suraj.png" 
-          line1="Senior Manager"
-          line2="Scaler"
+          name="Anoop Garg" 
+          image="/anup.jpeg" 
+          line1="Co-Founder"
+          line2="Programming Patshala"
           count={3} 
-          icon="https://www.linkedin.com/in/suraajhasija/" 
+          icon="https://www.linkedin.com/in/anoopgarg123/" 
         />
         <FacultyCard 
           name="Rohit Kumar Mishra" 
@@ -348,15 +348,28 @@ const Home = () => {
           count={3} 
           icon="https://www.linkedin.com/in/yash-ramani7/?originalSubdomain=in" 
         />
+      </div>
+    </div>
+
+    {/* Faculty Cards in 3-2 Grid */}
+    <div className="pt-12 flex flex-col items-center"> {/* Center the entire card section */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 w-full md:w-4/5 lg:w-3/4 xl:w-2/3"> {/* Top Row - 3 Cards, adjust width for responsiveness */}
         <FacultyCard 
-          name="Mr. Hiten Lulla" 
+          name="Suraaj Hasija" 
+          image="/suraj.png" 
+          line1="Senior Manager"
+          line2="Scaler"
+          count={3} 
+          icon="https://www.linkedin.com/in/suraajhasija/" 
+        />
+        <FacultyCard 
+          name="mr Hiten Lulla" 
           image="/hitenlulla.jpeg" 
           line1="Content Creator"
           line2="@hiten.codes"
           count={3} 
-          icon="https://www.linkedin.com/in/hiten-lulla-a434201aa/?originalSubdomain=in" 
+          icon="https://www.linkedin.com/in/hiten-lulla-a434201aa/" 
         />
-        
       </div>
     </div>
 
