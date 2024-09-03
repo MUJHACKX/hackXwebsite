@@ -323,7 +323,7 @@ const Home = () => {
       </div>
     {/* Faculty Cards in 3-2 Grid */}
     <div className="pt-12 flex flex-col items-center"> {/* Center the entire card section */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 w-full md:w-4/5 lg:w-3/4 xl:w-2/3"> {/* Top Row - 3 Cards, adjust width for responsiveness */}
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-8 w-full md:w-4/5 lg:w-3/4 xl:w-2/3"> {/* Top Row - 3 Cards, adjust width for responsiveness */}
         <FacultyCard 
           name="Suraaj Hasija" 
           image="/suraj.png" 
@@ -347,6 +347,14 @@ const Home = () => {
           line2="Say Design Studios"
           count={3} 
           icon="https://www.linkedin.com/in/yash-ramani7/?originalSubdomain=in" 
+        />
+        <FacultyCard 
+          name="Mr. Hiten Lulla" 
+          image="/hiten.jpeg" 
+          line1="Content Creator"
+          line2="@hiten.codes"
+          count={3} 
+          icon="https://www.linkedin.com/in/hiten-lulla-a434201aa/?originalSubdomain=in" 
         />
         
       </div>
