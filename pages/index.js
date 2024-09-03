@@ -350,7 +350,7 @@ const Home = () => {
         />
         <FacultyCard 
           name="Mr. Hiten Lulla" 
-          image="/hiten.jpeg" 
+          image="/hitenlulla.jpeg" 
           line1="Content Creator"
           line2="@hiten.codes"
           count={3} 
