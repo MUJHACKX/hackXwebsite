@@ -325,7 +325,7 @@ const Home = () => {
     <div className="pt-12 flex flex-col items-center"> {/* Center the entire card section */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 w-full md:w-4/5 lg:w-3/4 xl:w-2/3"> {/* Top Row - 3 Cards, adjust width for responsiveness */}
         <FacultyCard 
-          name="Anoop Garg" 
+          name="Mr. Anoop Garg" 
           image="/anup.jpeg" 
           line1="Co-Founder"
           line2="Programming Patshala"
@@ -333,7 +333,7 @@ const Home = () => {
           icon="https://www.linkedin.com/in/anoopgarg123/" 
         />
         <FacultyCard 
-          name="Rohit Kumar Mishra" 
+          name="Mr. Rohit Kumar Mishra" 
           image="/rohit.png" 
           line1="Project Engineer"
           line2="CDAC-DRDO"
@@ -355,7 +355,7 @@ const Home = () => {
     <div className="pt-12 flex flex-col items-center"> {/* Center the entire card section */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 w-full md:w-4/5 lg:w-3/4 xl:w-2/3"> {/* Top Row - 3 Cards, adjust width for responsiveness */}
         <FacultyCard 
-          name="Suraaj Hasija" 
+          name="Mr. Suraaj Hasija" 
           image="/suraj.png" 
           line1="Senior Manager"
           line2="Scaler"
@@ -363,7 +363,7 @@ const Home = () => {
           icon="https://www.linkedin.com/in/suraajhasija/" 
         />
         <FacultyCard 
-          name="mr Hiten Lulla" 
+          name="Mr Hiten Lulla" 
           image="/hitenlulla.jpeg" 
           line1="Content Creator"
           line2="@hiten.codes"
