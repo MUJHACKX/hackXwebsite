@@ -293,50 +293,44 @@ const Home = () => {
       {/* Faculty Cards in 3-2 Grid */}
       <div className="text-[#c8d3ef] flex flex-col justify-center items-center">
         <div className="pt-16 md:text-3xl lg:text-5xl sm:text-2xl text-xl ">
-          Keynote Speakers and Judges
+          Chief Guest and Keynote Speakers
         </div>
       </div>
     <div className="pt-12 flex flex-col items-center"> {/* Center the entire card section */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 w-full md:w-4/5 lg:w-3/4 xl:w-2/3"> {/* Top Row - 3 Cards, adjust width for responsiveness */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 w-full md:w-4/5 lg:w-3/4 xl:w-2/3"> {/* Top Row - 3 Cards, adjust width for responsiveness */}
         <FacultyCard 
-          name="Anoop Gupta" 
-          image="/anup.jpeg" 
-          line1="Co- Founder"
-          line2="Programming Patshala"
-          count={3} 
-          icon="https://www.linkedin.com/in/example-profile1" 
-        />
-        <FacultyCard 
-          name="Dr. Buddha Chandrashekhar" 
+          name="Dr. Buddha Chandrasekhar" 
           image="/buddha.jpeg" 
-          line1="COO AICTE"
-          line2="GOH Speaker"
+          line1="CCO of AICTE and CEO of Anuvadini Ai"
+          line2="Ministry of Education"
           count={3} 
-          icon="https://www.linkedin.com/in/example-profile2" 
+          icon="https://www.linkedin.com/in/chandrasekharbudha/?originalSubdomain=in" 
         />
-<FacultyCard 
-  name="Hiten Lulla" 
-  image="/hitenlulla.jpeg" 
-  line1="Content Creator @hiten.codes"
-  line2="Software Development @Zee Entertainment"
-  count={3} 
-  icons={[
-    { type: "linkedin", url: "https://www.linkedin.com/in/example-profile3" },
-    { type: "instagram", url: "https://www.instagram.com/example-profile" }
-  ]}
-/>
+        <FacultyCard 
+          name="Mr. Vishal Doshi" 
+          image="/vishaltcs.jpeg" 
+          line1="Head - Talent Acquisition"
+          line2="Tata Consultancy Services"
+          count={3} 
+          icon="https://www.linkedin.com/in/vishal-doshi-5b672414/?originalSubdomain=in" 
+        />
       </div>
     </div>
+    <div className="text-[#c8d3ef] flex flex-col justify-center items-center">
+        <div className="pt-16 md:text-3xl lg:text-5xl sm:text-2xl text-xl ">
+          Guest Speakers and Judges
+        </div>
+      </div>
     {/* Faculty Cards in 3-2 Grid */}
     <div className="pt-12 flex flex-col items-center"> {/* Center the entire card section */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 w-full md:w-4/5 lg:w-3/4 xl:w-2/3"> {/* Top Row - 3 Cards, adjust width for responsiveness */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 w-full md:w-4/5 lg:w-3/4 xl:w-2/3"> {/* Top Row - 3 Cards, adjust width for responsiveness */}
         <FacultyCard 
           name="Suraaj Hasija" 
           image="/suraj.png" 
           line1="Senior Manager"
           line2="Scaler"
           count={3} 
-          icon="https://www.linkedin.com/in/example-profile1" 
+          icon="https://www.linkedin.com/in/suraajhasija/" 
         />
         <FacultyCard 
           name="Rohit Kumar Mishra" 
@@ -344,7 +338,15 @@ const Home = () => {
           line1="Project Engineer"
           line2="CDAC-DRDO"
           count={3} 
-          icon="https://www.linkedin.com/in/example-profile2" 
+          //icon="" 
+        />
+        <FacultyCard 
+          name="Mr. Yash Ramani" 
+          image="/yash.jpeg" 
+          line1="Co-Founder"
+          line2="Say Design Studios"
+          count={3} 
+          icon="https://www.linkedin.com/in/yash-ramani7/?originalSubdomain=in" 
         />
         
       </div>

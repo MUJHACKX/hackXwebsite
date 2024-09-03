@@ -81,7 +81,7 @@ const Nav = () => {
                 Register now
               </button>
             </Link>
-            <Link href="/problem-statements" target="_blank">
+            <Link href="/problemstatements" target="_blank">
               <button className='text-violet-600 px-3 py-1 rounded-xl font-bold bg-white hover:bg-gray-200'>
                 Problem Statements
               </button>
@@ -132,7 +132,7 @@ const SideNavComp = ({ toggleSideNav, pathname }) => {
           </Link>
         </div>
         <div className='flex p-4 pt-8'>
-          <Link href="/problem-statements" target="_blank">
+          <Link href="/problemstatements" target="_blank">
             <button className='text-violet-600 px-4 py-2 rounded-xl font-bold bg-white hover:bg-gray-200'>
               Problem Statements
             </button>
