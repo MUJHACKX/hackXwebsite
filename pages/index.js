@@ -418,7 +418,7 @@ const Home = () => {
           {/* Sponsor 1 */}
           <div className="flex flex-col items-center">
             <img
-              src="/sponsors/Oracle.png"
+              src="/sponsors/oracleoriginal.png"
               alt="Title Sponsor 1"
               className="w-full"
             />
