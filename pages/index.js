@@ -241,15 +241,15 @@ const Home = () => {
           </svg>
         </div>
 
-        <div className="text-center pb-7">
+        {/* <div className="text-center pb-7">
           <div className="md:text-4xl text-3xl lg:text-5xl">
             Showdown starts in
           </div>
-        </div>
+        </div> */}
 
-        <div className="">
+        {/* <div className="">
           <Countdown date={new Date("2024-09-05T00:00:00")} />
-        </div>
+        </div> */}
       </div>
       <div
         className={
