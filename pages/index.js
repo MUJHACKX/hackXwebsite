@@ -134,14 +134,14 @@ const Home = () => {
 
         <div className="flex pb-6">
           <Link
-            href="https://unstop.com/hackathons/muj-hackx-20-manipal-university-mu-jaipur-1068307"
+            href="https://drive.google.com/file/d/12I6F9V8eky3jqF04W5nrLy0E5wwN_hwg/view?usp=sharing"
             target="_blank"
           >
             <button
               className="text-white px-4 py-2 rounded-lg font-bold sm:text-lg lg:text-xl text-base bg-gradient-to-r ease-in-out hover:animate-text from-[#ae40c0] via-violet-600 to-indigo-600"
               style={{ fontFamily: "Epilogue, sans-serif" }}
             >
-              Register now
+              Problem Statements Revealed!!
             </button>
           </Link>
         </div>

@@ -81,7 +81,7 @@ const Nav = () => {
                 Register now
               </button>
             </Link>
-            <Link href="/problemstatements" target="_blank">
+            <Link href="https://drive.google.com/file/d/12I6F9V8eky3jqF04W5nrLy0E5wwN_hwg/view?usp=sharing" target="_blank">
               <button className='text-violet-600 px-3 py-1 rounded-xl font-bold bg-white hover:bg-gray-200'>
                 Problem Statements
               </button>
@@ -125,14 +125,14 @@ const SideNavComp = ({ toggleSideNav, pathname }) => {
           </ul>
         </div>
         <div className='flex p-4 pt-8'>
-          <Link href="https://unstop.com/hackathons/muj-hackx-20-manipal-university-mu-jaipur-1068307" target="_blank">
+          <Link href="https://drive.google.com/file/d/12I6F9V8eky3jqF04W5nrLy0E5wwN_hwg/view?usp=sharing" target="_blank">
             <button className='text-white px-4 py-2 rounded-xl font-bold bg-gradient-to-r ease-in-out  hover:animate-text from-violet-600 to-indigo-600'>
               Register now
             </button>
           </Link>
         </div>
         <div className='flex p-4 pt-8'>
-          <Link href="/problemstatements" target="_blank">
+          <Link href="https://drive.google.com/file/d/12I6F9V8eky3jqF04W5nrLy0E5wwN_hwg/view?usp=sharing" target="_blank">
             <button className='text-violet-600 px-4 py-2 rounded-xl font-bold bg-white hover:bg-gray-200'>
               Problem Statements
             </button>
