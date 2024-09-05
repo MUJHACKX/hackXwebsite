@@ -226,7 +226,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="pb-10">
+        {/* <div className="pb-10">
           <svg
             width="18"
             height="18"
@@ -239,7 +239,7 @@ const Home = () => {
               fill="#A684C1"
             />
           </svg>
-        </div>
+        </div> */}
 
         {/* <div className="text-center pb-7">
           <div className="md:text-4xl text-3xl lg:text-5xl">
@@ -253,10 +253,10 @@ const Home = () => {
       </div>
       <div
         className={
-          wheight < 800 ? (wheight < 700 ? `pt-80` : `pt-56`) : `pt-20`
+          wheight < 800 ? (wheight < 700 ? `pt-80` : `pt-56`) : `pt-1`
         }
       >
-        <div className="pt-40"></div>
+        <div className="pt-0"></div>
         <div className="lg:mx-10 mx-4 grid grid-cols-4 gap-3 sm:grid-cols-6 lg:grid-cols-7 xl:grid-cols-9">
           <img src="/sdg_1.svg" alt="circles" className="w-full" />
           <img src="/sdg_2.svg" alt="circles" className="w-full" />
